@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FC8E358262A356800553D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD100D82629F48D004E5024 /* Assets.xcassets */; };
+		4FC8E35B262A35CD00553D49 /* airbnb-cereal-app-cufonfonts in Resources */ = {isa = PBXBuildFile; fileRef = 4FC8E35A262A35CD00553D49 /* airbnb-cereal-app-cufonfonts */; };
 		4FD100D02629F48A004E5024 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD100CF2629F48A004E5024 /* AppDelegate.swift */; };
 		4FD100D22629F48A004E5024 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD100D12629F48A004E5024 /* SceneDelegate.swift */; };
 		4FD100D42629F48A004E5024 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD100D32629F48A004E5024 /* ViewController.swift */; };
 		4FD100D72629F48A004E5024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD100D52629F48A004E5024 /* Main.storyboard */; };
-		4FD100D92629F48D004E5024 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD100D82629F48D004E5024 /* Assets.xcassets */; };
 		4FD100DC2629F48D004E5024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD100DA2629F48D004E5024 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FC8E35A262A35CD00553D49 /* airbnb-cereal-app-cufonfonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "airbnb-cereal-app-cufonfonts"; path = "../../../Downloads/airbnb-cereal-app-cufonfonts"; sourceTree = "<group>"; };
 		4FD100CC2629F48A004E5024 /* ConTilde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConTilde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD100CF2629F48A004E5024 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FD100D12629F48A004E5024 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				4FD100D82629F48D004E5024 /* Assets.xcassets */,
 				4FD100DA2629F48D004E5024 /* LaunchScreen.storyboard */,
 				4FD100DD2629F48D004E5024 /* Info.plist */,
+				4FC8E35A262A35CD00553D49 /* airbnb-cereal-app-cufonfonts */,
 			);
 			path = ConTilde;
 			sourceTree = "<group>";
@@ -125,8 +128,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FD100DC2629F48D004E5024 /* LaunchScreen.storyboard in Resources */,
-				4FD100D92629F48D004E5024 /* Assets.xcassets in Resources */,
+				4FC8E358262A356800553D49 /* Assets.xcassets in Resources */,
 				4FD100D72629F48A004E5024 /* Main.storyboard in Resources */,
+				4FC8E35B262A35CD00553D49 /* airbnb-cereal-app-cufonfonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
