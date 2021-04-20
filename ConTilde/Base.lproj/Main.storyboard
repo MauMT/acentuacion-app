@@ -91,6 +91,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="icW-Cn-r5s" secondAttribute="bottom" constant="60" id="zPq-AQ-uNJ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xFN-rP-lEe"/>
                     <connections>
                         <outlet property="letraAnimada" destination="dFC-hC-3dR" id="dEx-W0-edg"/>
                     </connections>
@@ -144,7 +145,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="NsG-we-1S1" kind="presentation" identifier="partida" modalPresentationStyle="fullScreen" id="q9A-jb-d15"/>
+                                    <action selector="changeView:" destination="QoD-tc-v9R" eventType="touchUpInside" id="y21-3h-LKm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fv4-FI-bkN">
@@ -158,7 +159,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NsG-we-1S1" kind="presentation" identifier="flecha" modalPresentationStyle="fullScreen" id="aRz-jE-dRn"/>
+                                    <action selector="changeViewArrow:" destination="QoD-tc-v9R" eventType="touchUpInside" id="0ls-BP-4tQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIo-Mt-YqQ">
@@ -574,9 +575,6 @@
             <point key="canvasLocation" x="2022" y="1038"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="q9A-jb-d15"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.down.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrow.up.circle.fill" catalog="system" width="128" height="121"/>

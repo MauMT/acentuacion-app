@@ -50,16 +50,16 @@ class ViewControllerModoDeJuego: UIViewController {
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             if lbModoDeJuego.text! == "Classic" {
                 let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Classic") as! ViewControllerClassic
-
+                resultViewController.modalPresentationStyle = .fullScreen
                 self.present(resultViewController, animated:true, completion:nil)
             }
             else if lbModoDeJuego.text! == "Time Attack" {
                 let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Time Attack") as! ViewControllerTimeAttack
-
+                resultViewController.modalPresentationStyle = .fullScreen
                 self.present(resultViewController, animated:true, completion:nil)
             }else{
                 let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Zen") as! ViewControllerZen
-
+                resultViewController.modalPresentationStyle = .fullScreen
                 self.present(resultViewController, animated:true, completion:nil)
             }
 
@@ -89,4 +89,39 @@ class ViewControllerModoDeJuego: UIViewController {
     }
 
 
+    @IBAction func changeView(_ sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        if lbModoDeJuego.text! == "Classic" {
+            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Classic") as! ViewControllerClassic
+            resultViewController.modalPresentationStyle = .fullScreen
+            self.present(resultViewController, animated:true, completion:nil)
+        }
+        else if lbModoDeJuego.text! == "Time Attack" {
+            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Time Attack") as! ViewControllerTimeAttack
+            resultViewController.modalPresentationStyle = .fullScreen
+            self.present(resultViewController, animated:true, completion:nil)
+        }else{
+            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Zen") as! ViewControllerZen
+            resultViewController.modalPresentationStyle = .fullScreen
+            self.present(resultViewController, animated:true, completion:nil)
+        }
+    }
+    
+    @IBAction func changeViewArrow(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        if lbModoDeJuego.text! == "Classic" {
+            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Classic") as! ViewControllerClassic
+            resultViewController.modalPresentationStyle = .fullScreen
+            self.present(resultViewController, animated:true, completion:nil)
+        }
+        else if lbModoDeJuego.text! == "Time Attack" {
+            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Time Attack") as! ViewControllerTimeAttack
+            resultViewController.modalPresentationStyle = .fullScreen
+            self.present(resultViewController, animated:true, completion:nil)
+        }else{
+            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Zen") as! ViewControllerZen
+            resultViewController.modalPresentationStyle = .fullScreen
+            self.present(resultViewController, animated:true, completion:nil)
+        }
+    }
 }
