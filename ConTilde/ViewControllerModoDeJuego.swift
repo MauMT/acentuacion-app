@@ -58,7 +58,7 @@ class ViewControllerModoDeJuego: UIViewController {
 
                 self.present(resultViewController, animated:true, completion:nil)
             }else{
-                let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Zen") as! ViewControllerTimeAttack
+                let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Zen") as! ViewControllerZen
 
                 self.present(resultViewController, animated:true, completion:nil)
             }
