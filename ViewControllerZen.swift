@@ -18,12 +18,35 @@ class ViewControllerZen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         listaPalabras.shuffle()
-        lbPalabra.text = listaPalabras[listaPalabras.count - 1].palabra
-
+        lbPalabra?.text = listaPalabras[listaPalabras.count - 1].palabra
+        
+        let downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+        let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+        upSwipe.direction = .up
+        downSwipe.direction = .down
+        view.addGestureRecognizer(upSwipe)
+        view.addGestureRecognizer(downSwipe)
         // Do any additional setup after loading the view.
     }
     
+    //MARK: - Swipe Controller
     
+    @objc func handleSwipes(_ sender: UISwipeGestureRecognizer){
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        if sender.direction == .up {
+            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ZenGame") as! ViewControllerZen
+            resultViewController.modalPresentationStyle = .fullScreen
+            self.present(resultViewController, animated:true, completion:nil)
+        }
+        
+        if sender.direction == .down {
+            self.dismiss(animated: true, completion: nil)
+        }
+        
+    }
+    
+    //MARK: - Juego
     @IBAction func opcionSi(_ sender: UIButton) {
         actualizarPuntaje(opcion: true)
     }
@@ -44,7 +67,7 @@ class ViewControllerZen: UIViewController {
             lbPuntos.text = String(puntos)
             if (listaPalabras.count > 1) {
                 listaPalabras.popLast()
-                lbPalabra.text = listaPalabras[listaPalabras.count - 1].palabra
+                lbPalabra.text? = listaPalabras[listaPalabras.count - 1].palabra
             }
             
         }
