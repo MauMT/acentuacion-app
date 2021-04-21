@@ -134,4 +134,14 @@ class ViewControllerModoDeJuego: UIViewController {
             self.present(resultViewController, animated:true, completion:nil)
         }
     }
+    
+    
+    @IBAction func goBackArrow(_ sender: UIButton) {
+        if let nav = self.navigationController {
+            nav.popViewController(animated: true)
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
 }

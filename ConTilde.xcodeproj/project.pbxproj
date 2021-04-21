@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F6C94A8262FBA3900E1ED7A /* airbnb-cereal-app-cufonfonts in Resources */ = {isa = PBXBuildFile; fileRef = 4FC8E35A262A35CD00553D49 /* airbnb-cereal-app-cufonfonts */; };
 		4F6C94AB262FC79800E1ED7A /* ViewControllerReglas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6C94AA262FC79800E1ED7A /* ViewControllerReglas.swift */; };
+		4F6C94AE262FD6A200E1ED7A /* ViewControllerMuestraReglas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6C94AD262FD6A200E1ED7A /* ViewControllerMuestraReglas.swift */; };
 		4F9A1D66262F3E7000370372 /* ViewControllerModoDeJuego.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A1D65262F3E7000370372 /* ViewControllerModoDeJuego.swift */; };
 		4F9A1D69262F433F00370372 /* ViewControllerClassic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A1D68262F433F00370372 /* ViewControllerClassic.swift */; };
 		4F9A1D6C262F439600370372 /* ViewControllerTimeAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A1D6B262F439600370372 /* ViewControllerTimeAttack.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		4F6C94AA262FC79800E1ED7A /* ViewControllerReglas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReglas.swift; sourceTree = "<group>"; };
+		4F6C94AD262FD6A200E1ED7A /* ViewControllerMuestraReglas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMuestraReglas.swift; sourceTree = "<group>"; };
 		4F9A1D65262F3E7000370372 /* ViewControllerModoDeJuego.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerModoDeJuego.swift; sourceTree = "<group>"; };
 		4F9A1D68262F433F00370372 /* ViewControllerClassic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerClassic.swift; sourceTree = "<group>"; };
 		4F9A1D6B262F439600370372 /* ViewControllerTimeAttack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTimeAttack.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				4FD100D12629F48A004E5024 /* SceneDelegate.swift */,
 				4FD100D32629F48A004E5024 /* ViewController.swift */,
 				4FD100D52629F48A004E5024 /* Main.storyboard */,
+				4F6C94AD262FD6A200E1ED7A /* ViewControllerMuestraReglas.swift */,
 				4F6C94AA262FC79800E1ED7A /* ViewControllerReglas.swift */,
 				4F9A1D65262F3E7000370372 /* ViewControllerModoDeJuego.swift */,
 				4FD100D82629F48D004E5024 /* Assets.xcassets */,
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FD100D42629F48A004E5024 /* ViewController.swift in Sources */,
+				4F6C94AE262FD6A200E1ED7A /* ViewControllerMuestraReglas.swift in Sources */,
 				4FD100D02629F48A004E5024 /* AppDelegate.swift in Sources */,
 				4F6C94AB262FC79800E1ED7A /* ViewControllerReglas.swift in Sources */,
 				4F9A1D69262F433F00370372 /* ViewControllerClassic.swift in Sources */,
