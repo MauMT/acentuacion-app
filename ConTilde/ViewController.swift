@@ -42,5 +42,8 @@ class ViewController: UIViewController {
         }
         
     }*/
+    @IBAction func quitaTeclado(_ sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
 }
 

@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F6C94A8262FBA3900E1ED7A /* airbnb-cereal-app-cufonfonts in Resources */ = {isa = PBXBuildFile; fileRef = 4FC8E35A262A35CD00553D49 /* airbnb-cereal-app-cufonfonts */; };
 		4F9A1D66262F3E7000370372 /* ViewControllerModoDeJuego.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A1D65262F3E7000370372 /* ViewControllerModoDeJuego.swift */; };
 		4F9A1D69262F433F00370372 /* ViewControllerClassic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A1D68262F433F00370372 /* ViewControllerClassic.swift */; };
 		4F9A1D6C262F439600370372 /* ViewControllerTimeAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A1D6B262F439600370372 /* ViewControllerTimeAttack.swift */; };
 		4F9A1D6F262F488A00370372 /* ViewControllerZen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9A1D6E262F488A00370372 /* ViewControllerZen.swift */; };
 		4FC8E358262A356800553D49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FD100D82629F48D004E5024 /* Assets.xcassets */; };
-		4FC8E35B262A35CD00553D49 /* airbnb-cereal-app-cufonfonts in Resources */ = {isa = PBXBuildFile; fileRef = 4FC8E35A262A35CD00553D49 /* airbnb-cereal-app-cufonfonts */; };
 		4FD100D02629F48A004E5024 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD100CF2629F48A004E5024 /* AppDelegate.swift */; };
 		4FD100D22629F48A004E5024 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD100D12629F48A004E5024 /* SceneDelegate.swift */; };
 		4FD100D42629F48A004E5024 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD100D32629F48A004E5024 /* ViewController.swift */; };
@@ -142,7 +142,7 @@
 				4FD100DC2629F48D004E5024 /* LaunchScreen.storyboard in Resources */,
 				4FC8E358262A356800553D49 /* Assets.xcassets in Resources */,
 				4FD100D72629F48A004E5024 /* Main.storyboard in Resources */,
-				4FC8E35B262A35CD00553D49 /* airbnb-cereal-app-cufonfonts in Resources */,
+				4F6C94A8262FBA3900E1ED7A /* airbnb-cereal-app-cufonfonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

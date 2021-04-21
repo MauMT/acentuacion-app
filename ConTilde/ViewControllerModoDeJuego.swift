@@ -10,6 +10,8 @@ import UIKit
 class ViewControllerModoDeJuego: UIViewController {
 
     @IBOutlet weak var lbModoDeJuego: UILabel!
+    @IBOutlet weak var imgModo: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +25,15 @@ class ViewControllerModoDeJuego: UIViewController {
             upSwipe.direction = .up
             leftSwipe.direction = .left
         rightSwipe.direction = .right
-        
+        imgModo.image = UIImage(named: "classicTemp.jpg")
         view.addGestureRecognizer(downSwipe)
         view.addGestureRecognizer(upSwipe)
         view.addGestureRecognizer(leftSwipe)
         view.addGestureRecognizer(rightSwipe)
         
     }
+    
+    //MARK: - Swipe Controller
     
     @objc func handleSwipes(_ sender: UISwipeGestureRecognizer)
     {
@@ -69,10 +73,13 @@ class ViewControllerModoDeJuego: UIViewController {
             
             if lbModoDeJuego.text! == "Classic" {
                 lbModoDeJuego.text! = "Time Attack"
+                imgModo.image! = UIImage(named: "time.jpg")!
             }else if lbModoDeJuego.text! == "Time Attack" {
                 lbModoDeJuego.text! = "Zen"
+                imgModo.image! = UIImage(named: "zen.jpg")!
             }else {
                 lbModoDeJuego.text! = "Classic"
+                imgModo.image! = UIImage(named: "classicTemp.jpg")!
             }
         }
         
@@ -80,10 +87,13 @@ class ViewControllerModoDeJuego: UIViewController {
             
             if lbModoDeJuego.text! == "Classic" {
                 lbModoDeJuego.text! = "Zen"
+                imgModo.image! = UIImage(named: "zen.jpg")!
             }else if lbModoDeJuego.text! == "Time Attack" {
                 lbModoDeJuego.text! = "Classic"
+                imgModo.image! = UIImage(named: "classicTemp.jpg")!
             }else {
                 lbModoDeJuego.text! = "Time Attack"
+                imgModo.image! = UIImage(named: "time.jpg")!
             }
         }
     }

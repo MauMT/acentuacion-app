@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AirbnbCerealBook.ttf">
+            <string>AirbnbCerealApp-Book</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idE-1z-U6B">
-                                <rect key="frame" x="89.5" y="90" width="196.5" height="58.5"/>
+                                <rect key="frame" x="80" y="90" width="215" height="58.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58.5" id="cr1-rI-FzU"/>
                                 </constraints>
@@ -25,7 +30,7 @@
                                     <fragment content="Con Tilde">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -108,25 +113,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVe-yu-0V7">
-                                <rect key="frame" x="89.5" y="90" width="196.5" height="58.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="196.5" id="qQx-H8-zSD"/>
-                                    <constraint firstAttribute="height" constant="58.5" id="u3o-6A-WA2"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Con Tilde">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
-                                <size key="shadowOffset" width="2" height="1"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Qz-hq-PHb">
                                 <rect key="frame" x="162.5" y="526" width="50" height="55"/>
                                 <constraints>
@@ -187,6 +173,25 @@
                                     <constraint firstAttribute="width" secondItem="mqq-wx-SL1" secondAttribute="height" multiplier="240:221" priority="750" id="XyK-ax-oQm"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVe-yu-0V7">
+                                <rect key="frame" x="78" y="90" width="217" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196.5" id="qQx-H8-zSD"/>
+                                    <constraint firstAttribute="height" constant="58.5" id="u3o-6A-WA2"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Con Tilde">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="2" height="1"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NS0-8J-ods"/>
                         <color key="backgroundColor" red="0.84705882349999995" green="0.23529411759999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
@@ -213,6 +218,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="igv-Pb-dxx"/>
                     <connections>
+                        <outlet property="imgModo" destination="mqq-wx-SL1" id="Yzz-h8-Lsc"/>
                         <outlet property="lbModoDeJuego" destination="T2e-1w-l79" id="84N-p2-kMQ"/>
                     </connections>
                 </viewController>
@@ -230,12 +236,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf3-ce-hEA">
-                                <rect key="frame" x="89.5" y="90" width="196.5" height="58.5"/>
+                                <rect key="frame" x="107.5" y="90" width="160" height="63.5"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Con Tilde">
+                                    <fragment content="Classic">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -273,45 +279,51 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4N2-HE-4sd">
-                                <rect key="frame" x="67" y="207" width="240" height="221"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mejores puntajes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4n-Dv-TDE">
+                                <rect key="frame" x="67" y="166" width="136.5" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="4N2-HE-4sd" secondAttribute="height" multiplier="240:221" id="nEk-F4-5Qi"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4n-Dv-TDE">
-                                <rect key="frame" x="160" y="161" width="55" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="pzL-VT-pE7"/>
                                     <constraint firstAttribute="height" constant="21" id="rIl-uB-WxL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Book" family="Airbnb Cereal App" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hN9-Mp-rBP">
+                                <rect key="frame" x="49" y="215" width="277" height="261"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaClassic" id="osQ-Kl-MnG">
+                                        <rect key="frame" x="0.0" y="28" width="277" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="osQ-Kl-MnG" id="zU6-MU-sOZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="277" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dbs-ue-NUb"/>
                         <color key="backgroundColor" red="0.84705882349999995" green="0.23529411759999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="4N2-HE-4sd" firstAttribute="top" secondItem="v4n-Dv-TDE" secondAttribute="bottom" constant="25" id="1Jm-6X-WdD"/>
                             <constraint firstItem="G3h-ny-mXV" firstAttribute="centerX" secondItem="EDJ-MK-uXc" secondAttribute="centerX" id="5Ri-lm-ooH"/>
+                            <constraint firstItem="iCF-aX-2a6" firstAttribute="top" secondItem="hN9-Mp-rBP" secondAttribute="bottom" constant="50" id="5aj-ld-0m1"/>
+                            <constraint firstItem="hN9-Mp-rBP" firstAttribute="centerX" secondItem="EDJ-MK-uXc" secondAttribute="centerX" id="6iQ-3B-zK5"/>
+                            <constraint firstItem="v4n-Dv-TDE" firstAttribute="top" secondItem="gf3-ce-hEA" secondAttribute="bottom" constant="12.5" id="6pM-CR-lAs"/>
                             <constraint firstItem="iCF-aX-2a6" firstAttribute="centerX" secondItem="EDJ-MK-uXc" secondAttribute="centerX" id="9lP-Ce-RLo"/>
+                            <constraint firstItem="v4n-Dv-TDE" firstAttribute="leading" secondItem="Dbs-ue-NUb" secondAttribute="leading" constant="67" id="AZ1-3z-M9O"/>
                             <constraint firstItem="Dbs-ue-NUb" firstAttribute="bottom" secondItem="G3h-ny-mXV" secondAttribute="bottom" constant="41.5" id="Q9i-AJ-deG"/>
                             <constraint firstItem="G3h-ny-mXV" firstAttribute="top" secondItem="iCF-aX-2a6" secondAttribute="bottom" constant="-1.5" id="QLc-Hn-dWS"/>
                             <constraint firstItem="gf3-ce-hEA" firstAttribute="centerX" secondItem="EDJ-MK-uXc" secondAttribute="centerX" id="ROM-42-Ob3"/>
-                            <constraint firstItem="iCF-aX-2a6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4N2-HE-4sd" secondAttribute="bottom" constant="40" id="aGe-r5-Vut"/>
-                            <constraint firstItem="v4n-Dv-TDE" firstAttribute="centerX" secondItem="EDJ-MK-uXc" secondAttribute="centerX" id="dhf-Mf-H6U"/>
-                            <constraint firstItem="Dbs-ue-NUb" firstAttribute="trailing" secondItem="4N2-HE-4sd" secondAttribute="trailing" constant="68" id="hVz-iL-hR5"/>
-                            <constraint firstItem="4N2-HE-4sd" firstAttribute="leading" secondItem="Dbs-ue-NUb" secondAttribute="leading" constant="67" id="iGf-lC-8l7"/>
+                            <constraint firstItem="hN9-Mp-rBP" firstAttribute="top" secondItem="v4n-Dv-TDE" secondAttribute="bottom" constant="28" id="cJC-vU-foL"/>
                             <constraint firstItem="gf3-ce-hEA" firstAttribute="top" secondItem="Dbs-ue-NUb" secondAttribute="top" constant="90" id="tDL-SA-xB4"/>
-                            <constraint firstItem="v4n-Dv-TDE" firstAttribute="top" secondItem="gf3-ce-hEA" secondAttribute="bottom" constant="12.5" id="z5j-0F-QNb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="axt-4h-9e0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBZ-XA-m1g" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="962"/>
+            <point key="canvasLocation" x="604" y="961.16941529235385"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="blW-7d-Nrf">
@@ -322,12 +334,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcK-Et-V8v">
-                                <rect key="frame" x="111" y="133" width="153.5" height="58.5"/>
+                                <rect key="frame" x="102" y="133" width="171" height="63.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Ajustes">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
+                                            <font key="NSOriginalFont" size="48" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -337,12 +350,12 @@
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OiI-bz-8yK">
-                                <rect key="frame" x="141" y="300" width="184" height="34"/>
+                                <rect key="frame" x="141" y="305" width="184" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zQ-So-idE">
-                                <rect key="frame" x="49" y="306" width="62" height="21"/>
+                                <rect key="frame" x="49" y="311" width="62" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="jq2-wt-27i"/>
                                     <constraint firstAttribute="width" constant="62" id="s7O-cE-bNR"/>
@@ -352,7 +365,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volumen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tso-vo-teT">
-                                <rect key="frame" x="49" y="393" width="67" height="21"/>
+                                <rect key="frame" x="49" y="398" width="67" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="67" id="q2j-8l-4YA"/>
                                     <constraint firstAttribute="height" constant="21" id="wBi-GE-DnM"/>
@@ -362,7 +375,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qQU-jz-Pyb">
-                                <rect key="frame" x="141" y="388.5" width="186" height="31"/>
+                                <rect key="frame" x="141" y="393.5" width="186" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="yjj-P6-cik"/>
                                 </constraints>
@@ -370,6 +383,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fif-Um-Xy4"/>
                         <color key="backgroundColor" red="0.84705882349999995" green="0.23529411759999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="tso-vo-teT" firstAttribute="leading" secondItem="4zQ-So-idE" secondAttribute="leading" id="Dpy-Dn-csH"/>
                             <constraint firstItem="fif-Um-Xy4" firstAttribute="trailing" secondItem="qQU-jz-Pyb" secondAttribute="trailing" constant="50" id="L7Y-ua-mM9"/>
@@ -385,10 +399,18 @@
                             <constraint firstItem="4zQ-So-idE" firstAttribute="leading" secondItem="fif-Um-Xy4" secondAttribute="leading" constant="49" id="tKj-kG-Zla"/>
                             <constraint firstItem="tso-vo-teT" firstAttribute="top" secondItem="4zQ-So-idE" secondAttribute="bottom" constant="66" id="wUF-4W-8Iq"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qmw-Fl-Cul" appends="YES" id="V3U-12-hPH"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Xx0-Rb-Bw0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0CT-uC-YDz" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qmw-Fl-Cul">
+                    <connections>
+                        <action selector="quitaTeclado:" destination="Scj-JX-Tkp" id="yc7-PI-wku"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-268" y="909.89505247376314"/>
         </scene>
@@ -401,12 +423,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-TK-w2g">
-                                <rect key="frame" x="89.5" y="90" width="196.5" height="58.5"/>
+                                <rect key="frame" x="48" y="90" width="279.5" height="63.5"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Con Tilde">
+                                    <fragment content="Time Attack">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -444,44 +466,50 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Gno-1D-VbQ">
-                                <rect key="frame" x="67" y="207" width="240" height="221"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mejores puntajes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rY-Ch-mmW">
+                                <rect key="frame" x="67" y="166" width="136.5" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Gno-1D-VbQ" secondAttribute="height" multiplier="240:221" id="JII-bW-4w5"/>
+                                    <constraint firstAttribute="height" constant="21" id="9pc-jX-YRG"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Attack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6b-vT-UrA">
-                                <rect key="frame" x="142" y="161" width="91" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="LqG-z0-eOC"/>
-                                    <constraint firstAttribute="width" constant="91" id="mHI-2q-xzc"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Book" family="Airbnb Cereal App" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lcG-gf-z66">
+                                <rect key="frame" x="50" y="215" width="277" height="261"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaTimeAttack" id="oZg-cU-CYX">
+                                        <rect key="frame" x="0.0" y="28" width="277" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oZg-cU-CYX" id="B96-cp-lye">
+                                            <rect key="frame" x="0.0" y="0.0" width="277" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S8g-tu-ebR"/>
                         <color key="backgroundColor" red="0.84705882349999995" green="0.23529411759999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="J6b-vT-UrA" firstAttribute="centerX" secondItem="off-Q2-nkP" secondAttribute="centerX" id="5SJ-70-PjN"/>
-                            <constraint firstItem="J6b-vT-UrA" firstAttribute="top" secondItem="8S6-TK-w2g" secondAttribute="bottom" constant="12.5" id="5Zz-Wb-kwU"/>
+                            <constraint firstItem="lcG-gf-z66" firstAttribute="top" secondItem="4rY-Ch-mmW" secondAttribute="bottom" constant="28" id="8h6-bP-LfH"/>
+                            <constraint firstItem="lcG-gf-z66" firstAttribute="centerX" secondItem="off-Q2-nkP" secondAttribute="centerX" id="AxI-FI-iDh"/>
+                            <constraint firstItem="6iL-We-RqR" firstAttribute="top" secondItem="lcG-gf-z66" secondAttribute="bottom" constant="61" id="Bii-pc-FIa"/>
+                            <constraint firstItem="4rY-Ch-mmW" firstAttribute="leading" secondItem="S8g-tu-ebR" secondAttribute="leading" constant="67" id="BlI-0H-3as"/>
                             <constraint firstItem="S8g-tu-ebR" firstAttribute="bottom" secondItem="XPg-N7-kS1" secondAttribute="bottom" constant="41.5" id="EJQ-ok-gGL"/>
-                            <constraint firstItem="S8g-tu-ebR" firstAttribute="trailing" secondItem="Gno-1D-VbQ" secondAttribute="trailing" constant="68" id="NK4-Rw-ioa"/>
+                            <constraint firstItem="4rY-Ch-mmW" firstAttribute="top" secondItem="8S6-TK-w2g" secondAttribute="bottom" constant="12.5" id="PSn-wD-A8k"/>
                             <constraint firstItem="XPg-N7-kS1" firstAttribute="centerX" secondItem="off-Q2-nkP" secondAttribute="centerX" id="V8h-Dr-CbM"/>
                             <constraint firstItem="6iL-We-RqR" firstAttribute="centerX" secondItem="off-Q2-nkP" secondAttribute="centerX" id="YAj-JA-Uz3"/>
-                            <constraint firstItem="Gno-1D-VbQ" firstAttribute="top" secondItem="J6b-vT-UrA" secondAttribute="bottom" constant="25" id="ZXA-3N-HxW"/>
                             <constraint firstItem="8S6-TK-w2g" firstAttribute="centerX" secondItem="off-Q2-nkP" secondAttribute="centerX" id="beJ-P1-y3z"/>
-                            <constraint firstItem="6iL-We-RqR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Gno-1D-VbQ" secondAttribute="bottom" constant="40" id="pRU-ff-Lmn"/>
                             <constraint firstItem="8S6-TK-w2g" firstAttribute="top" secondItem="S8g-tu-ebR" secondAttribute="top" constant="90" id="ptC-L6-6Fj"/>
-                            <constraint firstItem="Gno-1D-VbQ" firstAttribute="leading" secondItem="S8g-tu-ebR" secondAttribute="leading" constant="67" id="yOs-dH-fIV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xNE-x5-P5B"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EZw-er-tvg" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1324" y="1101"/>
+            <point key="canvasLocation" x="1324" y="1100.5997001499252"/>
         </scene>
         <!--View Controller Zen-->
         <scene sceneID="a2w-Xi-Qn7">
@@ -492,12 +520,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqR-eo-RCP">
-                                <rect key="frame" x="89.5" y="90" width="196.5" height="58.5"/>
+                                <rect key="frame" x="143.5" y="90" width="88.5" height="63.5"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Con Tilde">
+                                    <fragment content="Zen">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -535,44 +563,50 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZgX-py-cPv">
-                                <rect key="frame" x="67" y="207" width="240" height="221"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mejores puntajes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shj-bd-74e">
+                                <rect key="frame" x="67" y="166" width="136.5" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="ZgX-py-cPv" secondAttribute="height" multiplier="240:221" id="FjZ-Pc-PKK"/>
+                                    <constraint firstAttribute="height" constant="21" id="OTL-cR-0hz"/>
                                 </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRb-Bc-5gu">
-                                <rect key="frame" x="172.5" y="161" width="30" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Mzy-Co-4hV"/>
-                                    <constraint firstAttribute="width" constant="30" id="hfc-bC-5BG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Book" family="Airbnb Cereal App" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iWk-dJ-9w2">
+                                <rect key="frame" x="49" y="220" width="277" height="261"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaTimeAttack" id="zfS-sw-dQ8">
+                                        <rect key="frame" x="0.0" y="28" width="277" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zfS-sw-dQ8" id="rtF-4G-f3R">
+                                            <rect key="frame" x="0.0" y="0.0" width="277" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0WS-6S-0Rj"/>
                         <color key="backgroundColor" red="0.84705882349999995" green="0.23529411759999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="StX-UN-82Q" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZgX-py-cPv" secondAttribute="bottom" constant="40" id="4I7-Id-1qG"/>
                             <constraint firstItem="oqR-eo-RCP" firstAttribute="centerX" secondItem="Lmd-IH-hVQ" secondAttribute="centerX" id="5fL-y9-uij"/>
-                            <constraint firstItem="KRb-Bc-5gu" firstAttribute="top" secondItem="oqR-eo-RCP" secondAttribute="bottom" constant="12.5" id="8XD-Kh-Vdu"/>
                             <constraint firstItem="oqR-eo-RCP" firstAttribute="top" secondItem="0WS-6S-0Rj" secondAttribute="top" constant="90" id="DZy-Qv-dpM"/>
                             <constraint firstItem="nn5-dK-b0o" firstAttribute="centerX" secondItem="Lmd-IH-hVQ" secondAttribute="centerX" id="IFM-n2-tpN"/>
-                            <constraint firstItem="ZgX-py-cPv" firstAttribute="top" secondItem="KRb-Bc-5gu" secondAttribute="bottom" constant="25" id="M0i-A7-kj9"/>
                             <constraint firstItem="0WS-6S-0Rj" firstAttribute="bottom" secondItem="nn5-dK-b0o" secondAttribute="bottom" constant="41.5" id="Mpa-88-wAn"/>
-                            <constraint firstItem="KRb-Bc-5gu" firstAttribute="centerX" secondItem="Lmd-IH-hVQ" secondAttribute="centerX" id="Ppx-ww-iWT"/>
-                            <constraint firstItem="0WS-6S-0Rj" firstAttribute="trailing" secondItem="ZgX-py-cPv" secondAttribute="trailing" constant="68" id="jAd-6H-CL8"/>
-                            <constraint firstItem="ZgX-py-cPv" firstAttribute="leading" secondItem="0WS-6S-0Rj" secondAttribute="leading" constant="67" id="ph9-l3-Sna"/>
+                            <constraint firstItem="iWk-dJ-9w2" firstAttribute="centerX" secondItem="Lmd-IH-hVQ" secondAttribute="centerX" id="USD-5N-KbE"/>
+                            <constraint firstItem="Shj-bd-74e" firstAttribute="leading" secondItem="0WS-6S-0Rj" secondAttribute="leading" constant="67" id="YSN-Sv-mgY"/>
+                            <constraint firstItem="iWk-dJ-9w2" firstAttribute="top" secondItem="Shj-bd-74e" secondAttribute="bottom" constant="28" id="mbA-4g-mEs"/>
+                            <constraint firstItem="Shj-bd-74e" firstAttribute="top" secondItem="oqR-eo-RCP" secondAttribute="bottom" constant="12.5" id="rTP-uY-PNX"/>
                             <constraint firstItem="StX-UN-82Q" firstAttribute="centerX" secondItem="Lmd-IH-hVQ" secondAttribute="centerX" id="v4n-4Q-yG6"/>
+                            <constraint firstItem="StX-UN-82Q" firstAttribute="top" secondItem="iWk-dJ-9w2" secondAttribute="bottom" constant="61" id="yTs-xY-CkP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RHn-p1-R9l"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2VZ-R7-B6A" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2022" y="1038"/>
+            <point key="canvasLocation" x="2021.5999999999999" y="1037.6311844077961"/>
         </scene>
     </scenes>
     <resources>
@@ -581,6 +615,9 @@
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
