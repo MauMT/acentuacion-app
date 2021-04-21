@@ -176,7 +176,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVe-yu-0V7">
                                 <rect key="frame" x="78" y="90" width="217" height="59"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="196.5" id="qQx-H8-zSD"/>
                                     <constraint firstAttribute="height" constant="58.5" id="u3o-6A-WA2"/>
                                 </constraints>
                                 <attributedString key="attributedText">
@@ -576,7 +575,7 @@
                                 <rect key="frame" x="49" y="220" width="277" height="261"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaTimeAttack" id="zfS-sw-dQ8">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaZen" id="zfS-sw-dQ8">
                                         <rect key="frame" x="0.0" y="28" width="277" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zfS-sw-dQ8" id="rtF-4G-f3R">
@@ -607,6 +606,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2VZ-R7-B6A" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2021.5999999999999" y="1037.6311844077961"/>
+        </scene>
+        <!--View Controller Reglas-->
+        <scene sceneID="3dM-Cg-Rdo">
+            <objects>
+                <viewController storyboardIdentifier="Reglas" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Phd-Zz-8Ey" customClass="ViewControllerReglas" customModule="ConTilde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VOl-d8-vSC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPq-UP-vnl">
+                                <rect key="frame" x="65.5" y="90" width="244" height="105.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Reglas de acentuación</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="40" name="AirbnbCerealApp-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="2" height="1"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rGo-z0-uHe"/>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.23529411759999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RPq-UP-vnl" firstAttribute="centerX" secondItem="VOl-d8-vSC" secondAttribute="centerX" id="fpC-da-VGQ"/>
+                            <constraint firstItem="RPq-UP-vnl" firstAttribute="top" secondItem="rGo-z0-uHe" secondAttribute="top" constant="90" id="nRm-7u-1Xr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WYu-KD-uWJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J7y-mz-1pG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1655" y="225"/>
         </scene>
     </scenes>
     <resources>
