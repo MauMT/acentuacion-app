@@ -33,37 +33,14 @@ class ViewController: UIViewController {
     }
     
     func randomVowel() -> String{
-        let numeroLetra = Int.random(in: 0...9)
         //áéíóú ÁÉÍÓÚ
-        switch numeroLetra{
-        case 0:
-            return "á"
-        case 1:
-            return "é"
-        case 2:
-            return "í"
-        case 3:
-            return "ó"
-        case 4:
-            return "ú"
-        case 5:
-            return "Á"
-        case 6:
-            return "É"
-        case 7:
-            return "Í"
-        case 8:
-            return "Ó"
-        case 9:
-            return "Ú"
-        default:
-            return "a"
-        }
-    }
+      let numeroVocal = [0:"á", 1:"é", 2:"í", 3:"ó", 4:"ú", 5:"Á", 6:"É", 7:"Í", 8:"Ó", 9:"Ú"]
+      let randomInt = Int.random(in: 0...9)
+      return numeroVocal[randomInt]!
+   }
     
     var contador = 0
-    
-    
+        
     @objc func fireTimer() {
         letraAnimada.text = randomVowel()
         if contador == 0 {
