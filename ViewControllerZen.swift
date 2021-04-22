@@ -8,17 +8,9 @@ import UIKit
 
 class ViewControllerZen: UIViewController {
 
-    @IBOutlet weak var lbPuntos: UILabel!
-    @IBOutlet weak var lbPalabra: UILabel!
-    
-    // Lista de palabras de prueba
-    var listaPalabras = [Palabra(palabra: "hola", correcta: true), Palabra(palabra: "comida", correcta: true), Palabra(palabra: "raton", correcta: false), Palabra(palabra: "telefono", correcta: false)]
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        listaPalabras.shuffle()
-        lbPalabra?.text = listaPalabras[listaPalabras.count - 1].palabra
+
         
         let downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
         let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
@@ -46,33 +38,6 @@ class ViewControllerZen: UIViewController {
         
     }
     
-    //MARK: - Juego
-    @IBAction func opcionSi(_ sender: UIButton) {
-        actualizarPuntaje(opcion: true)
-    }
-    
-    @IBAction func opcionNo(_ sender: UIButton) {
-        actualizarPuntaje(opcion: false)
-    }
-    
-    func actualizarPuntaje(opcion : Bool) {
-        let respuesta = listaPalabras[listaPalabras.count - 1].correcta
-        
-        if var puntos = Int(lbPuntos.text!) {
-            if (opcion == respuesta) {
-                puntos = puntos + 1
-            } else {
-                puntos = 0
-            }
-            lbPuntos.text = String(puntos)
-            if (listaPalabras.count > 1) {
-                listaPalabras.popLast()
-                lbPalabra.text? = listaPalabras[listaPalabras.count - 1].palabra
-            }
-            
-        }
-        
-    }
     
     /*
     // MARK: - Navigation

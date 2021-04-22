@@ -20,6 +20,9 @@
 		4FD100D72629F48A004E5024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD100D52629F48A004E5024 /* Main.storyboard */; };
 		4FD100DC2629F48D004E5024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD100DA2629F48D004E5024 /* LaunchScreen.storyboard */; };
 		8D4CA5982630A36A00577807 /* Palabra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CA5972630A36A00577807 /* Palabra.swift */; };
+		8DBD5E282630DC8E007FB4DE /* ViewControllerZenGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD5E272630DC8E007FB4DE /* ViewControllerZenGame.swift */; };
+		8DBD5E2B2630DCA1007FB4DE /* ViewControllerTimeAttackGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD5E2A2630DCA1007FB4DE /* ViewControllerTimeAttackGame.swift */; };
+		8DBD5E2E2630DCBB007FB4DE /* ViewControllerClassicGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD5E2D2630DCBB007FB4DE /* ViewControllerClassicGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		4FD100DB2629F48D004E5024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FD100DD2629F48D004E5024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D4CA5972630A36A00577807 /* Palabra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palabra.swift; sourceTree = "<group>"; };
+		8DBD5E272630DC8E007FB4DE /* ViewControllerZenGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerZenGame.swift; sourceTree = "<group>"; };
+		8DBD5E2A2630DCA1007FB4DE /* ViewControllerTimeAttackGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTimeAttackGame.swift; sourceTree = "<group>"; };
+		8DBD5E2D2630DCBB007FB4DE /* ViewControllerClassicGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerClassicGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				4F9A1D6E262F488A00370372 /* ViewControllerZen.swift */,
 				8D4CA5972630A36A00577807 /* Palabra.swift */,
 				4F9A1D6B262F439600370372 /* ViewControllerTimeAttack.swift */,
+				8DBD5E272630DC8E007FB4DE /* ViewControllerZenGame.swift */,
+				8DBD5E2A2630DCA1007FB4DE /* ViewControllerTimeAttackGame.swift */,
+				8DBD5E2D2630DCBB007FB4DE /* ViewControllerClassicGame.swift */,
 				4F9A1D68262F433F00370372 /* ViewControllerClassic.swift */,
 				4FD100CE2629F48A004E5024 /* ConTilde */,
 				4FD100CD2629F48A004E5024 /* Products */,
@@ -162,7 +171,10 @@
 				4F6C94AE262FD6A200E1ED7A /* ViewControllerMuestraReglas.swift in Sources */,
 				4FD100D02629F48A004E5024 /* AppDelegate.swift in Sources */,
 				8D4CA5982630A36A00577807 /* Palabra.swift in Sources */,
+				8DBD5E282630DC8E007FB4DE /* ViewControllerZenGame.swift in Sources */,
+				8DBD5E2B2630DCA1007FB4DE /* ViewControllerTimeAttackGame.swift in Sources */,
 				4F6C94AB262FC79800E1ED7A /* ViewControllerReglas.swift in Sources */,
+				8DBD5E2E2630DCBB007FB4DE /* ViewControllerClassicGame.swift in Sources */,
 				4F9A1D69262F433F00370372 /* ViewControllerClassic.swift in Sources */,
 				4F9A1D6F262F488A00370372 /* ViewControllerZen.swift in Sources */,
 				4F9A1D6C262F439600370372 /* ViewControllerTimeAttack.swift in Sources */,
