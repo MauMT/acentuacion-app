@@ -14,7 +14,8 @@ class ViewControllerTimeAttackGame: UIViewController {
     @IBOutlet weak var lbTiempo: UILabel!
     
     // Lista de palabras de prueba
-    var listaPalabras = [Palabra(palabra: "hola", correcta: true), Palabra(palabra: "comida", correcta: true), Palabra(palabra: "raton", correcta: false), Palabra(palabra: "telefono", correcta: false)]
+    var listaPalabras = [Palabra]()
+
     
     
     var timeRemaining : Int = 10
@@ -23,6 +24,15 @@ class ViewControllerTimeAttackGame: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let ruta = Bundle.main.path(forResource: "palabrasJSON", ofType: "json")!
+        
+        do {
+            let data = try Data.init(contentsOf: URL(fileURLWithPath: ruta))
+            listaPalabras = try JSONDecoder().decode([Palabra].self, from: data)
+        } catch {
+            print("Error al cargar el archivo")
+        }
         
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))

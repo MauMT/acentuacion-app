@@ -23,6 +23,7 @@
 		8DBD5E282630DC8E007FB4DE /* ViewControllerZenGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD5E272630DC8E007FB4DE /* ViewControllerZenGame.swift */; };
 		8DBD5E2B2630DCA1007FB4DE /* ViewControllerTimeAttackGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD5E2A2630DCA1007FB4DE /* ViewControllerTimeAttackGame.swift */; };
 		8DBD5E2E2630DCBB007FB4DE /* ViewControllerClassicGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD5E2D2630DCBB007FB4DE /* ViewControllerClassicGame.swift */; };
+		8DBD5E3226312519007FB4DE /* palabrasJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 8DBD5E3126312519007FB4DE /* palabrasJSON.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		8DBD5E272630DC8E007FB4DE /* ViewControllerZenGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerZenGame.swift; sourceTree = "<group>"; };
 		8DBD5E2A2630DCA1007FB4DE /* ViewControllerTimeAttackGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTimeAttackGame.swift; sourceTree = "<group>"; };
 		8DBD5E2D2630DCBB007FB4DE /* ViewControllerClassicGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerClassicGame.swift; sourceTree = "<group>"; };
+		8DBD5E3126312519007FB4DE /* palabrasJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = palabrasJSON.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				4FD100D82629F48D004E5024 /* Assets.xcassets */,
 				4FD100DA2629F48D004E5024 /* LaunchScreen.storyboard */,
 				4FD100DD2629F48D004E5024 /* Info.plist */,
+				8DBD5E3126312519007FB4DE /* palabrasJSON.json */,
 			);
 			path = ConTilde;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FD100DC2629F48D004E5024 /* LaunchScreen.storyboard in Resources */,
+				8DBD5E3226312519007FB4DE /* palabrasJSON.json in Resources */,
 				4FC8E358262A356800553D49 /* Assets.xcassets in Resources */,
 				4FD100D72629F48A004E5024 /* Main.storyboard in Resources */,
 			);

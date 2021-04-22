@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class Palabra: NSObject {
+class Palabra: NSObject, Codable {
     var palabra : String
     var correcta : Bool
     
