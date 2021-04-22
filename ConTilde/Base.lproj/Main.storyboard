@@ -131,7 +131,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NS0-8J-ods"/>
-                        <color key="backgroundColor" red="0.84705882349999995" green="0.23529411759999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="NS0-8J-ods" firstAttribute="bottom" secondItem="fv4-FI-bkN" secondAttribute="bottom" constant="41.5" id="0Uo-q0-rCR"/>
