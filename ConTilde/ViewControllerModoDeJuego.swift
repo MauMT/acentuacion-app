@@ -95,7 +95,7 @@ class ViewControllerModoDeJuego: UIViewController {
             
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             if lbModoDeJuego.text! == "Classic" {
-                let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Classic") as! ViewControllerClassicGame
+                let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ClassicGame") as! ViewControllerClassicGame
                 resultViewController.modalPresentationStyle = .fullScreen
                 self.present(resultViewController, animated:true, completion:nil)
             }

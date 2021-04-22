@@ -1,0 +1,50 @@
+[
+  {
+    "palabra":"ágil",
+    "correcta":true
+  },
+  {
+    "palabra":"néctar",
+    "correcta":true
+  },
+  {
+    "palabra":"ángel",
+    "correcta":true
+  },
+  {
+    "palabra":"árbol",
+    "correcta":true
+  },
+  {
+    "palabra":"marmol",
+    "correcta":false
+  },
+  {
+    "palabra":"facil",
+    "correcta":false
+  },
+  {
+    "palabra":"policia",
+    "correcta":false
+  },
+  {
+    "palabra": "raices",
+    "correcta": false
+  },
+  {
+    "palabra": "duo",
+    "correcta": false
+  },
+  {
+    "palabra": "energía",
+    "correcta": true
+  },
+  {
+    "palabra": "decía",
+    "correcta": true
+  },
+  {
+    "palabra": "circulo",
+    "correcta": false
+  }
+]
