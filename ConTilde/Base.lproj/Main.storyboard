@@ -677,6 +677,15 @@
                                 <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbx-eL-4GZ">
+                                <rect key="frame" x="13" y="3" width="34" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="⏪"/>
+                                <connections>
+                                    <action selector="volver:" destination="RRG-94-1fV" eventType="touchUpInside" id="nzn-bg-tpe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NQ1-6r-h6g"/>
                         <color key="backgroundColor" red="0.88358461860000004" green="0.32767713069999999" blue="0.2274000347" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -974,6 +983,15 @@
                                 <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8d-Gf-JQ0">
+                                <rect key="frame" x="16" y="7" width="34" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="⏪"/>
+                                <connections>
+                                    <action selector="volver:" destination="sJx-Ve-sog" eventType="touchUpInside" id="2JH-Xo-5ND"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hXP-uh-paY"/>
                         <color key="backgroundColor" red="0.88358461860000004" green="0.32767713069999999" blue="0.2274000347" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1082,6 +1100,15 @@
                                 <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj2-Zk-Des">
+                                <rect key="frame" x="13" y="5" width="34" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="⏪"/>
+                                <connections>
+                                    <action selector="volver:" destination="hAi-db-yBn" eventType="touchUpInside" id="V9N-9j-Bnf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WFl-CU-l6q"/>
                         <color key="backgroundColor" red="0.88358461860000004" green="0.32767713069999999" blue="0.2274000347" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
