@@ -21,6 +21,18 @@ class ViewControllerZen: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func playGame(_ sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ZenGame") as! ViewControllerZenGame
+        resultViewController.modalPresentationStyle = .fullScreen
+        self.present(resultViewController, animated:true, completion:nil)
+    }
+    
+    @IBAction func btJugarPlay(_ sender: UIButton) {
+        playGame(sender)
+    }
+    
+    
     //MARK: - Swipe Controller
     
     @objc func handleSwipes(_ sender: UISwipeGestureRecognizer){

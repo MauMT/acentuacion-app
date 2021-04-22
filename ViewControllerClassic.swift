@@ -22,11 +22,25 @@ class ViewControllerClassic: UIViewController {
     }
     
 
+    @IBAction func playGame(_ sender: UIButton) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ClassicGame") as! ViewControllerClassicGame
+        resultViewController.modalPresentationStyle = .fullScreen
+        self.present(resultViewController, animated:true, completion:nil)
+    }
+    
+    
+    @IBAction func btJugarPlay(_ sender: UIButton) {
+        playGame(sender)
+    }
+    
+    
+    
     @objc func handleSwipes(_ sender: UISwipeGestureRecognizer){
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
         if sender.direction == .up {
-            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ZenGame") as! ViewControllerZen
+            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ClassicGame") as! ViewControllerZen
             resultViewController.modalPresentationStyle = .fullScreen
             self.present(resultViewController, animated:true, completion:nil)
         }

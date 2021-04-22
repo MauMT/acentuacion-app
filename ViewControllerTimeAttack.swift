@@ -26,11 +26,16 @@ class ViewControllerTimeAttack: UIViewController {
     @IBAction func playGame(_ sender: UIButton) {
     
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let resultViewController = storyBoard.instantiateViewController(withIdentifier: "TimeAttackGame") as! ViewControllerTimeAttack
+        let resultViewController = storyBoard.instantiateViewController(withIdentifier: "TimeAttackGame") as! ViewControllerTimeAttackGame
         resultViewController.modalPresentationStyle = .fullScreen
         self.present(resultViewController, animated:true, completion:nil)
     
     }
+    
+    @IBAction func btJugarPlay(_ sender: UIButton) {
+        playGame(sender)
+    }
+    
     
     //MARK: - Swipe Controller
     
