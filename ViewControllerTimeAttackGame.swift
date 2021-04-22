@@ -98,6 +98,13 @@ class ViewControllerTimeAttackGame: UIViewController {
                 puntos = puntos + 1
                 timeRemaining += 3
             } else {
+                let alerta = UIAlertController(title: "Error", message: "Opcion incorrecta", preferredStyle: .alert)
+                
+                let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alerta.addAction(accion)
+                
+                present(alerta, animated: true, completion: nil)
                 timeRemaining -= 3
                 if timeRemaining < 0 {
                     // perdiste papu :V
