@@ -42,6 +42,15 @@ class ViewControllerZenGame: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //MARK: - Boton volver
+    
+    @IBAction func volver(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+
+        
+    }
+    
+    
     //MARK: - Swipe Controller
     
     @objc func handleSwipes(_ sender: UISwipeGestureRecognizer) {
