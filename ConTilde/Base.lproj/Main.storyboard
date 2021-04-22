@@ -555,10 +555,10 @@
             </objects>
             <point key="canvasLocation" x="2021.5999999999999" y="1037.6311844077961"/>
         </scene>
-        <!--View Controller Time Attack-->
+        <!--View Controller Time Attack Game-->
         <scene sceneID="aqg-jR-Lbk">
             <objects>
-                <viewController storyboardIdentifier="TimeAttackGame" id="RRG-94-1fV" customClass="ViewControllerTimeAttack" customModule="ConTilde" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimeAttackGame" id="RRG-94-1fV" customClass="ViewControllerTimeAttackGame" customModule="ConTilde" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pzn-We-WHj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -633,7 +633,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="🛑"/>
                                 <connections>
-                                    <action selector="opcionNo:" destination="RRG-94-1fV" eventType="touchUpInside" id="z3D-B5-vMT"/>
+                                    <action selector="opcionNo:" destination="RRG-94-1fV" eventType="touchUpInside" id="i7A-9L-QRW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4p-xt-J5r">
@@ -642,7 +642,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="✅"/>
                                 <connections>
-                                    <action selector="opcionSi:" destination="RRG-94-1fV" eventType="touchUpInside" id="Bds-ez-BS1"/>
+                                    <action selector="opcionSi:" destination="RRG-94-1fV" eventType="touchUpInside" id="c4N-DV-C3h"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rn9-Cl-HEI">
@@ -680,14 +680,19 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NQ1-6r-h6g"/>
                         <color key="backgroundColor" red="0.88358461860000004" green="0.32767713069999999" blue="0.2274000347" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gby-Jq-HSz" appends="YES" id="jhe-Kd-NU0"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="lbPalabra" destination="biF-lp-kxw" id="W08-8D-gOT"/>
-                        <outlet property="lbPuntos" destination="9L6-7g-GmZ" id="5vX-uG-l6J"/>
-                        <outlet property="lbTiempo" destination="fxH-bH-Jd1" id="DeG-Oc-dzl"/>
+                        <outlet property="lbPalabra" destination="biF-lp-kxw" id="DiS-Dw-CLC"/>
+                        <outlet property="lbPuntos" destination="9L6-7g-GmZ" id="sfz-c0-Oe2"/>
+                        <outlet property="lbTiempo" destination="fxH-bH-Jd1" id="6AI-qh-0JI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwt-bL-9Yd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="gby-Jq-HSz"/>
             </objects>
             <point key="canvasLocation" x="869.60000000000002" y="-558.17091454272872"/>
         </scene>
@@ -879,10 +884,10 @@
             </objects>
             <point key="canvasLocation" x="2352.8000000000002" y="249.62518740629687"/>
         </scene>
-        <!--View Controller Zen-->
+        <!--View Controller Zen Game-->
         <scene sceneID="aa2-zW-kre">
             <objects>
-                <viewController storyboardIdentifier="ZenGame" id="sJx-Ve-sog" customClass="ViewControllerZen" customModule="ConTilde" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ZenGame" id="sJx-Ve-sog" customClass="ViewControllerZenGame" customModule="ConTilde" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BzE-95-fgS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -941,7 +946,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="🛑"/>
                                 <connections>
-                                    <action selector="opcionNo:" destination="sJx-Ve-sog" eventType="touchUpInside" id="51K-wj-5F9"/>
+                                    <action selector="opcionNo:" destination="sJx-Ve-sog" eventType="touchUpInside" id="YwO-8f-v88"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdE-PK-fRJ">
@@ -950,7 +955,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="✅"/>
                                 <connections>
-                                    <action selector="opcionSi:" destination="sJx-Ve-sog" eventType="touchUpInside" id="Nmy-ia-8u3"/>
+                                    <action selector="opcionSi:" destination="sJx-Ve-sog" eventType="touchUpInside" id="VZA-Sm-HSJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3D-18-ABM">
@@ -972,13 +977,18 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hXP-uh-paY"/>
                         <color key="backgroundColor" red="0.88358461860000004" green="0.32767713069999999" blue="0.2274000347" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="m1V-vW-V38" appends="YES" id="lcT-Cs-K2I"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="lbPalabra" destination="yex-ys-2d8" id="yUV-pa-mGS"/>
-                        <outlet property="lbPuntos" destination="SNM-1E-aBC" id="nHH-qX-nl9"/>
+                        <outlet property="lbPalabra" destination="yex-ys-2d8" id="JsK-gA-amO"/>
+                        <outlet property="lbPuntos" destination="SNM-1E-aBC" id="Xpx-On-5Xh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQu-80-DnI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="m1V-vW-V38"/>
             </objects>
             <point key="canvasLocation" x="92" y="-558"/>
         </scene>
