@@ -71,6 +71,13 @@ class ViewControllerZenGame: UIViewController {
             if (opcion == respuesta) {
                 puntos = puntos + 1
             } else {
+                let alerta = UIAlertController(title: "Error", message: "Opcion incorrecta", preferredStyle: .alert)
+                
+                let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alerta.addAction(accion)
+                
+                present(alerta, animated: true, completion: nil)
                 puntos = 0
             }
             lbPuntos.text = String(puntos)
