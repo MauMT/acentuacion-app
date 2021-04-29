@@ -46,9 +46,17 @@ class ViewControllerClassicGame: UIViewController {
     //MARK: - Boton volver
     
     @IBAction func volver(_ sender: UIButton) {
+        dismissGame()
+    }
+    
+    func dismissGame(){
+        self.salvarPuntaje()
         self.dismiss(animated: true, completion: nil)
     }
     
+    func salvarPuntaje(){
+        
+    }
     
     //MARK: - Swipe Controller
     
@@ -79,14 +87,22 @@ class ViewControllerClassicGame: UIViewController {
             if (opcion == respuesta) {
                 puntos = puntos + 1
             } else {
-                let alerta = UIAlertController(title: "Error", message: "Opcion incorrecta", preferredStyle: .alert)
+                let alerta = UIAlertController(title: "Error", message: "Opcion incorrecta, puntaje de: " + String(puntos), preferredStyle: .alert)
                 
-                let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                let accion = UIAlertAction(title: "Change Mode", style: .default, handler: {_ in
+                    self.dismissGame()
+                })
                 
+                let playAgain = UIAlertAction(title: "Play Again", style: .cancel, handler: {_ in
+                    self.salvarPuntaje()
+                    puntos = 0
+                })
+                
+                alerta.addAction(playAgain)
                 alerta.addAction(accion)
                 
                 present(alerta, animated: true, completion: nil)
-                puntos = 0
+                
             }
             lbPuntos.text = String(puntos)
             if (listaPalabras.count > 1) {
