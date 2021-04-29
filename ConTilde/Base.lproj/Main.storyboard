@@ -352,6 +352,10 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Xx0-Rb-Bw0"/>
+                    <connections>
+                        <outlet property="sliderVolume" destination="qQU-jz-Pyb" id="C98-fD-ngo"/>
+                        <outlet property="tfName" destination="OiI-bz-8yK" id="PkS-Wq-KZ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0CT-uC-YDz" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="qmw-Fl-Cul">

@@ -50,7 +50,7 @@ class ViewControllerClassicGame: UIViewController {
     }
     
     func dismissGame(){
-        self.salvarPuntaje()
+        self.salvarPuntaje()			
         self.dismiss(animated: true, completion: nil)
     }
     
