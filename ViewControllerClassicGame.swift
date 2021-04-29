@@ -9,24 +9,28 @@ import UIKit
 
 class ViewControllerClassicGame: UIViewController {
 
+    struct Puntaje: Codable {
+        var name: String
+        var points: Int
+    }
     @IBOutlet weak var lbPuntos: UILabel!
     @IBOutlet weak var lbPalabra: UILabel!
     
     // Lista de palabras de prueba
     var listaPalabras = [Palabra]()
-
+    let defaults = UserDefaults.standard
+    var puntaje = [Puntaje]()
+    var nombre: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let ruta = Bundle.main.path(forResource: "palabrasJSON", ofType: "json")!
-        
-        do {
-            let data = try Data.init(contentsOf: URL(fileURLWithPath: ruta))
-            listaPalabras = try JSONDecoder().decode([Palabra].self, from: data)
-        } catch {
-            print("Error al cargar el archivo")
+        if let data = defaults.data(forKey: "puntaje") {
+            puntaje = try! PropertyListDecoder().decode([Puntaje].self, from: data)
         }
+        nombre = defaults.string(forKey: "name")
+        
+        cargaPalabras()
         
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
@@ -43,6 +47,17 @@ class ViewControllerClassicGame: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func cargaPalabras(){
+        let ruta = Bundle.main.path(forResource: "palabrasJSON", ofType: "json")!
+        
+        do {
+            let data = try Data.init(contentsOf: URL(fileURLWithPath: ruta))
+            listaPalabras = try JSONDecoder().decode([Palabra].self, from: data)
+        } catch {
+            print("Error al cargar el archivo")
+        }
+    }
+    
     //MARK: - Boton volver
     
     @IBAction func volver(_ sender: UIButton) {
@@ -55,7 +70,14 @@ class ViewControllerClassicGame: UIViewController {
     }
     
     func salvarPuntaje(){
-        
+        puntaje.append(Puntaje(name: nombre, points: Int(lbPuntos.text!)!))
+        puntaje.sort { (lhs, rhs) in return lhs.points > rhs.points }
+        if puntaje.count > 5 {
+            puntaje.popLast()
+        }
+        if let data = try? PropertyListEncoder().encode(puntaje) {
+            defaults.set(data, forKey: "puntaje")
+        }
     }
     
     //MARK: - Swipe Controller
@@ -96,6 +118,13 @@ class ViewControllerClassicGame: UIViewController {
                 let playAgain = UIAlertAction(title: "Play Again", style: .cancel, handler: {_ in
                     self.salvarPuntaje()
                     puntos = 0
+                    self.lbPuntos.text = String(puntos)
+                    self.cargaPalabras()
+                    if (self.listaPalabras.count > 1) {
+                        self.listaPalabras.popLast()
+                        self.lbPalabra.text? = self.listaPalabras[self.listaPalabras.count - 1].palabra
+                    }
+                    
                 })
                 
                 alerta.addAction(playAgain)
