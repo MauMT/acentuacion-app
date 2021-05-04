@@ -25,7 +25,7 @@ class ViewControllerClassicGame: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let data = defaults.data(forKey: "puntaje") {
+        if let data = defaults.data(forKey: "puntajeClassic") {
             puntaje = try! PropertyListDecoder().decode([Puntaje].self, from: data)
         }
         nombre = defaults.string(forKey: "name")
@@ -76,7 +76,7 @@ class ViewControllerClassicGame: UIViewController {
             puntaje.popLast()
         }
         if let data = try? PropertyListEncoder().encode(puntaje) {
-            defaults.set(data, forKey: "puntaje")
+            defaults.set(data, forKey: "puntajeClassic")
         }
     }
     
