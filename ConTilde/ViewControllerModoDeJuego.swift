@@ -95,16 +95,16 @@ class ViewControllerModoDeJuego: UIViewController {
             
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             if lbModoDeJuego.text! == "Classic" {
-                let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ClassicGame") as! ViewControllerClassicGame
+                let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Classic") as! ViewControllerClassic
                 resultViewController.modalPresentationStyle = .fullScreen
                 self.present(resultViewController, animated:true, completion:nil)
             }
             else if lbModoDeJuego.text! == "Time Attack" {
-                let resultViewController = storyBoard.instantiateViewController(withIdentifier: "TimeAttackGame") as! ViewControllerTimeAttackGame
+                let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Time Attack") as! ViewControllerTimeAttack
                 resultViewController.modalPresentationStyle = .fullScreen
                 self.present(resultViewController, animated:true, completion:nil)
             }else{
-                let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ZenGame") as! ViewControllerZenGame
+                let resultViewController = storyBoard.instantiateViewController(withIdentifier: "Zen") as! ViewControllerZen
                 resultViewController.modalPresentationStyle = .fullScreen
                 self.present(resultViewController, animated:true, completion:nil)
             }

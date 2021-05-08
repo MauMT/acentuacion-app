@@ -5,9 +5,10 @@
 //  Created by user189095 on 4/20/21.
 //
 
+
 import UIKit
 
-class ViewControllerClassic: UIViewController {
+class ViewControllerClassic: UIViewController, UIPopoverPresentationControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +34,14 @@ class ViewControllerClassic: UIViewController {
     @IBAction func btJugarPlay(_ sender: UIButton) {
         playGame(sender)
     }
-    
-    
+    let explicacion = "En el modo de juego Classic, cada vez que aciertas si una palabra está bien escrita o no, de acuerdo con las reglas de acentuación, ganas un punto.\nAl momento de fallar termina la partida y se guarda tu racha. Puedes ver tus mejores puntajes en el menú antes de iniciar el juego."
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "popoverClassic"{
+            let vistaPopOver = segue.destination as! ViewControllerComoJugar
+            vistaPopOver.popoverPresentationController!.delegate = self
+            vistaPopOver.texto = explicacion
+        }
+    }
     
     @objc func handleSwipes(_ sender: UISwipeGestureRecognizer){
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
@@ -52,4 +59,10 @@ class ViewControllerClassic: UIViewController {
         
     }
 
+    // MARK:- Metodos para PopOver
+ 
+    func adaptivePresentationStyle (for controller:
+    UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
 }

@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class ViewControllerZen: UIViewController {
+class ViewControllerZen: UIViewController, UIPopoverPresentationControllerDelegate  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,13 +51,25 @@ class ViewControllerZen: UIViewController {
     }
     
     
-    /*
+    
     // MARK: - Navigation
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+
+    let explicacion = "En el modo de juego Zen no hay cronómetros ni partidas perdidas, es el modo perfecto para practicar sin estrés. Tu mejor racha es guardada"
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "popoverZen"{
+            let vistaPopOver = segue.destination as! ViewControllerComoJugar
+            vistaPopOver.popoverPresentationController!.delegate = self
+            vistaPopOver.texto = explicacion
+        }
     }
-    */
+    
+    
+    // MARK:- Metodos para PopOver
+ 
+    func adaptivePresentationStyle (for controller:
+    UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
 
 }

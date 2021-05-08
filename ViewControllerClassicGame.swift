@@ -20,7 +20,7 @@ class ViewControllerClassicGame: UIViewController {
     var listaPalabras = [Palabra]()
     let defaults = UserDefaults.standard
     var puntaje = [Puntaje]()
-    var nombre: String!
+    var nombre : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class ViewControllerClassicGame: UIViewController {
         if let data = defaults.data(forKey: "puntajeClassic") {
             puntaje = try! PropertyListDecoder().decode([Puntaje].self, from: data)
         }
-        nombre = defaults.string(forKey: "name")
+        nombre = defaults.string(forKey: "name") ?? "Einstein"
         
         cargaPalabras()
         
@@ -70,6 +70,7 @@ class ViewControllerClassicGame: UIViewController {
     }
     
     func salvarPuntaje(){
+        
         puntaje.append(Puntaje(name: nombre, points: Int(lbPuntos.text!)!))
         puntaje.sort { (lhs, rhs) in return lhs.points > rhs.points }
         if puntaje.count > 5 {
