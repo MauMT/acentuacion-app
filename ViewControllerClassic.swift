@@ -47,7 +47,7 @@ class ViewControllerClassic: UIViewController, UIPopoverPresentationControllerDe
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
         if sender.direction == .up {
-            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ClassicGame") as! ViewControllerZen
+            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ClassicGame") as! ViewControllerClassicGame
             resultViewController.modalPresentationStyle = .fullScreen
             self.present(resultViewController, animated:true, completion:nil)
         }
