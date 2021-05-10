@@ -57,7 +57,8 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>AirbnbCerealMedium.ttf</string>
+		<string>AirbnbCerealBold.ttf</string>
+		<string>AirbnbCerealLight.ttf</string>
 		<string>AirbnbCerealBook.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>

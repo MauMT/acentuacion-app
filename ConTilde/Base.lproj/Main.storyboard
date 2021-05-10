@@ -30,7 +30,7 @@
                                     <fragment content="Con Tilde">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1378,7 +1378,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="eUG-Oe-B65"/>
-        <segue reference="NQe-EQ-1fJ"/>
+        <segue reference="HmQ-FE-F9J"/>
         <segue reference="WjN-6M-6Lh"/>
     </inferredMetricsTieBreakers>
     <resources>
