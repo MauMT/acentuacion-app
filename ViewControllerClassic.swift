@@ -8,11 +8,37 @@
 
 import UIKit
 
-class ViewControllerClassic: UIViewController, UIPopoverPresentationControllerDelegate {
-
+class ViewControllerClassic: UIViewController, UIPopoverPresentationControllerDelegate, UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return puntaje.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celdaClassic")!
+        cell.textLabel?.text = puntaje[indexPath.row].name
+        cell.detailTextLabel?.text = String(puntaje[indexPath.row].points)
+        return cell
+    }
+    
+    
+    struct Puntaje: Codable{
+        var name: String
+        var points: Int
+    }
+    let defaults = UserDefaults.standard
+    var puntaje = [Puntaje]()
+    
+    @IBOutlet weak var tableview: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableview.delegate = self
+        tableview.dataSource = self
+        if let data = defaults.data(forKey: "puntajeClassic") {
+            puntaje = try! PropertyListDecoder().decode([Puntaje].self, from: data)
+        }
+        tableview.reloadData()
         let downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
         let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
         upSwipe.direction = .up

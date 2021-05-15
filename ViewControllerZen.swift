@@ -6,11 +6,38 @@
 //
 import UIKit
 
-class ViewControllerZen: UIViewController, UIPopoverPresentationControllerDelegate  {
-
+class ViewControllerZen: UIViewController, UIPopoverPresentationControllerDelegate, UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return puntaje.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "celdaZen")!
+        cell.textLabel?.text = puntaje[indexPath.row].name
+        cell.detailTextLabel?.text = String(puntaje[indexPath.row].points)
+        return cell
+    }
+    
+    
+    struct Puntaje: Codable{
+        var name: String
+        var points: Int
+    }
+    let defaults = UserDefaults.standard
+    var puntaje = [Puntaje]()
+    
+    @IBOutlet weak var tableview: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableview.delegate = self
+        tableview.dataSource = self
+        if let data = defaults.data(forKey: "puntajeZen") {
+            puntaje = try! PropertyListDecoder().decode([Puntaje].self, from: data)
+        }
+        tableview.reloadData()
         
         let downSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
         let upSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
@@ -39,7 +66,7 @@ class ViewControllerZen: UIViewController, UIPopoverPresentationControllerDelega
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
         if sender.direction == .up {
-            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ZenGame") as! ViewControllerZen
+            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "ZenGame") as! ViewControllerZenGame
             resultViewController.modalPresentationStyle = .fullScreen
             self.present(resultViewController, animated:true, completion:nil)
         }

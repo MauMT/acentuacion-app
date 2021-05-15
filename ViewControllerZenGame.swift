@@ -125,7 +125,6 @@ class ViewControllerZenGame: UIViewController {
                 alerta.addAction(accion)
                 
                 present(alerta, animated: true, completion: nil)
-                puntos = 0
             }
             lbPuntos.text = String(puntos)
             if (listaPalabras.count > 1) {
