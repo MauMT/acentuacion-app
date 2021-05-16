@@ -30,7 +30,7 @@
                                     <fragment content="Con Tilde">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -83,8 +83,8 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Classic">
                                         <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="17" name="AirbnbCerealApp-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -184,12 +184,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf3-ce-hEA">
-                                <rect key="frame" x="112.5" y="90" width="150" height="58.5"/>
+                                <rect key="frame" x="107.5" y="90" width="160" height="63.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Classic">
                                         <attributes>
                                             <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -257,7 +257,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAZ-dp-Q6Z">
-                                <rect key="frame" x="15" y="46" width="29" height="27"/>
+                                <rect key="frame" x="15" y="46" width="31" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="O2Q-ZY-fGj"/>
                                     <constraint firstAttribute="width" constant="30" id="aLU-ZI-ze3"/>
@@ -267,9 +267,9 @@
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Cómo
- Jugar</string>
+Jugar</string>
                                         <attributes>
-                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" metaFont="system" size="10"/>
                                         </attributes>
                                     </fragment>
@@ -306,9 +306,10 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hN9-Mp-rBP">
-                                <rect key="frame" x="49" y="210" width="277" height="266"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hN9-Mp-rBP">
+                                <rect key="frame" x="49" y="215" width="277" height="261"/>
+                                <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaClassic" textLabel="6Yy-v1-QWU" detailTextLabel="4sK-Qe-Qme" rowHeight="69" style="IBUITableViewCellStyleSubtitle" id="osQ-Kl-MnG">
                                         <rect key="frame" x="0.0" y="28" width="277" height="69"/>
@@ -332,7 +333,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -415,12 +418,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcK-Et-V8v">
-                                <rect key="frame" x="111" y="133" width="153.5" height="58.5"/>
+                                <rect key="frame" x="102" y="133" width="171" height="63.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Ajustes">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
                                             <font key="NSOriginalFont" metaFont="system" size="48"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -431,62 +434,47 @@
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OiI-bz-8yK">
-                                <rect key="frame" x="141" y="300" width="184" height="34"/>
+                                <rect key="frame" x="141" y="305" width="189" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zQ-So-idE">
-                                <rect key="frame" x="49" y="306" width="62" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zQ-So-idE">
+                                <rect key="frame" x="46" y="306" width="70" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="jq2-wt-27i"/>
                                     <constraint firstAttribute="width" constant="62" id="s7O-cE-bNR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Nombre">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="16" name="AirbnbCerealApp-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volumen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tso-vo-teT">
-                                <rect key="frame" x="49" y="393" width="67" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="q2j-8l-4YA"/>
-                                    <constraint firstAttribute="height" constant="21" id="wBi-GE-DnM"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qQU-jz-Pyb">
-                                <rect key="frame" x="141" y="388.5" width="186" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="yjj-P6-cik"/>
-                                </constraints>
-                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fif-Um-Xy4"/>
                         <color key="backgroundColor" red="0.84705882349999995" green="0.23529411759999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="tso-vo-teT" firstAttribute="leading" secondItem="4zQ-So-idE" secondAttribute="leading" id="Dpy-Dn-csH"/>
-                            <constraint firstItem="fif-Um-Xy4" firstAttribute="trailing" secondItem="qQU-jz-Pyb" secondAttribute="trailing" constant="50" id="L7Y-ua-mM9"/>
                             <constraint firstItem="OiI-bz-8yK" firstAttribute="firstBaseline" secondItem="4zQ-So-idE" secondAttribute="firstBaseline" id="PDV-g2-Ngh"/>
                             <constraint firstItem="OiI-bz-8yK" firstAttribute="leading" secondItem="4zQ-So-idE" secondAttribute="trailing" constant="30" id="Vge-cr-3kE"/>
                             <constraint firstItem="4zQ-So-idE" firstAttribute="top" secondItem="hcK-Et-V8v" secondAttribute="bottom" constant="114.5" id="buZ-L8-Yqh"/>
-                            <constraint firstItem="qQU-jz-Pyb" firstAttribute="centerY" secondItem="tso-vo-teT" secondAttribute="centerY" id="gEz-xV-uVh"/>
                             <constraint firstItem="hcK-Et-V8v" firstAttribute="top" secondItem="fif-Um-Xy4" secondAttribute="top" constant="133" id="ji1-9W-CbH"/>
-                            <constraint firstItem="fif-Um-Xy4" firstAttribute="trailing" secondItem="OiI-bz-8yK" secondAttribute="trailing" constant="50" id="khe-Ns-YzB"/>
-                            <constraint firstItem="qQU-jz-Pyb" firstAttribute="leading" secondItem="tso-vo-teT" secondAttribute="trailing" constant="27" id="mUz-CD-QQg"/>
+                            <constraint firstItem="fif-Um-Xy4" firstAttribute="trailing" secondItem="OiI-bz-8yK" secondAttribute="trailing" constant="45" id="khe-Ns-YzB"/>
                             <constraint firstItem="hcK-Et-V8v" firstAttribute="centerX" secondItem="d5z-ky-Moy" secondAttribute="centerX" id="mx8-2O-tZq"/>
-                            <constraint firstItem="tso-vo-teT" firstAttribute="leading" secondItem="fif-Um-Xy4" secondAttribute="leading" constant="49" id="pcU-Ay-tqP"/>
                             <constraint firstItem="4zQ-So-idE" firstAttribute="leading" secondItem="fif-Um-Xy4" secondAttribute="leading" constant="49" id="tKj-kG-Zla"/>
-                            <constraint firstItem="tso-vo-teT" firstAttribute="top" secondItem="4zQ-So-idE" secondAttribute="bottom" constant="66" id="wUF-4W-8Iq"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="qmw-Fl-Cul" appends="YES" id="V3U-12-hPH"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Xx0-Rb-Bw0"/>
+                    <value key="contentSizeForViewInPopover" type="size" width="375" height="667"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="sliderVolume" destination="qQU-jz-Pyb" id="C98-fD-ngo"/>
                         <outlet property="tfName" destination="OiI-bz-8yK" id="PkS-Wq-KZ1"/>
                     </connections>
                 </viewController>
@@ -508,12 +496,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-TK-w2g">
-                                <rect key="frame" x="65" y="90" width="245" height="58.5"/>
+                                <rect key="frame" x="48" y="90" width="279.5" height="63.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Time Attack">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -558,7 +546,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mejores puntajes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rY-Ch-mmW">
-                                <rect key="frame" x="67" y="161" width="136.5" height="21"/>
+                                <rect key="frame" x="67" y="166" width="136.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="9pc-jX-YRG"/>
                                 </constraints>
@@ -566,9 +554,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lcG-gf-z66">
-                                <rect key="frame" x="50" y="210" width="275" height="255"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lcG-gf-z66">
+                                <rect key="frame" x="50" y="215" width="275" height="250"/>
+                                <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaTime" textLabel="vuE-2O-8xI" detailTextLabel="HWe-V9-Amh" style="IBUITableViewCellStyleSubtitle" id="oZg-cU-CYX">
                                         <rect key="frame" x="0.0" y="28" width="275" height="55.5"/>
@@ -592,6 +580,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -696,12 +685,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqR-eo-RCP">
-                                <rect key="frame" x="146.5" y="90" width="82.5" height="58.5"/>
+                                <rect key="frame" x="143.5" y="90" width="88.5" height="63.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Zen">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -746,7 +735,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mejores puntajes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shj-bd-74e">
-                                <rect key="frame" x="67" y="161" width="136.5" height="21"/>
+                                <rect key="frame" x="67" y="166" width="136.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="OTL-cR-0hz"/>
                                 </constraints>
@@ -754,9 +743,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iWk-dJ-9w2">
-                                <rect key="frame" x="49" y="210" width="277" height="255"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iWk-dJ-9w2">
+                                <rect key="frame" x="49" y="215" width="277" height="250"/>
+                                <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaZen" textLabel="uLb-Dj-ZsR" detailTextLabel="a3A-X7-Wz0" style="IBUITableViewCellStyleSubtitle" id="zfS-sw-dQ8">
                                         <rect key="frame" x="0.0" y="28" width="277" height="55.5"/>
@@ -780,6 +769,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -893,13 +883,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biF-lp-kxw">
-                                <rect key="frame" x="95" y="171" width="163" height="57"/>
+                                <rect key="frame" x="95" y="171" width="173" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="palabra">
                                         <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -908,36 +898,32 @@
                                 <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAn-cY-Cza">
-                                <rect key="frame" x="39" y="474" width="164" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAn-cY-Cza">
+                                <rect key="frame" x="74" y="588" width="140" height="47"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Puntaje">
+                                    <fragment content="Puntaje:">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="36"/>
+                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L6-7g-GmZ">
-                                <rect key="frame" x="211" y="474" width="108" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L6-7g-GmZ">
+                                <rect key="frame" x="220" y="590" width="22.5" height="47"/>
                                 <attributedString key="attributedText">
                                     <fragment content="0">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="36"/>
+                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxH-bH-Jd1">
@@ -990,27 +976,29 @@
                                 <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qme-vX-fuW">
-                                <rect key="frame" x="58" y="46" width="259" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qme-vX-fuW">
+                                <rect key="frame" x="49" y="45" width="277.5" height="62.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Time Attack">
                                         <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbx-eL-4GZ">
-                                <rect key="frame" x="13" y="3" width="34" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbx-eL-4GZ">
+                                <rect key="frame" x="13" y="13.5" width="34" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="D0G-FT-P0h"/>
+                                    <constraint firstAttribute="width" constant="34" id="cla-ca-Om9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="⏪"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="chevron.backward.circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="volver:" destination="RRG-94-1fV" eventType="touchUpInside" id="nzn-bg-tpe"/>
                                 </connections>
@@ -1019,6 +1007,16 @@
                         <viewLayoutGuide key="safeArea" id="NQ1-6r-h6g"/>
                         <color key="backgroundColor" red="0.88235294117647056" green="0.32549019607843138" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="NQ1-6r-h6g" firstAttribute="bottom" secondItem="9L6-7g-GmZ" secondAttribute="bottom" constant="30" id="DNb-ks-ZNN"/>
+                            <constraint firstItem="Qme-vX-fuW" firstAttribute="centerX" secondItem="pzn-We-WHj" secondAttribute="centerX" id="Hfm-7M-zMY"/>
+                            <constraint firstItem="9L6-7g-GmZ" firstAttribute="leading" secondItem="NQ1-6r-h6g" secondAttribute="leading" constant="220" id="JiW-lW-qIL"/>
+                            <constraint firstItem="zbx-eL-4GZ" firstAttribute="top" secondItem="NQ1-6r-h6g" secondAttribute="top" constant="13" id="ZbH-8R-kav"/>
+                            <constraint firstItem="NQ1-6r-h6g" firstAttribute="bottom" secondItem="hAn-cY-Cza" secondAttribute="bottom" constant="32" id="c01-la-a9H"/>
+                            <constraint firstItem="Qme-vX-fuW" firstAttribute="top" secondItem="NQ1-6r-h6g" secondAttribute="top" constant="45" id="dyI-IM-49M"/>
+                            <constraint firstItem="zbx-eL-4GZ" firstAttribute="leading" secondItem="NQ1-6r-h6g" secondAttribute="leading" constant="13" id="o5j-ZH-MRR"/>
+                            <constraint firstItem="hAn-cY-Cza" firstAttribute="leading" secondItem="NQ1-6r-h6g" secondAttribute="leading" constant="74" id="vwH-yD-7jb"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="gby-Jq-HSz" appends="YES" id="jhe-Kd-NU0"/>
                         </connections>
@@ -1043,14 +1041,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPq-UP-vnl">
-                                <rect key="frame" x="77.5" y="50" width="220.5" height="96.5"/>
+                                <rect key="frame" x="65.5" y="50" width="244" height="105.5"/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Reglas de
  acentuación</string>
                                         <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="40"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="40" name="AirbnbCerealApp-Medium"/>
+                                            <font key="NSOriginalFont" size="40" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1066,7 +1065,7 @@
                                     <constraint firstAttribute="width" constant="150" id="p0G-lA-mqq"/>
                                 </constraints>
                                 <state key="normal" title="Diptongo y Hiato">
-                                    <color key="titleColor" red="0.98730964470000004" green="0.21270718920000001" blue="0.23119560950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -1091,7 +1090,7 @@
                                     <constraint firstAttribute="height" constant="30" id="xl1-6N-27k"/>
                                 </constraints>
                                 <state key="normal" title="Regla General">
-                                    <color key="titleColor" red="0.98730964470000004" green="0.21270718920000001" blue="0.23119560950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -1115,7 +1114,7 @@
                                     <constraint firstAttribute="width" constant="150" id="bSf-AK-Wz7"/>
                                 </constraints>
                                 <state key="normal" title="Casos Especiales">
-                                    <color key="titleColor" red="0.98730964470000004" green="0.21270718920000001" blue="0.23119560950000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -1166,7 +1165,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bb6-Jg-Umc">
-                                <rect key="frame" x="17.5" y="200" width="340" height="223.5"/>
+                                <rect key="frame" x="17.5" y="160" width="340" height="263.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLp-cJ-XwO">
                                         <rect key="frame" x="0.0" y="0.0" width="340" height="23.5"/>
@@ -1177,15 +1176,21 @@
                                         <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="shadowOffset" width="1" height="1"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GJm-ys-p1O">
-                                        <rect key="frame" x="0.0" y="23.5" width="340" height="200"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GJm-ys-p1O">
+                                        <rect key="frame" x="0.0" y="23.5" width="340" height="240"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="Pea-mP-ia0"/>
+                                            <constraint firstAttribute="height" constant="240" id="Pea-mP-ia0"/>
                                         </constraints>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <color key="textColor" systemColor="labelColor"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <attributes>
+                                                    <color key="NSColor" systemColor="labelColor"/>
+                                                    <font key="NSFont" size="17" name="HelveticaNeue-Light"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
@@ -1208,6 +1213,7 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="XEa-c5-RrL"/>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="contenedorTexto" destination="GJm-ys-p1O" id="rTL-fV-AbH"/>
                         <outlet property="lbTitulo" destination="jLp-cJ-XwO" id="Zly-VQ-yRZ"/>
@@ -1220,7 +1226,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2352.8000000000002" y="249.62518740629687"/>
+            <point key="canvasLocation" x="2348" y="248.72563718140933"/>
         </scene>
         <!--View Controller Zen Game-->
         <scene sceneID="aa2-zW-kre">
@@ -1230,52 +1236,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yex-ys-2d8">
-                                <rect key="frame" x="95" y="171" width="163" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnx-qw-sWZ">
+                                <rect key="frame" x="74" y="588" width="140" height="47"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="palabra">
+                                    <fragment content="Puntaje:">
                                         <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnx-qw-sWZ">
-                                <rect key="frame" x="39" y="474" width="164" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Puntaje">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="36"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
-                                <size key="shadowOffset" width="2" height="1"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNM-1E-aBC">
-                                <rect key="frame" x="211" y="474" width="108" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNM-1E-aBC">
+                                <rect key="frame" x="220" y="590" width="22.5" height="47"/>
                                 <attributedString key="attributedText">
                                     <fragment content="0">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="36"/>
+                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR3-wV-0S1">
@@ -1296,14 +1282,41 @@
                                     <action selector="opcionSi:" destination="sJx-Ve-sog" eventType="touchUpInside" id="VZA-Sm-HSJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3D-18-ABM">
-                                <rect key="frame" x="145" y="41" width="84" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3D-18-ABM">
+                                <rect key="frame" x="144.5" y="45" width="86.5" height="62.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Zen">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="2" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8d-Gf-JQ0">
+                                <rect key="frame" x="13" y="13.5" width="34" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34" id="8w0-xY-Pak"/>
+                                    <constraint firstAttribute="height" constant="33" id="Kxg-jQ-22s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="chevron.backward.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="volver:" destination="sJx-Ve-sog" eventType="touchUpInside" id="2JH-Xo-5ND"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yex-ys-2d8">
+                                <rect key="frame" x="96" y="171" width="177" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="palabra">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1312,19 +1325,20 @@
                                 <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8d-Gf-JQ0">
-                                <rect key="frame" x="16" y="7" width="34" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="⏪"/>
-                                <connections>
-                                    <action selector="volver:" destination="sJx-Ve-sog" eventType="touchUpInside" id="2JH-Xo-5ND"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hXP-uh-paY"/>
                         <color key="backgroundColor" red="0.88235294117647056" green="0.32549019607843138" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="hXP-uh-paY" firstAttribute="bottom" secondItem="cnx-qw-sWZ" secondAttribute="bottom" constant="32" id="4wq-cc-Yqx"/>
+                            <constraint firstItem="d8d-Gf-JQ0" firstAttribute="leading" secondItem="hXP-uh-paY" secondAttribute="leading" constant="13" id="5Pd-As-NyS"/>
+                            <constraint firstItem="SNM-1E-aBC" firstAttribute="leading" secondItem="hXP-uh-paY" secondAttribute="leading" constant="220" id="IWz-Xo-iPE"/>
+                            <constraint firstItem="cnx-qw-sWZ" firstAttribute="leading" secondItem="hXP-uh-paY" secondAttribute="leading" constant="74" id="jeA-Xo-5zg"/>
+                            <constraint firstItem="M3D-18-ABM" firstAttribute="top" secondItem="hXP-uh-paY" secondAttribute="top" constant="45" id="jmb-Ee-WWa"/>
+                            <constraint firstItem="M3D-18-ABM" firstAttribute="centerX" secondItem="BzE-95-fgS" secondAttribute="centerX" id="oPe-MD-2Tp"/>
+                            <constraint firstItem="d8d-Gf-JQ0" firstAttribute="top" secondItem="hXP-uh-paY" secondAttribute="top" constant="13" id="p4l-Rm-urn"/>
+                            <constraint firstItem="hXP-uh-paY" firstAttribute="bottom" secondItem="SNM-1E-aBC" secondAttribute="bottom" constant="30" id="q9X-FE-ikL"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="m1V-vW-V38" appends="YES" id="lcT-Cs-K2I"/>
                         </connections>
@@ -1337,7 +1351,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQu-80-DnI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="m1V-vW-V38"/>
             </objects>
-            <point key="canvasLocation" x="92" y="-558"/>
+            <point key="canvasLocation" x="92" y="-558.17091454272872"/>
         </scene>
         <!--View Controller Classic Game-->
         <scene sceneID="UU4-Ne-1S9">
@@ -1347,38 +1361,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ih-4K-Y45">
-                                <rect key="frame" x="39" y="474" width="164" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Puntaje">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="36"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
-                                <size key="shadowOffset" width="2" height="1"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXZ-aw-dEb">
-                                <rect key="frame" x="211" y="474" width="108" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="0">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="36"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
-                                <size key="shadowOffset" width="2" height="1"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVy-pu-c0w">
                                 <rect key="frame" x="96" y="345" width="47" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1397,20 +1379,18 @@
                                     <action selector="opcionSi:" destination="hAi-db-yBn" eventType="touchUpInside" id="GqL-Y2-Hak"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyx-47-3h4">
-                                <rect key="frame" x="108" y="41" width="158" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyx-47-3h4">
+                                <rect key="frame" x="108.5" y="45" width="158" height="62.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Classic">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atf-TR-Zlt">
@@ -1420,7 +1400,7 @@
                                     <fragment content="palabra">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="48"/>
+                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1429,19 +1409,69 @@
                                 <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj2-Zk-Des">
-                                <rect key="frame" x="13" y="5" width="34" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj2-Zk-Des">
+                                <rect key="frame" x="13" y="13.5" width="34" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="dzV-1J-OtW"/>
+                                    <constraint firstAttribute="width" constant="34" id="zhX-up-dIt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="⏪"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="chevron.backward.circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="volver:" destination="hAi-db-yBn" eventType="touchUpInside" id="V9N-9j-Bnf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ih-4K-Y45">
+                                <rect key="frame" x="74" y="588" width="140" height="47"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Puntaje">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
+                                            <font key="NSOriginalFont" size="36" name="AirbnbCerealApp-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=":">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="2" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXZ-aw-dEb">
+                                <rect key="frame" x="220" y="590" width="22.5" height="47"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="0">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="2" height="1"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WFl-CU-l6q"/>
                         <color key="backgroundColor" red="0.88235294117647056" green="0.32549019607843138" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="kXZ-aw-dEb" firstAttribute="leading" secondItem="WFl-CU-l6q" secondAttribute="leading" constant="220" id="59m-ek-e82"/>
+                            <constraint firstItem="fj2-Zk-Des" firstAttribute="leading" secondItem="WFl-CU-l6q" secondAttribute="leading" constant="13" id="AwM-z5-OZy"/>
+                            <constraint firstItem="WFl-CU-l6q" firstAttribute="bottom" secondItem="7Ih-4K-Y45" secondAttribute="bottom" constant="32" id="C8L-5I-9HL"/>
+                            <constraint firstItem="cyx-47-3h4" firstAttribute="top" secondItem="WFl-CU-l6q" secondAttribute="top" constant="45" id="XCK-YO-0YI"/>
+                            <constraint firstItem="fj2-Zk-Des" firstAttribute="top" secondItem="WFl-CU-l6q" secondAttribute="top" constant="13" id="XQD-Z0-DxK"/>
+                            <constraint firstItem="WFl-CU-l6q" firstAttribute="bottom" secondItem="kXZ-aw-dEb" secondAttribute="bottom" constant="30" id="lxd-qC-nHl"/>
+                            <constraint firstItem="7Ih-4K-Y45" firstAttribute="leading" secondItem="WFl-CU-l6q" secondAttribute="leading" constant="74" id="oG7-Mq-iy5"/>
+                            <constraint firstItem="cyx-47-3h4" firstAttribute="centerX" secondItem="SJE-Ch-YzF" secondAttribute="centerX" id="suH-rp-6ZF"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="d6Y-sM-0ZI" appends="YES" id="uUg-Gm-izt"/>
                         </connections>
@@ -1459,12 +1489,13 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="eUG-Oe-B65"/>
-        <segue reference="NQe-EQ-1fJ"/>
-        <segue reference="WjN-6M-6Lh"/>
+        <segue reference="N5C-Ab-nyo"/>
+        <segue reference="Ykw-UO-Uci"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.down.circle.fill" catalog="system" width="128" height="121"/>
         <image name="character.book.closed.fill" catalog="system" width="115" height="128"/>
+        <image name="chevron.backward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">

@@ -77,7 +77,7 @@ class ViewControllerTimeAttack: UIViewController, UIPopoverPresentationControlle
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
         if sender.direction == .up {
-            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "TimeAttackGame") as! ViewControllerTimeAttack
+            let resultViewController = storyBoard.instantiateViewController(withIdentifier: "TimeAttackGame") as! ViewControllerTimeAttackGame
             resultViewController.modalPresentationStyle = .fullScreen
             self.present(resultViewController, animated:true, completion:nil)
         }

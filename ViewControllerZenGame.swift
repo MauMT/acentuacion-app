@@ -27,7 +27,9 @@ class ViewControllerZenGame: UIViewController {
         if let data = defaults.data(forKey: "puntajeZen") {
             puntaje = try! PropertyListDecoder().decode([Puntaje].self, from: data)
         }
-        nombre = defaults.string(forKey: "name")
+        
+        nombre = defaults.string(forKey: "name") ?? "Einstein"
+
         
         cargaPalabras()
         

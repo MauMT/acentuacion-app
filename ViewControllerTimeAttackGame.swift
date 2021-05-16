@@ -34,7 +34,8 @@ class ViewControllerTimeAttackGame: UIViewController {
         if let data = defaults.data(forKey: "puntajeTime") {
             puntaje = try! PropertyListDecoder().decode([Puntaje].self, from: data)
         }
-        nombre = defaults.string(forKey: "name")
+        nombre = defaults.string(forKey: "name") ?? "Einstein"
+
         
         cargaPalabras()
         
@@ -108,16 +109,19 @@ class ViewControllerTimeAttackGame: UIViewController {
     @objc func step() {
         if timeRemaining > 0 {
             timeRemaining -= 1
+            if timeRemaining <= 3 {
+                lbTiempo.shadowColor = .red
+            }
         } else if presenting == false{
             if var puntos = Int(lbPuntos.text!) {
-                let alerta = UIAlertController(title: "Se acabo el tiempo", message: "Puntaje de: " + String(puntos), preferredStyle: .alert)
+                let alerta = UIAlertController(title: "Se acabó el tiempo", message: "Puntaje: " + String(puntos), preferredStyle: .alert)
                               
-                let accion = UIAlertAction(title: "Change Mode", style: .default, handler: {_ in
+                let accion = UIAlertAction(title: "Cambiar Modo de Juego", style: .default, handler: {_ in
                     self.presenting = true
                     self.dismissGame()
                 })
 
-                let playAgain = UIAlertAction(title: "Play Again", style: .cancel, handler: {_ in
+                let playAgain = UIAlertAction(title: "Nueva Partida", style: .cancel, handler: {_ in
                     self.salvarPuntaje()
                     puntos = 0
                     self.lbPuntos.text = String(puntos)
