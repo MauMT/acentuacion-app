@@ -27,7 +27,7 @@ class ViewControllerModoDeJuego: UIViewController {
             upSwipe.direction = .up
             leftSwipe.direction = .left
         rightSwipe.direction = .right
-        imgModo.image = UIImage(named: "classicTemp.jpg")
+        imgModo.image = UIImage(named: "classicTemp-white.jpg")
         //view.addGestureRecognizer(downSwipe)
         view.addGestureRecognizer(upSwipe)
         view.addGestureRecognizer(leftSwipe)
@@ -115,13 +115,13 @@ class ViewControllerModoDeJuego: UIViewController {
             
             if lbModoDeJuego.text! == "Classic" {
                 lbModoDeJuego.text! = "Time Attack"
-                imgModo.image! = UIImage(named: "time.jpg")!
+                imgModo.image! = UIImage(named: "time-white.jpg")!
             }else if lbModoDeJuego.text! == "Time Attack" {
                 lbModoDeJuego.text! = "Zen"
-                imgModo.image! = UIImage(named: "zen.jpg")!
+                imgModo.image! = UIImage(named: "zen-blanco.jpg")!
             }else {
                 lbModoDeJuego.text! = "Classic"
-                imgModo.image! = UIImage(named: "classicTemp.jpg")!
+                imgModo.image! = UIImage(named: "classicTemp-white.jpg")!
             }
         }
         
@@ -129,13 +129,13 @@ class ViewControllerModoDeJuego: UIViewController {
             
             if lbModoDeJuego.text! == "Classic" {
                 lbModoDeJuego.text! = "Zen"
-                imgModo.image! = UIImage(named: "zen.jpg")!
+                imgModo.image! = UIImage(named: "zen-blanco.jpg")!
             }else if lbModoDeJuego.text! == "Time Attack" {
                 lbModoDeJuego.text! = "Classic"
-                imgModo.image! = UIImage(named: "classicTemp.jpg")!
+                imgModo.image! = UIImage(named: "classicTemp-white.jpg")!
             }else {
                 lbModoDeJuego.text! = "Time Attack"
-                imgModo.image! = UIImage(named: "time.jpg")!
+                imgModo.image! = UIImage(named: "time-white.jpg")!
             }
         }
     }

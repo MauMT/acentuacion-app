@@ -5,12 +5,13 @@
 //  Created by user189095 on 4/20/21.
 //
 import UIKit
+import Koloda
 
 class ViewControllerTimeAttackGame: UIViewController {
 
+    @IBOutlet var kolodaView: KolodaView!
     
     @IBOutlet weak var lbPuntos: UILabel!
-    @IBOutlet weak var lbPalabra: UILabel!
     @IBOutlet weak var lbTiempo: UILabel!
     
     // Lista de palabras de prueba
@@ -39,22 +40,17 @@ class ViewControllerTimeAttackGame: UIViewController {
         
         cargaPalabras()
         
-        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
-        
-        leftSwipe.direction = .left
-        rightSwipe.direction = .right
-        
-        view.addGestureRecognizer(leftSwipe)
-        view.addGestureRecognizer(rightSwipe)
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(step), userInfo: nil, repeats: true)
         
         listaPalabras.shuffle()
-        lbPalabra?.text = listaPalabras[listaPalabras.count - 1].palabra
-        
-
+   
+        kolodaView.countOfVisibleCards = 2
+        kolodaView.backgroundCardsTopMargin = 0
         // Do any additional setup after loading the view.
+        kolodaView.dataSource = self
+        kolodaView.delegate = self
+
     }
 
     //MARK: - Boton volver
@@ -91,17 +87,6 @@ class ViewControllerTimeAttackGame: UIViewController {
         }
     }
     
-    //MARK: - Swipe Controller
-    
-    @objc func handleSwipes(_ sender: UISwipeGestureRecognizer) {
-        if sender.direction == .left {
-            actualizarPuntaje(opcion: false)
-        }
-        
-        if sender.direction == .right {
-            actualizarPuntaje(opcion: true)
-        }
-    }
     
     
     //MARK: - Juego
@@ -112,7 +97,7 @@ class ViewControllerTimeAttackGame: UIViewController {
             if timeRemaining <= 3 {
                 lbTiempo.shadowColor = .red
             }
-        } else if presenting == false{
+        } else if presenting == false {
             if var puntos = Int(lbPuntos.text!) {
                 let alerta = UIAlertController(title: "Se acabó el tiempo", message: "Puntaje: " + String(puntos), preferredStyle: .alert)
                               
@@ -126,13 +111,13 @@ class ViewControllerTimeAttackGame: UIViewController {
                     puntos = 0
                     self.lbPuntos.text = String(puntos)
                     self.cargaPalabras()
-                    if (self.listaPalabras.count > 1) {
-                        self.listaPalabras.popLast()
-                        self.lbPalabra.text? = self.listaPalabras[self.listaPalabras.count - 1].palabra
-                    }
+                    self.listaPalabras.shuffle()
+                    self.kolodaView.resetCurrentCardIndex()
                     self.timeRemaining = 10
                     self.lbTiempo?.text = String(self.timeRemaining)
                 })
+                
+                 
 
                 alerta.addAction(playAgain)
                 alerta.addAction(accion)
@@ -146,15 +131,15 @@ class ViewControllerTimeAttackGame: UIViewController {
     
     
     @IBAction func opcionSi(_ sender: UIButton) {
-        actualizarPuntaje(opcion: true)
+        kolodaView.swipe(SwipeResultDirection.right)
     }
     
     @IBAction func opcionNo(_ sender: UIButton) {
-        actualizarPuntaje(opcion: false)
+        kolodaView.swipe(SwipeResultDirection.left)
     }
     
-    func actualizarPuntaje(opcion : Bool) {
-        let respuesta = listaPalabras[listaPalabras.count - 1].correcta
+    func actualizarPuntaje(opcion: Bool, indice: Int) {
+        let respuesta = listaPalabras[indice].correcta
         
         if var puntos = Int(lbPuntos.text!) {
             if (opcion == respuesta) {
@@ -173,15 +158,67 @@ class ViewControllerTimeAttackGame: UIViewController {
             }
             lbTiempo?.text = String(timeRemaining)
             lbPuntos?.text = String(puntos)
-            if (listaPalabras.count > 1) {
-                listaPalabras.popLast()
-                lbPalabra.text? = listaPalabras[listaPalabras.count - 1].palabra
-            } else {
-                cargaPalabras()
-            }
             
         }
         
     }
+    
+}
+
+
+extension ViewControllerTimeAttackGame: KolodaViewDelegate {
+    func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
+        // kolodaView.reloadData()
+        listaPalabras.shuffle()
+        kolodaView.resetCurrentCardIndex()
+    }
+  
+    func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
+        let alert = UIAlertController(title: listaPalabras[index].palabra, message: listaPalabras[index].palabra, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true)
+    }
+    
+    internal func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
+        
+        if direction == SwipeResultDirection.left {
+            actualizarPuntaje(opcion: false, indice: index)
+
+        } else {
+            actualizarPuntaje(opcion: true, indice: index)
+
+        }
+       
+
+    }
+    
+}
+
+extension ViewControllerTimeAttackGame: KolodaViewDataSource {
+  
+  func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
+    print("count = " + String(listaPalabras.count))
+    return listaPalabras.count
+  }
+    
+    
+  
+  func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
+    let viewMain = UIView(frame: kolodaView.frame)
+    viewMain.backgroundColor = .white
+    let titleLabel = UILabel(frame: CGRect(x: 0 , y: 35, width: viewMain.frame.width, height: 50))
+    
+    titleLabel.text = listaPalabras[index].palabra
+    titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 42)
+    titleLabel.textColor = UIColor.black
+    titleLabel.backgroundColor = .white
+    titleLabel.textAlignment = NSTextAlignment.center
+    viewMain.addSubview(titleLabel)
+
+    viewMain.layer.cornerRadius = 20
+    viewMain.clipsToBounds = true
+    print("indice es " + String(index))
+    return viewMain
+  }
     
 }

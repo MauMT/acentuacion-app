@@ -1,15 +1,16 @@
-//
+ //
 //  ViewControllerZenGame.swift
 //  ConTilde
 //
 //  Created by Marcos Quintero on 20/04/21.
 //
 import UIKit
+import Koloda
 
 class ViewControllerZenGame: UIViewController {
 
+    @IBOutlet var kolodaView: KolodaView!
     @IBOutlet weak var lbPuntos: UILabel!
-    @IBOutlet weak var lbPalabra: UILabel!
     
     // Lista de palabras de prueba
     var listaPalabras = [Palabra]()
@@ -33,18 +34,12 @@ class ViewControllerZenGame: UIViewController {
         
         cargaPalabras()
         
-        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
-        
-        leftSwipe.direction = .left
-        rightSwipe.direction = .right
-        
-        view.addGestureRecognizer(leftSwipe)
-        view.addGestureRecognizer(rightSwipe)
-        
         listaPalabras.shuffle()
-        lbPalabra?.text = listaPalabras[listaPalabras.count - 1].palabra
-        
+
+        kolodaView.countOfVisibleCards = 2
+        kolodaView.backgroundCardsTopMargin = 0
+        kolodaView.dataSource = self
+        kolodaView.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -81,7 +76,7 @@ class ViewControllerZenGame: UIViewController {
         dismissGame()
     }
     
-    
+    /*
     //MARK: - Swipe Controller
     
     @objc func handleSwipes(_ sender: UISwipeGestureRecognizer) {
@@ -93,48 +88,48 @@ class ViewControllerZenGame: UIViewController {
             actualizarPuntaje(opcion: true)
         }
     }
+  */
     
     
     //MARK: - Juego
     @IBAction func opcionSi(_ sender: UIButton) {
-        actualizarPuntaje(opcion: true)
+        kolodaView.swipe(SwipeResultDirection.right)
     }
     
     @IBAction func opcionNo(_ sender: UIButton) {
-        actualizarPuntaje(opcion: false)
+        kolodaView.swipe(SwipeResultDirection.left)
     }
     
-    func actualizarPuntaje(opcion : Bool) {
-        let respuesta = listaPalabras[listaPalabras.count - 1].correcta
+    func actualizarPuntaje(opcion : Bool, indice: Int) {
+        let respuesta = listaPalabras[indice].correcta
         
         if var puntos = Int(lbPuntos.text!) {
             if (opcion == respuesta) {
                 puntos = puntos + 1
             } else {
-                let alerta = UIAlertController(title: "Error", message: "Opcion incorrecta", preferredStyle: .alert)
+                let alerta = UIAlertController(title: "Error", message: "Opcion incorrecta, puntaje de: " + String(puntos), preferredStyle: .alert)
                 
-                let accion = UIAlertAction(title: "OK", style: .cancel, handler: {_ in
+                let accion = UIAlertAction(title: "Change Mode", style: .default, handler: {_ in
+                    self.dismissGame()
+                })
+                
+                let playAgain = UIAlertAction(title: "Play Again", style: .cancel, handler: {_ in
                     self.salvarPuntaje()
                     puntos = 0
                     self.lbPuntos.text = String(puntos)
                     self.cargaPalabras()
-                    if (self.listaPalabras.count > 1) {
-                        self.listaPalabras.popLast()
-                        self.lbPalabra.text? = self.listaPalabras[self.listaPalabras.count - 1].palabra
-                    }
+                    self.listaPalabras.shuffle()
+                    self.kolodaView.resetCurrentCardIndex()
+                    
                 })
                 
                 alerta.addAction(accion)
+                alerta.addAction(playAgain)
                 
                 present(alerta, animated: true, completion: nil)
             }
             lbPuntos.text = String(puntos)
-            if (listaPalabras.count > 1) {
-                listaPalabras.popLast()
-                lbPalabra.text? = listaPalabras[listaPalabras.count - 1].palabra
-            } else {
-                cargaPalabras()
-            }
+
             
         }
         
@@ -150,3 +145,62 @@ class ViewControllerZenGame: UIViewController {
     */
 
 }
+ 
+
+ 
+ extension ViewControllerZenGame: KolodaViewDelegate {
+     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
+         // kolodaView.reloadData()
+         kolodaView.resetCurrentCardIndex()
+     }
+   
+     func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
+         let alert = UIAlertController(title: listaPalabras[index].palabra, message: listaPalabras[index].palabra, preferredStyle: .alert)
+         alert.addAction(UIAlertAction(title: "OK", style: .default))
+         self.present(alert, animated: true)
+     }
+     
+     internal func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
+         
+         if direction == SwipeResultDirection.left {
+             actualizarPuntaje(opcion: false, indice: index)
+
+         } else {
+             actualizarPuntaje(opcion: true, indice: index)
+
+         }
+        
+
+     }
+     
+ }
+
+ extension ViewControllerZenGame: KolodaViewDataSource {
+   
+   func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
+     print("count = " + String(listaPalabras.count))
+     return listaPalabras.count
+   }
+     
+     
+   
+   func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
+     let viewMain = UIView(frame: kolodaView.frame)
+     viewMain.backgroundColor = .white
+     let titleLabel = UILabel(frame: CGRect(x: 0 , y: 35, width: viewMain.frame.width, height: 50))
+     
+     titleLabel.text = listaPalabras[index].palabra
+     titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 42)
+     titleLabel.textColor = UIColor.black
+     titleLabel.backgroundColor = .white
+     titleLabel.textAlignment = NSTextAlignment.center
+     viewMain.addSubview(titleLabel)
+
+     viewMain.layer.cornerRadius = 20
+     viewMain.clipsToBounds = true
+     print("indice es " + String(index))
+     return viewMain
+   }
+     
+ }
+

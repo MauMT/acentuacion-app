@@ -1,0 +1,6 @@
+framework module Pods_ConTilde {
+  umbrella header "Pods-ConTilde-umbrella.h"
+
+  export *
+  module * { export * }
+}
