@@ -16,9 +16,9 @@ class ViewControllerZen: UIViewController, UIPopoverPresentationControllerDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "celdaZen")!
         cell.textLabel?.text = puntaje[indexPath.row].name
         cell.detailTextLabel?.text = String(puntaje[indexPath.row].points)
-        cell.textLabel?.textColor = .white
-        cell.detailTextLabel?.textColor = .white
-        cell.textLabel?.tintColor = .white
+        //cell.textLabel?.textColor = .white
+        //cell.detailTextLabel?.textColor = .white
+        //cell.textLabel?.tintColor = .white
         return cell
     }
     
