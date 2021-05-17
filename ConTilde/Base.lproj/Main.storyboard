@@ -882,22 +882,6 @@ Jugar</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biF-lp-kxw">
-                                <rect key="frame" x="95" y="171" width="173" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="palabra">
-                                        <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
-                                <size key="shadowOffset" width="2" height="1"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAn-cY-Cza">
                                 <rect key="frame" x="74" y="588" width="140" height="47"/>
                                 <attributedString key="attributedText">
@@ -924,56 +908,6 @@ Jugar</string>
                                     </fragment>
                                 </attributedString>
                                 <color key="highlightedColor" systemColor="labelColor"/>
-                                <size key="shadowOffset" width="2" height="1"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxH-bH-Jd1">
-                                <rect key="frame" x="211" y="262" width="89" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="10">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="36"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
-                                <size key="shadowOffset" width="2" height="1"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTv-4d-xCm">
-                                <rect key="frame" x="96" y="345" width="47" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <state key="normal" title="🛑"/>
-                                <connections>
-                                    <action selector="opcionNo:" destination="RRG-94-1fV" eventType="touchUpInside" id="i7A-9L-QRW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4p-xt-J5r">
-                                <rect key="frame" x="253" y="345" width="47" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <state key="normal" title="✅"/>
-                                <connections>
-                                    <action selector="opcionSi:" destination="RRG-94-1fV" eventType="touchUpInside" id="c4N-DV-C3h"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rn9-Cl-HEI">
-                                <rect key="frame" x="39" y="262" width="164" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Tiempo:">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="36"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qme-vX-fuW">
@@ -1003,6 +937,61 @@ Jugar</string>
                                     <action selector="volver:" destination="RRG-94-1fV" eventType="touchUpInside" id="nzn-bg-tpe"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxH-bH-Jd1">
+                                <rect key="frame" x="221" y="525" width="89" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="10">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="36"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="2" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rn9-Cl-HEI">
+                                <rect key="frame" x="49" y="525" width="164" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tiempo:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="system" size="36"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="2" height="1"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTv-4d-xCm">
+                                <rect key="frame" x="96" y="391" width="47" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="🛑"/>
+                                <connections>
+                                    <action selector="opcionNo:" destination="RRG-94-1fV" eventType="touchUpInside" id="i7A-9L-QRW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4p-xt-J5r">
+                                <rect key="frame" x="253" y="391" width="47" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="✅"/>
+                                <connections>
+                                    <action selector="opcionSi:" destination="RRG-94-1fV" eventType="touchUpInside" id="c4N-DV-C3h"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kFr-wf-rI9" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="67" y="213" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.32549019610000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NQ1-6r-h6g"/>
                         <color key="backgroundColor" red="0.88235294117647056" green="0.32549019607843138" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1017,18 +1006,14 @@ Jugar</string>
                             <constraint firstItem="zbx-eL-4GZ" firstAttribute="leading" secondItem="NQ1-6r-h6g" secondAttribute="leading" constant="13" id="o5j-ZH-MRR"/>
                             <constraint firstItem="hAn-cY-Cza" firstAttribute="leading" secondItem="NQ1-6r-h6g" secondAttribute="leading" constant="74" id="vwH-yD-7jb"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="gby-Jq-HSz" appends="YES" id="jhe-Kd-NU0"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="lbPalabra" destination="biF-lp-kxw" id="DiS-Dw-CLC"/>
+                        <outlet property="kolodaView" destination="kFr-wf-rI9" id="RF7-Yr-IU3"/>
                         <outlet property="lbPuntos" destination="9L6-7g-GmZ" id="sfz-c0-Oe2"/>
                         <outlet property="lbTiempo" destination="fxH-bH-Jd1" id="6AI-qh-0JI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwt-bL-9Yd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="gby-Jq-HSz"/>
             </objects>
             <point key="canvasLocation" x="869.60000000000002" y="-558.17091454272872"/>
         </scene>
@@ -1264,24 +1249,6 @@ Jugar</string>
                                 <color key="highlightedColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR3-wV-0S1">
-                                <rect key="frame" x="96" y="345" width="47" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <state key="normal" title="🛑"/>
-                                <connections>
-                                    <action selector="opcionNo:" destination="sJx-Ve-sog" eventType="touchUpInside" id="YwO-8f-v88"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdE-PK-fRJ">
-                                <rect key="frame" x="253" y="345" width="47" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <state key="normal" title="✅"/>
-                                <connections>
-                                    <action selector="opcionSi:" destination="sJx-Ve-sog" eventType="touchUpInside" id="VZA-Sm-HSJ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3D-18-ABM">
                                 <rect key="frame" x="144.5" y="45" width="86.5" height="62.5"/>
                                 <attributedString key="attributedText">
@@ -1309,22 +1276,29 @@ Jugar</string>
                                     <action selector="volver:" destination="sJx-Ve-sog" eventType="touchUpInside" id="2JH-Xo-5ND"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yex-ys-2d8">
-                                <rect key="frame" x="96" y="171" width="177" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR3-wV-0S1">
+                                <rect key="frame" x="96" y="404" width="47" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="palabra">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
-                                <size key="shadowOffset" width="2" height="1"/>
-                            </label>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="🛑"/>
+                                <connections>
+                                    <action selector="opcionNo:" destination="sJx-Ve-sog" eventType="touchUpInside" id="YwO-8f-v88"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdE-PK-fRJ">
+                                <rect key="frame" x="253" y="404" width="47" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="✅"/>
+                                <connections>
+                                    <action selector="opcionSi:" destination="sJx-Ve-sog" eventType="touchUpInside" id="VZA-Sm-HSJ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YcK-h8-75m" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="67" y="223" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.32549019610000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hXP-uh-paY"/>
                         <color key="backgroundColor" red="0.88235294117647056" green="0.32549019607843138" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1339,17 +1313,13 @@ Jugar</string>
                             <constraint firstItem="d8d-Gf-JQ0" firstAttribute="top" secondItem="hXP-uh-paY" secondAttribute="top" constant="13" id="p4l-Rm-urn"/>
                             <constraint firstItem="hXP-uh-paY" firstAttribute="bottom" secondItem="SNM-1E-aBC" secondAttribute="bottom" constant="30" id="q9X-FE-ikL"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="m1V-vW-V38" appends="YES" id="lcT-Cs-K2I"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="lbPalabra" destination="yex-ys-2d8" id="JsK-gA-amO"/>
+                        <outlet property="kolodaView" destination="YcK-h8-75m" id="Ygn-Nh-50m"/>
                         <outlet property="lbPuntos" destination="SNM-1E-aBC" id="Xpx-On-5Xh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQu-80-DnI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="m1V-vW-V38"/>
             </objects>
             <point key="canvasLocation" x="92" y="-558.17091454272872"/>
         </scene>
@@ -1362,7 +1332,7 @@ Jugar</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVy-pu-c0w">
-                                <rect key="frame" x="96" y="345" width="47" height="63"/>
+                                <rect key="frame" x="85" y="412" width="47" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="🛑"/>
@@ -1371,7 +1341,7 @@ Jugar</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4R-TU-xOk">
-                                <rect key="frame" x="253" y="345" width="47" height="63"/>
+                                <rect key="frame" x="242" y="412" width="47" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
                                 <state key="normal" title="✅"/>
@@ -1391,22 +1361,6 @@ Jugar</string>
                                     </fragment>
                                 </attributedString>
                                 <color key="highlightedColor" systemColor="labelColor"/>
-                                <size key="shadowOffset" width="2" height="1"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atf-TR-Zlt">
-                                <rect key="frame" x="63" y="169" width="249" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="palabra">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj2-Zk-Des">
@@ -1458,6 +1412,11 @@ Jugar</string>
                                 <color key="highlightedColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hpF-ma-ge1" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="67" y="225" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88235294119999996" green="0.32549019610000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WFl-CU-l6q"/>
                         <color key="backgroundColor" red="0.88235294117647056" green="0.32549019607843138" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1472,17 +1431,13 @@ Jugar</string>
                             <constraint firstItem="7Ih-4K-Y45" firstAttribute="leading" secondItem="WFl-CU-l6q" secondAttribute="leading" constant="74" id="oG7-Mq-iy5"/>
                             <constraint firstItem="cyx-47-3h4" firstAttribute="centerX" secondItem="SJE-Ch-YzF" secondAttribute="centerX" id="suH-rp-6ZF"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="d6Y-sM-0ZI" appends="YES" id="uUg-Gm-izt"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="lbPalabra" destination="atf-TR-Zlt" id="uUL-8t-QnB"/>
+                        <outlet property="kolodaView" destination="hpF-ma-ge1" id="uSu-bc-hVN"/>
                         <outlet property="lbPuntos" destination="kXZ-aw-dEb" id="iG2-eo-emG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9U-bA-2rJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="d6Y-sM-0ZI"/>
             </objects>
             <point key="canvasLocation" x="-674.39999999999998" y="-558.17091454272872"/>
         </scene>

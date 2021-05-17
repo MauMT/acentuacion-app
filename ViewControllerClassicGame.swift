@@ -6,32 +6,37 @@
 //
 
 import UIKit
+import Koloda
 
 class ViewControllerClassicGame: UIViewController {
 
+    @IBOutlet var kolodaView: KolodaView!
+    
     struct Puntaje: Codable {
         var name: String
         var points: Int
     }
     @IBOutlet weak var lbPuntos: UILabel!
-    @IBOutlet weak var lbPalabra: UILabel!
     
     // Lista de palabras de prueba
     var listaPalabras = [Palabra]()
+
     let defaults = UserDefaults.standard
     var puntaje = [Puntaje]()
     var nombre : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         if let data = defaults.data(forKey: "puntajeClassic") {
             puntaje = try! PropertyListDecoder().decode([Puntaje].self, from: data)
         }
         nombre = defaults.string(forKey: "name") ?? "Einstein"
         
-        cargaPalabras()
+         cargaPalabras()
         
+       /*
         let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
         let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
         
@@ -40,11 +45,20 @@ class ViewControllerClassicGame: UIViewController {
         
         view.addGestureRecognizer(leftSwipe)
         view.addGestureRecognizer(rightSwipe)
+        */
         
         listaPalabras.shuffle()
-        lbPalabra?.text = listaPalabras[listaPalabras.count - 1].palabra
+
         
+        for pal in listaPalabras {
+            print(pal.palabra)
+        }
+        
+        kolodaView.countOfVisibleCards = 2
+        kolodaView.backgroundCardsTopMargin = 0
         // Do any additional setup after loading the view.
+        kolodaView.dataSource = self
+        kolodaView.delegate = self
     }
     
     func cargaPalabras(){
@@ -56,6 +70,7 @@ class ViewControllerClassicGame: UIViewController {
         } catch {
             print("Error al cargar el archivo")
         }
+
     }
     
     //MARK: - Boton volver
@@ -81,6 +96,7 @@ class ViewControllerClassicGame: UIViewController {
         }
     }
     
+    /*
     //MARK: - Swipe Controller
     
     @objc func handleSwipes(_ sender: UISwipeGestureRecognizer) {
@@ -92,20 +108,20 @@ class ViewControllerClassicGame: UIViewController {
             actualizarPuntaje(opcion: true)
         }
     }
+    */
     
     
     //MARK: - Juego
     @IBAction func opcionSi(_ sender: UIButton) {
-        actualizarPuntaje(opcion: true)
+        kolodaView.swipe(SwipeResultDirection.right)
     }
     
     @IBAction func opcionNo(_ sender: UIButton) {
-        actualizarPuntaje(opcion: false)
+        kolodaView.swipe(SwipeResultDirection.left)
     }
     
-    func actualizarPuntaje(opcion : Bool) {
-        let respuesta = listaPalabras[listaPalabras.count - 1].correcta
-        
+    func actualizarPuntaje(opcion : Bool, indice: Int) {
+        let respuesta = listaPalabras[indice].correcta
         if var puntos = Int(lbPuntos.text!) {
             if (opcion == respuesta) {
                 puntos = puntos + 1
@@ -121,10 +137,8 @@ class ViewControllerClassicGame: UIViewController {
                     puntos = 0
                     self.lbPuntos.text = String(puntos)
                     self.cargaPalabras()
-                    if (self.listaPalabras.count > 1) {
-                        self.listaPalabras.popLast()
-                        self.lbPalabra.text? = self.listaPalabras[self.listaPalabras.count - 1].palabra
-                    }
+                    self.listaPalabras.shuffle()
+                    self.kolodaView.resetCurrentCardIndex()
                     
                 })
                 
@@ -135,10 +149,11 @@ class ViewControllerClassicGame: UIViewController {
                 
             }
             lbPuntos.text = String(puntos)
-            if (listaPalabras.count > 1) {
-                listaPalabras.popLast()
-                lbPalabra.text? = listaPalabras[listaPalabras.count - 1].palabra
+            if indice >= listaPalabras.count - 1 {
+                //listaPalabras.shuffle()
+                //kolodaView.resetCurrentCardIndex()
             }
+         
             
         }
         
@@ -154,4 +169,63 @@ class ViewControllerClassicGame: UIViewController {
     */
 
 
+}
+
+
+
+extension ViewControllerClassicGame: KolodaViewDelegate {
+    func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
+        // kolodaView.reloadData()
+        listaPalabras.shuffle()
+        kolodaView.resetCurrentCardIndex()
+    }
+  
+    func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
+        let alert = UIAlertController(title: listaPalabras[index].palabra, message: listaPalabras[index].palabra, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        self.present(alert, animated: true)
+    }
+    
+    internal func koloda(_ koloda: KolodaView, didSwipeCardAt index: Int, in direction: SwipeResultDirection) {
+        
+        if direction == SwipeResultDirection.left {
+            actualizarPuntaje(opcion: false, indice: index)
+
+        } else {
+            actualizarPuntaje(opcion: true, indice: index)
+
+        }
+       
+
+    }
+    
+}
+
+extension ViewControllerClassicGame: KolodaViewDataSource {
+  
+  func kolodaNumberOfCards(_ koloda:KolodaView) -> Int {
+    print("count = " + String(listaPalabras.count))
+    return listaPalabras.count
+  }
+    
+    
+  
+  func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
+    let viewMain = UIView(frame: kolodaView.frame)
+    viewMain.backgroundColor = .white
+    let titleLabel = UILabel(frame: CGRect(x: 0 , y: 35, width: viewMain.frame.width, height: 50))
+    
+    titleLabel.text = listaPalabras[index].palabra
+    titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 42)
+    titleLabel.textColor = UIColor.black
+    titleLabel.backgroundColor = .white
+    titleLabel.textAlignment = NSTextAlignment.center
+    viewMain.addSubview(titleLabel)
+
+    viewMain.layer.cornerRadius = 20
+    viewMain.clipsToBounds = true
+    print("indice es " + String(index))
+    return viewMain
+  }
+    
 }
