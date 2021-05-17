@@ -107,30 +107,15 @@ class ViewControllerZenGame: UIViewController {
             if (opcion == respuesta) {
                 puntos = puntos + 1
             } else {
-                let alerta = UIAlertController(title: "Error", message: "Opción incorrecta\nPuntaje: " + String(puntos), preferredStyle: .alert)
-                
-                let accion = UIAlertAction(title: "Cambiar Modo de Juego", style: .default, handler: {_ in
-                    self.dismissGame()
-                })
-                
-                let playAgain = UIAlertAction(title: "Nueva Partida", style: .cancel, handler: {_ in
-                    self.salvarPuntaje()
-                    puntos = 0
-                    self.lbPuntos.text = String(puntos)
-                    self.cargaPalabras()
-                    self.listaPalabras.shuffle()
-                    self.kolodaView.resetCurrentCardIndex()
-                    
-                })
-                
-                alerta.addAction(accion)
-                alerta.addAction(playAgain)
-                
-                present(alerta, animated: true, completion: nil)
+                self.salvarPuntaje()
+                puntos = 0
+                self.lbPuntos.text = String(puntos)
+                self.cargaPalabras()
+                self.listaPalabras.shuffle()
+                self.kolodaView.resetCurrentCardIndex()
             }
             lbPuntos.text = String(puntos)
 
-            
         }
         
     }
