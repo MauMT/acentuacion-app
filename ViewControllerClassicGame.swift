@@ -218,7 +218,12 @@ extension ViewControllerClassicGame: KolodaViewDataSource {
     let titleLabel = UILabel(frame: CGRect(x: 0 , y: 35, width: viewMain.frame.width, height: 50))
     
     titleLabel.text = listaPalabras[index].palabra
-    titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 42)
+    if listaPalabras[index].palabra.count >= 9 {
+        titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 36)
+    } else {
+        titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 42)
+
+    }
     titleLabel.textColor = UIColor.black
     titleLabel.backgroundColor = .systemGray6
     titleLabel.textAlignment = NSTextAlignment.center
