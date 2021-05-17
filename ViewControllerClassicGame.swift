@@ -126,13 +126,13 @@ class ViewControllerClassicGame: UIViewController {
             if (opcion == respuesta) {
                 puntos = puntos + 1
             } else {
-                let alerta = UIAlertController(title: "Error", message: "Opcion incorrecta, puntaje de: " + String(puntos), preferredStyle: .alert)
+                let alerta = UIAlertController(title: "Error", message: "Opción incorrecta\nPuntaje: " + String(puntos), preferredStyle: .alert)
                 
-                let accion = UIAlertAction(title: "Change Mode", style: .default, handler: {_ in
+                let accion = UIAlertAction(title: "Cambiar Modo de Juego", style: .default, handler: {_ in
                     self.dismissGame()
                 })
                 
-                let playAgain = UIAlertAction(title: "Play Again", style: .cancel, handler: {_ in
+                let playAgain = UIAlertAction(title: "Nueva Partida", style: .cancel, handler: {_ in
                     self.salvarPuntaje()
                     puntos = 0
                     self.lbPuntos.text = String(puntos)
@@ -171,7 +171,7 @@ class ViewControllerClassicGame: UIViewController {
 
 }
 
-
+// MARK: - Card Methods
 
 extension ViewControllerClassicGame: KolodaViewDelegate {
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
@@ -208,17 +208,19 @@ extension ViewControllerClassicGame: KolodaViewDataSource {
     return listaPalabras.count
   }
     
-    
+  
   
   func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
+    ///let grisClaro = CIColor(red: 230, green: 230, blue: 230, alpha: 1)
+    
     let viewMain = UIView(frame: kolodaView.frame)
-    viewMain.backgroundColor = .white
+    viewMain.backgroundColor = .systemGray6
     let titleLabel = UILabel(frame: CGRect(x: 0 , y: 35, width: viewMain.frame.width, height: 50))
     
     titleLabel.text = listaPalabras[index].palabra
     titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 42)
     titleLabel.textColor = UIColor.black
-    titleLabel.backgroundColor = .white
+    titleLabel.backgroundColor = .systemGray6
     titleLabel.textAlignment = NSTextAlignment.center
     viewMain.addSubview(titleLabel)
 

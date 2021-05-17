@@ -95,7 +95,7 @@ class ViewControllerTimeAttackGame: UIViewController {
         if timeRemaining > 0 {
             timeRemaining -= 1
             if timeRemaining <= 3 {
-                lbTiempo.shadowColor = .red
+                lbTiempo.textColor = .systemRed
             }
         } else if presenting == false {
             if var puntos = Int(lbPuntos.text!) {
@@ -165,6 +165,7 @@ class ViewControllerTimeAttackGame: UIViewController {
     
 }
 
+// MARK: - Card Methods
 
 extension ViewControllerTimeAttackGame: KolodaViewDelegate {
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
@@ -205,13 +206,13 @@ extension ViewControllerTimeAttackGame: KolodaViewDataSource {
   
   func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
     let viewMain = UIView(frame: kolodaView.frame)
-    viewMain.backgroundColor = .white
+    viewMain.backgroundColor = .systemGray6
     let titleLabel = UILabel(frame: CGRect(x: 0 , y: 35, width: viewMain.frame.width, height: 50))
     
     titleLabel.text = listaPalabras[index].palabra
     titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 42)
     titleLabel.textColor = UIColor.black
-    titleLabel.backgroundColor = .white
+    titleLabel.backgroundColor = .systemGray6
     titleLabel.textAlignment = NSTextAlignment.center
     viewMain.addSubview(titleLabel)
 

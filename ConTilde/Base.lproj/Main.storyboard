@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -500,7 +501,7 @@ Jugar</string>
                                 <attributedString key="attributedText">
                                     <fragment content="Time Attack">
                                         <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -882,13 +883,18 @@ Jugar</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qOQ-pg-XSo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.32549019610000002" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAn-cY-Cza">
-                                <rect key="frame" x="74" y="588" width="140" height="47"/>
+                                <rect key="frame" x="74" y="603.5" width="93.5" height="31.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Puntaje:">
                                         <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -897,12 +903,12 @@ Jugar</string>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L6-7g-GmZ">
-                                <rect key="frame" x="220" y="590" width="22.5" height="47"/>
+                                <rect key="frame" x="195" y="605.5" width="15" height="31.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="0">
                                         <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -911,12 +917,12 @@ Jugar</string>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qme-vX-fuW">
-                                <rect key="frame" x="49" y="45" width="277.5" height="62.5"/>
+                                <rect key="frame" x="118" y="13" width="139" height="31.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Time Attack">
                                         <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -937,52 +943,37 @@ Jugar</string>
                                     <action selector="volver:" destination="RRG-94-1fV" eventType="touchUpInside" id="nzn-bg-tpe"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxH-bH-Jd1">
-                                <rect key="frame" x="221" y="525" width="89" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="10">
-                                        <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="36"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
-                                <size key="shadowOffset" width="2" height="1"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rn9-Cl-HEI">
-                                <rect key="frame" x="49" y="525" width="164" height="57"/>
+                                <rect key="frame" x="67" y="525" width="109" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Tiempo:">
                                         <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" metaFont="system" size="36"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
-                                <color key="highlightedColor" systemColor="labelColor"/>
-                                <color key="shadowColor" systemColor="labelColor"/>
+                                <color key="highlightedColor" name="AccentColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTv-4d-xCm">
-                                <rect key="frame" x="96" y="391" width="47" height="63"/>
+                                <rect key="frame" x="76" y="413" width="74" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <state key="normal" title="🛑"/>
+                                <color key="tintColor" red="0.99607843137254903" green="0.15686274509803921" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="xmark.rectangle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="opcionNo:" destination="RRG-94-1fV" eventType="touchUpInside" id="i7A-9L-QRW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4p-xt-J5r">
-                                <rect key="frame" x="253" y="391" width="47" height="63"/>
+                                <rect key="frame" x="233" y="413" width="74" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <state key="normal" title="✅"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" backgroundImage="checkmark.rectangle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="opcionSi:" destination="RRG-94-1fV" eventType="touchUpInside" id="c4N-DV-C3h"/>
                                 </connections>
@@ -990,19 +981,33 @@ Jugar</string>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kFr-wf-rI9" customClass="KolodaView" customModule="Koloda">
                                 <rect key="frame" x="67" y="213" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.88235294119999996" green="0.32549019610000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxH-bH-Jd1">
+                                <rect key="frame" x="176" y="525" width="52" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="10">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="24" name="AirbnbCerealApp-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <size key="shadowOffset" width="2" height="1"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NQ1-6r-h6g"/>
-                        <color key="backgroundColor" red="0.88235294117647056" green="0.32549019607843138" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="NQ1-6r-h6g" firstAttribute="bottom" secondItem="9L6-7g-GmZ" secondAttribute="bottom" constant="30" id="DNb-ks-ZNN"/>
                             <constraint firstItem="Qme-vX-fuW" firstAttribute="centerX" secondItem="pzn-We-WHj" secondAttribute="centerX" id="Hfm-7M-zMY"/>
-                            <constraint firstItem="9L6-7g-GmZ" firstAttribute="leading" secondItem="NQ1-6r-h6g" secondAttribute="leading" constant="220" id="JiW-lW-qIL"/>
+                            <constraint firstItem="9L6-7g-GmZ" firstAttribute="leading" secondItem="NQ1-6r-h6g" secondAttribute="leading" constant="195" id="JiW-lW-qIL"/>
                             <constraint firstItem="zbx-eL-4GZ" firstAttribute="top" secondItem="NQ1-6r-h6g" secondAttribute="top" constant="13" id="ZbH-8R-kav"/>
                             <constraint firstItem="NQ1-6r-h6g" firstAttribute="bottom" secondItem="hAn-cY-Cza" secondAttribute="bottom" constant="32" id="c01-la-a9H"/>
-                            <constraint firstItem="Qme-vX-fuW" firstAttribute="top" secondItem="NQ1-6r-h6g" secondAttribute="top" constant="45" id="dyI-IM-49M"/>
+                            <constraint firstItem="Qme-vX-fuW" firstAttribute="top" secondItem="NQ1-6r-h6g" secondAttribute="top" constant="13" id="dyI-IM-49M"/>
                             <constraint firstItem="zbx-eL-4GZ" firstAttribute="leading" secondItem="NQ1-6r-h6g" secondAttribute="leading" constant="13" id="o5j-ZH-MRR"/>
                             <constraint firstItem="hAn-cY-Cza" firstAttribute="leading" secondItem="NQ1-6r-h6g" secondAttribute="leading" constant="74" id="vwH-yD-7jb"/>
                         </constraints>
@@ -1221,27 +1226,32 @@ Jugar</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="azf-2s-dDe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.87843137250000003" green="0.32549019610000002" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnx-qw-sWZ">
-                                <rect key="frame" x="74" y="588" width="140" height="47"/>
+                                <rect key="frame" x="74" y="603.5" width="93.5" height="31.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Puntaje:">
                                         <attributes>
-                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
-                                <color key="highlightedColor" systemColor="labelColor"/>
+                                <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNM-1E-aBC">
-                                <rect key="frame" x="220" y="590" width="22.5" height="47"/>
+                                <rect key="frame" x="175" y="605.5" width="15" height="31.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="0">
                                         <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="24" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1250,12 +1260,13 @@ Jugar</string>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3D-18-ABM">
-                                <rect key="frame" x="144.5" y="45" width="86.5" height="62.5"/>
+                                <rect key="frame" x="166" y="13" width="43.5" height="31.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Zen">
                                         <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
+                                            <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="AirbnbCerealApp-Medium"/>
+                                            <font key="NSOriginalFont" size="24" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1277,19 +1288,21 @@ Jugar</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GR3-wV-0S1">
-                                <rect key="frame" x="96" y="404" width="47" height="63"/>
+                                <rect key="frame" x="76" y="413" width="74" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <state key="normal" title="🛑"/>
+                                <color key="tintColor" red="0.99607843137254903" green="0.15686274509803921" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="xmark.rectangle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="opcionNo:" destination="sJx-Ve-sog" eventType="touchUpInside" id="YwO-8f-v88"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdE-PK-fRJ">
-                                <rect key="frame" x="253" y="404" width="47" height="63"/>
+                                <rect key="frame" x="233" y="413" width="74" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <state key="normal" title="✅"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" backgroundImage="checkmark.rectangle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="opcionSi:" destination="sJx-Ve-sog" eventType="touchUpInside" id="VZA-Sm-HSJ"/>
                                 </connections>
@@ -1297,18 +1310,17 @@ Jugar</string>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YcK-h8-75m" customClass="KolodaView" customModule="Koloda">
                                 <rect key="frame" x="67" y="223" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.88235294119999996" green="0.32549019610000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hXP-uh-paY"/>
-                        <color key="backgroundColor" red="0.88235294117647056" green="0.32549019607843138" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="hXP-uh-paY" firstAttribute="bottom" secondItem="cnx-qw-sWZ" secondAttribute="bottom" constant="32" id="4wq-cc-Yqx"/>
                             <constraint firstItem="d8d-Gf-JQ0" firstAttribute="leading" secondItem="hXP-uh-paY" secondAttribute="leading" constant="13" id="5Pd-As-NyS"/>
-                            <constraint firstItem="SNM-1E-aBC" firstAttribute="leading" secondItem="hXP-uh-paY" secondAttribute="leading" constant="220" id="IWz-Xo-iPE"/>
+                            <constraint firstItem="SNM-1E-aBC" firstAttribute="leading" secondItem="hXP-uh-paY" secondAttribute="leading" constant="175" id="IWz-Xo-iPE"/>
                             <constraint firstItem="cnx-qw-sWZ" firstAttribute="leading" secondItem="hXP-uh-paY" secondAttribute="leading" constant="74" id="jeA-Xo-5zg"/>
-                            <constraint firstItem="M3D-18-ABM" firstAttribute="top" secondItem="hXP-uh-paY" secondAttribute="top" constant="45" id="jmb-Ee-WWa"/>
+                            <constraint firstItem="M3D-18-ABM" firstAttribute="top" secondItem="hXP-uh-paY" secondAttribute="top" constant="13" id="jmb-Ee-WWa"/>
                             <constraint firstItem="M3D-18-ABM" firstAttribute="centerX" secondItem="BzE-95-fgS" secondAttribute="centerX" id="oPe-MD-2Tp"/>
                             <constraint firstItem="d8d-Gf-JQ0" firstAttribute="top" secondItem="hXP-uh-paY" secondAttribute="top" constant="13" id="p4l-Rm-urn"/>
                             <constraint firstItem="hXP-uh-paY" firstAttribute="bottom" secondItem="SNM-1E-aBC" secondAttribute="bottom" constant="30" id="q9X-FE-ikL"/>
@@ -1331,31 +1343,18 @@ Jugar</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVy-pu-c0w">
-                                <rect key="frame" x="85" y="412" width="47" height="63"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4fs-bB-XWd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <state key="normal" title="🛑"/>
-                                <connections>
-                                    <action selector="opcionNo:" destination="hAi-db-yBn" eventType="touchUpInside" id="QFE-Hz-9to"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4R-TU-xOk">
-                                <rect key="frame" x="242" y="412" width="47" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <state key="normal" title="✅"/>
-                                <connections>
-                                    <action selector="opcionSi:" destination="hAi-db-yBn" eventType="touchUpInside" id="GqL-Y2-Hak"/>
-                                </connections>
-                            </button>
+                                <color key="backgroundColor" red="0.8784313725490196" green="0.32549019607843138" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyx-47-3h4">
-                                <rect key="frame" x="108.5" y="45" width="158" height="62.5"/>
+                                <rect key="frame" x="148" y="13" width="79" height="31.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Classic">
                                         <attributes>
                                             <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="48" name="AirbnbCerealApp-Medium"/>
+                                            <font key="NSFont" size="24" name="AirbnbCerealApp-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1377,20 +1376,21 @@ Jugar</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ih-4K-Y45">
-                                <rect key="frame" x="74" y="588" width="140" height="47"/>
+                                <rect key="frame" x="74" y="603.5" width="93.5" height="31.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Puntaje">
                                         <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="AirbnbCerealApp-Bold"/>
                                             <font key="NSOriginalFont" size="36" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=":">
                                         <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1399,12 +1399,12 @@ Jugar</string>
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXZ-aw-dEb">
-                                <rect key="frame" x="220" y="590" width="22.5" height="47"/>
+                                <rect key="frame" x="175" y="605.5" width="15" height="31.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="0">
                                         <attributes>
-                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="36" name="AirbnbCerealApp-Bold"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="AirbnbCerealApp-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -1415,17 +1415,36 @@ Jugar</string>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hpF-ma-ge1" customClass="KolodaView" customModule="Koloda">
                                 <rect key="frame" x="67" y="225" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.88235294119999996" green="0.32549019610000002" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVy-pu-c0w">
+                                <rect key="frame" x="76" y="413" width="74" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="tintColor" red="0.99607843137254903" green="0.15686274509803921" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="xmark.rectangle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="opcionNo:" destination="hAi-db-yBn" eventType="touchUpInside" id="QFE-Hz-9to"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4R-TU-xOk">
+                                <rect key="frame" x="233" y="413" width="74" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" backgroundImage="checkmark.rectangle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="opcionSi:" destination="hAi-db-yBn" eventType="touchUpInside" id="GqL-Y2-Hak"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WFl-CU-l6q"/>
-                        <color key="backgroundColor" red="0.88235294117647056" green="0.32549019607843138" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="kXZ-aw-dEb" firstAttribute="leading" secondItem="WFl-CU-l6q" secondAttribute="leading" constant="220" id="59m-ek-e82"/>
+                            <constraint firstItem="kXZ-aw-dEb" firstAttribute="leading" secondItem="WFl-CU-l6q" secondAttribute="leading" constant="175" id="59m-ek-e82"/>
                             <constraint firstItem="fj2-Zk-Des" firstAttribute="leading" secondItem="WFl-CU-l6q" secondAttribute="leading" constant="13" id="AwM-z5-OZy"/>
                             <constraint firstItem="WFl-CU-l6q" firstAttribute="bottom" secondItem="7Ih-4K-Y45" secondAttribute="bottom" constant="32" id="C8L-5I-9HL"/>
-                            <constraint firstItem="cyx-47-3h4" firstAttribute="top" secondItem="WFl-CU-l6q" secondAttribute="top" constant="45" id="XCK-YO-0YI"/>
+                            <constraint firstItem="cyx-47-3h4" firstAttribute="top" secondItem="WFl-CU-l6q" secondAttribute="top" constant="13" id="XCK-YO-0YI"/>
                             <constraint firstItem="fj2-Zk-Des" firstAttribute="top" secondItem="WFl-CU-l6q" secondAttribute="top" constant="13" id="XQD-Z0-DxK"/>
                             <constraint firstItem="WFl-CU-l6q" firstAttribute="bottom" secondItem="kXZ-aw-dEb" secondAttribute="bottom" constant="30" id="lxd-qC-nHl"/>
                             <constraint firstItem="7Ih-4K-Y45" firstAttribute="leading" secondItem="WFl-CU-l6q" secondAttribute="leading" constant="74" id="oG7-Mq-iy5"/>
@@ -1443,21 +1462,29 @@ Jugar</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eUG-Oe-B65"/>
-        <segue reference="N5C-Ab-nyo"/>
-        <segue reference="Ykw-UO-Uci"/>
+        <segue reference="0tw-qQ-fdh"/>
+        <segue reference="Cwh-et-2hz"/>
+        <segue reference="byI-SE-XLN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.down.circle.fill" catalog="system" width="128" height="121"/>
         <image name="character.book.closed.fill" catalog="system" width="115" height="128"/>
+        <image name="checkmark.rectangle.fill" catalog="system" width="128" height="93"/>
         <image name="chevron.backward.circle.fill" catalog="system" width="128" height="121"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="xmark.rectangle.fill" catalog="system" width="128" height="93"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
