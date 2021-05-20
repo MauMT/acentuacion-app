@@ -20,6 +20,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>AirbnbCerealBold.ttf</string>
+		<string>AirbnbCerealMedium.ttf</string>
+		<string>AirbnbCerealBlack.ttf</string>
+		<string>AirbnbCerealLight.ttf</string>
+		<string>AirbnbCerealBook.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -52,16 +60,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>AirbnbCerealBold.ttf</string>
-		<string>AirbnbCerealMedium.ttf</string>
-		<string>AirbnbCerealBlack.ttf</string>
-		<string>AirbnbCerealLight.ttf</string>
-		<string>AirbnbCerealBook.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

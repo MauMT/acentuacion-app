@@ -9,7 +9,13 @@ import UIKit
 
 
 class ViewControllerMuestraReglas: UIViewController{
-
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
     
     @IBOutlet weak var lbTitulo: UILabel!
     @IBOutlet weak var contenedorTexto: UITextView!

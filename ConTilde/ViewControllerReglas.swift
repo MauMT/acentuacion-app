@@ -8,6 +8,13 @@
 import UIKit
 
 class ViewControllerReglas: UIViewController {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
     @IBOutlet weak var reglaButton: UIButton!
     @IBOutlet weak var diptongoHiato: UIButton!
     @IBOutlet weak var casosEspeciales: UIButton!

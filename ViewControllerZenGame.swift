@@ -8,7 +8,13 @@ import UIKit
 import Koloda
 
 class ViewControllerZenGame: UIViewController {
-
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
     @IBOutlet var kolodaView: KolodaView!
     @IBOutlet weak var lbPuntos: UILabel!
     

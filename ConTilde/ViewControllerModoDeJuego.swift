@@ -8,7 +8,13 @@
 import UIKit
 
 class ViewControllerModoDeJuego: UIViewController {
-
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
     @IBOutlet weak var lbModoDeJuego: UILabel!
     @IBOutlet weak var imgModo: UIImageView!
     

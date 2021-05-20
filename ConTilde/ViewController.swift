@@ -8,7 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
    //let timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(cambiarLetra), userInfo: nil, repeats: true)
     
     @IBOutlet weak var tfName: UITextField!

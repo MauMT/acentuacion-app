@@ -362,7 +362,7 @@ Jugar</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBZ-XA-m1g" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="604" y="961.16941529235385"/>
+            <point key="canvasLocation" x="526" y="1101"/>
         </scene>
         <!--View Controller Como Jugar-->
         <scene sceneID="Y1f-ct-uxX">
@@ -396,7 +396,7 @@ Jugar</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fgn-G9-Aqf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="90.400000000000006" y="1537.7811094452775"/>
+            <point key="canvasLocation" x="92" y="1755"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="blW-7d-Nrf">
@@ -460,7 +460,7 @@ Jugar</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-268" y="909.89505247376314"/>
+            <point key="canvasLocation" x="-318" y="1101"/>
         </scene>
         <!--View Controller Time Attack-->
         <scene sceneID="5BL-bD-INm">
@@ -701,21 +701,21 @@ Jugar</string>
                                 <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaZen" textLabel="uLb-Dj-ZsR" detailTextLabel="a3A-X7-Wz0" style="IBUITableViewCellStyleValue1" id="zfS-sw-dQ8">
-                                        <rect key="frame" x="0.0" y="28" width="277" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="277" height="57.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zfS-sw-dQ8" id="rtF-4G-f3R">
-                                            <rect key="frame" x="0.0" y="0.0" width="277" height="44.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="277" height="57.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uLb-Dj-ZsR">
-                                                    <rect key="frame" x="16" y="8" width="47.5" height="29"/>
+                                                    <rect key="frame" x="16" y="15" width="47.5" height="29"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="22"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a3A-X7-Wz0">
-                                                    <rect key="frame" x="182.5" y="8" width="78.5" height="29"/>
+                                                    <rect key="frame" x="182.5" y="15" width="78.5" height="29"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="AirbnbCerealApp-Book" family="Airbnb Cereal App" pointSize="22"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -825,7 +825,7 @@ Jugar</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2VZ-R7-B6A" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2021.5999999999999" y="1037.6311844077961"/>
+            <point key="canvasLocation" x="2169" y="1101"/>
         </scene>
         <!--View Controller Time Attack Game-->
         <scene sceneID="aqg-jR-Lbk">
@@ -951,7 +951,7 @@ Jugar</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nwt-bL-9Yd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="869.60000000000002" y="-558.17091454272872"/>
+            <point key="canvasLocation" x="873" y="-558"/>
         </scene>
         <!--View Controller Reglas-->
         <scene sceneID="3dM-Cg-Rdo">
@@ -1070,7 +1070,7 @@ Jugar</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7y-mz-1pG" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1653.5999999999999" y="224.4377811094453"/>
+            <point key="canvasLocation" x="1644" y="242"/>
         </scene>
         <!--View Controller Muestra Reglas-->
         <scene sceneID="5uS-85-Mqm">
@@ -1142,7 +1142,7 @@ Jugar</string>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2348" y="248.72563718140933"/>
+            <point key="canvasLocation" x="2361" y="242"/>
         </scene>
         <!--View Controller Zen Game-->
         <scene sceneID="aa2-zW-kre">
@@ -1244,7 +1244,7 @@ Jugar</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQu-80-DnI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92" y="-558.17091454272872"/>
+            <point key="canvasLocation" x="68" y="-558"/>
         </scene>
         <!--View Controller Classic Game-->
         <scene sceneID="UU4-Ne-1S9">
@@ -1346,7 +1346,7 @@ Jugar</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G9U-bA-2rJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-674.39999999999998" y="-558.17091454272872"/>
+            <point key="canvasLocation" x="-686" y="-558"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

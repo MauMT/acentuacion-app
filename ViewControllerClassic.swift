@@ -9,7 +9,13 @@
 import UIKit
 
 class ViewControllerClassic: UIViewController, UIPopoverPresentationControllerDelegate, UITableViewDelegate, UITableViewDataSource {
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
     
+    override var shouldAutorotate: Bool {
+        return false
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return puntaje.count
     }

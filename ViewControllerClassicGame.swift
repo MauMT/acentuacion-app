@@ -9,7 +9,13 @@ import UIKit
 import Koloda
 
 class ViewControllerClassicGame: UIViewController {
-
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
     @IBOutlet var kolodaView: KolodaView!
     
     struct Puntaje: Codable {
