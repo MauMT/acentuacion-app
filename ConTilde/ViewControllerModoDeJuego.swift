@@ -43,7 +43,7 @@ class ViewControllerModoDeJuego: UIViewController {
     
     
     
-    //MARK: - Label random text controller
+//MARK: - Label random text controller
     /*func randomColor() -> UIColor{
         let red = CGFloat(drand48())
         let green = CGFloat(drand48())
@@ -139,13 +139,16 @@ class ViewControllerModoDeJuego: UIViewController {
             
             if lbModoDeJuego.text! == "Classic" {
                 lbModoDeJuego.text! = "Zen"
-                imgModo.image! = UIImage(named: "zen-blanco.jpg")!
+                ///imgModo.image! = UIImage(named: "zen-blanco.jpg")!
+                UIView.transition(with: imgModo, duration: 0.5, options: .transitionCrossDissolve, animations: {self.imgModo.image=UIImage(named: "zen-blanco.jpg")!}, completion: nil)
             }else if lbModoDeJuego.text! == "Time Attack" {
                 lbModoDeJuego.text! = "Classic"
-                imgModo.image! = UIImage(named: "classicTemp-white.jpg")!
+                ///imgModo.image! = UIImage(named: "classicTemp-white.jpg")!
+                UIView.transition(with: imgModo, duration: 0.5, options: .transitionCrossDissolve, animations: {self.imgModo.image=UIImage(named: "classicTemp-white.jpg")!}, completion: nil)
             }else {
                 lbModoDeJuego.text! = "Time Attack"
-                imgModo.image! = UIImage(named: "time-white.jpg")!
+                ///imgModo.image! = UIImage(named: "time-white.jpg")!
+                UIView.transition(with: imgModo, duration: 0.5, options: .transitionCrossDissolve, animations: {self.imgModo.image=UIImage(named: "time-white.jpg")!}, completion: nil)
             }
         }
     }

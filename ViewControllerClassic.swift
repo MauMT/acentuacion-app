@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewControllerClassic: UIViewController, UIPopoverPresentationControllerDelegate, UITableViewDelegate, UITableViewDataSource {
+  
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.portrait
     }
@@ -39,6 +41,7 @@ class ViewControllerClassic: UIViewController, UIPopoverPresentationControllerDe
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableview.delegate = self
         tableview.dataSource = self
         if let data = defaults.data(forKey: "puntajeClassic") {
@@ -53,6 +56,7 @@ class ViewControllerClassic: UIViewController, UIPopoverPresentationControllerDe
         view.addGestureRecognizer(downSwipe)
         
     }
+    
     
 
     @IBAction func playGame(_ sender: UIButton) {

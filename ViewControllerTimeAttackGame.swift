@@ -123,6 +123,7 @@ class ViewControllerTimeAttackGame: UIViewController {
                     self.kolodaView.resetCurrentCardIndex()
                     self.timeRemaining = 10
                     self.lbTiempo?.text = String(self.timeRemaining)
+                    self.lbTiempo.textColor = .black
                 })
                 
                  
@@ -153,8 +154,11 @@ class ViewControllerTimeAttackGame: UIViewController {
             if (opcion == respuesta) {
                 puntos = puntos + 1
                 timeRemaining += 3
+                if(timeRemaining > 3){
+                    lbTiempo.textColor = .black
+                }
             } else {
-                let alerta = UIAlertController(title: "Error", message: "Opcion incorrecta", preferredStyle: .alert)
+                let alerta = UIAlertController(title: "Error", message: "Opción incorrecta", preferredStyle: .alert)
                 
                 let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 
@@ -215,10 +219,18 @@ extension ViewControllerTimeAttackGame: KolodaViewDataSource {
   func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
     let viewMain = UIView(frame: kolodaView.frame)
     viewMain.backgroundColor = .systemGray6
-    let titleLabel = UILabel(frame: CGRect(x: 0 , y: 35, width: viewMain.frame.width, height: 50))
+    let titleLabel = UILabel(frame: CGRect(x: 0 , y: 25, width: viewMain.frame.width, height: 80))
     
     titleLabel.text = listaPalabras[index].palabra
-    titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 42)
+    if listaPalabras[index].palabra.count >= 15  {
+        titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 18)
+        titleLabel.lineBreakMode = .byWordWrapping
+        titleLabel.numberOfLines = 3
+    } else if listaPalabras[index].palabra.count >= 8 {
+        titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 30)
+    }else {
+        titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 42)
+    }
     titleLabel.textColor = UIColor.black
     titleLabel.backgroundColor = .systemGray6
     titleLabel.textAlignment = NSTextAlignment.center

@@ -8,6 +8,7 @@
 import UIKit
 import Koloda
 
+
 class ViewControllerClassicGame: UIViewController {
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.portrait
@@ -23,7 +24,8 @@ class ViewControllerClassicGame: UIViewController {
         var points: Int
     }
     @IBOutlet weak var lbPuntos: UILabel!
-    
+        
+   
     // Lista de palabras de prueba
     var listaPalabras = [Palabra]()
 
@@ -33,6 +35,7 @@ class ViewControllerClassicGame: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
 
         
         if let data = defaults.data(forKey: "puntajeClassic") {
@@ -137,6 +140,7 @@ class ViewControllerClassicGame: UIViewController {
                 
                 let accion = UIAlertAction(title: "Salir", style: .default, handler: {_ in
                     self.dismissGame()
+                    
                 })
                 
                 let playAgain = UIAlertAction(title: "Nueva Partida", style: .cancel, handler: {_ in
@@ -222,14 +226,17 @@ extension ViewControllerClassicGame: KolodaViewDataSource {
     
     let viewMain = UIView(frame: kolodaView.frame)
     viewMain.backgroundColor = .systemGray6
-    let titleLabel = UILabel(frame: CGRect(x: 0 , y: 35, width: viewMain.frame.width, height: 50))
+    let titleLabel = UILabel(frame: CGRect(x: 0 , y: 25, width: viewMain.frame.width, height: 80))
     
     titleLabel.text = listaPalabras[index].palabra
-    if listaPalabras[index].palabra.count >= 9 {
-        titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 36)
-    } else {
+    if listaPalabras[index].palabra.count >= 15  {
+        titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 18)
+        titleLabel.lineBreakMode = .byWordWrapping
+        titleLabel.numberOfLines = 3
+    } else if listaPalabras[index].palabra.count >= 8 {
+        titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 30)
+    }else {
         titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 42)
-
     }
     titleLabel.textColor = UIColor.black
     titleLabel.backgroundColor = .systemGray6
