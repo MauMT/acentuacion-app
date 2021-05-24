@@ -66,7 +66,7 @@ class ViewControllerClassic: UIViewController, UIPopoverPresentationControllerDe
     @IBAction func btJugarPlay(_ sender: UIButton) {
         playGame(sender)
     }
-    let explicacion = "En el modo de juego Classic, cada vez que aciertas si una palabra está bien escrita o no, de acuerdo con las reglas de acentuación, ganas un punto.\nAl momento de fallar termina la partida y se guarda tu racha. Puedes ver tus mejores puntajes en el menú antes de iniciar el juego."
+    let explicacion = "En el modo de juego Classic, cada vez que aciertas si una palabra está bien escrita o no, de acuerdo con las reglas de acentuación, ganas un punto.\nAl momento de fallar termina la partida y se guarda tu racha.\nPuedes ver tus mejores puntajes en el menú antes de iniciar el juego."
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "popoverClassic"{
             let vistaPopOver = segue.destination as! ViewControllerComoJugar

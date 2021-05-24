@@ -66,6 +66,7 @@ class ViewControllerZenGame: UIViewController {
     }
     
     func salvarPuntaje(){
+        
         puntaje.append(Puntaje(name: nombre, points: Int(lbPuntos.text!)!))
         puntaje.sort { (lhs, rhs) in return lhs.points > rhs.points }
         if puntaje.count > 5 {
@@ -74,6 +75,7 @@ class ViewControllerZenGame: UIViewController {
         if let data = try? PropertyListEncoder().encode(puntaje) {
             defaults.set(data, forKey: "puntajeZen")
         }
+        
     }
     
     //MARK: - Boton volver

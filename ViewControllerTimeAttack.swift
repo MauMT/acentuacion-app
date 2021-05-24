@@ -67,7 +67,7 @@ class ViewControllerTimeAttack: UIViewController, UIPopoverPresentationControlle
         playGame(sender)
     }
     
-    let explicacion = "En el modo de juego Time Attack tienes un cronómetro con valor inicial de 10 segundos, cada vez que aciertas si una palabra está bien escrita o no, de acuerdo con las reglas de acentuación, ganas un punto y se suman 3 segundos al cronómetro, pero si fallas pierdes 3 segundos. El juego termina cuando el cronómetro llega a 0."
+    let explicacion = "En el modo de juego Time Attack tienes un cronómetro con valor inicial de 10 segundos.\nCada vez que aciertas si una palabra está bien escrita o no, de acuerdo con las reglas de acentuación, ganas un punto y se suman 3 segundos al cronómetro, pero, si fallas pierdes 3 segundos. El juego termina cuando el cronómetro llega a 0."
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "popoverTimeAttack" {

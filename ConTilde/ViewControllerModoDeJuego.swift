@@ -38,13 +38,13 @@ class ViewControllerModoDeJuego: UIViewController {
         view.addGestureRecognizer(upSwipe)
         view.addGestureRecognizer(leftSwipe)
         view.addGestureRecognizer(rightSwipe)
-        timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
+       // timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
     }
     
     
     
     //MARK: - Label random text controller
-    func randomColor() -> UIColor{
+    /*func randomColor() -> UIColor{
         let red = CGFloat(drand48())
         let green = CGFloat(drand48())
         let blue = CGFloat(drand48())
@@ -88,7 +88,7 @@ class ViewControllerModoDeJuego: UIViewController {
             contador = 0
         }
     }
-    
+    */
     //MARK: - Swipe Controller
     
     @objc func handleSwipes(_ sender: UISwipeGestureRecognizer)

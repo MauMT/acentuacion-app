@@ -83,6 +83,7 @@ class ViewControllerTimeAttackGame: UIViewController {
     }
         
     func salvarPuntaje(){
+        
         puntaje.append(Puntaje(name: nombre, points: Int(lbPuntos.text!)!))
         puntaje.sort { (lhs, rhs) in return lhs.points > rhs.points }
         if puntaje.count > 5 {
@@ -91,6 +92,7 @@ class ViewControllerTimeAttackGame: UIViewController {
         if let data = try? PropertyListEncoder().encode(puntaje) {
             defaults.set(data, forKey: "puntajeTime")
         }
+        
     }
     
     
@@ -107,7 +109,7 @@ class ViewControllerTimeAttackGame: UIViewController {
             if var puntos = Int(lbPuntos.text!) {
                 let alerta = UIAlertController(title: "Se acabó el tiempo", message: "Puntaje: " + String(puntos), preferredStyle: .alert)
                               
-                let accion = UIAlertAction(title: "Cambiar Modo de Juego", style: .default, handler: {_ in
+                let accion = UIAlertAction(title: "Salir", style: .default, handler: {_ in
                     self.presenting = true
                     self.dismissGame()
                 })

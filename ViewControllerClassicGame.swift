@@ -100,6 +100,7 @@ class ViewControllerClassicGame: UIViewController {
         if let data = try? PropertyListEncoder().encode(puntaje) {
             defaults.set(data, forKey: "puntajeClassic")
         }
+        
     }
     
     /*
@@ -134,7 +135,7 @@ class ViewControllerClassicGame: UIViewController {
             } else {
                 let alerta = UIAlertController(title: "Error", message: "Opción incorrecta\nPuntaje: " + String(puntos), preferredStyle: .alert)
                 
-                let accion = UIAlertAction(title: "Cambiar Modo de Juego", style: .default, handler: {_ in
+                let accion = UIAlertAction(title: "Salir", style: .default, handler: {_ in
                     self.dismissGame()
                 })
                 

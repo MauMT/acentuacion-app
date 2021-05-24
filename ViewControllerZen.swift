@@ -97,6 +97,7 @@ class ViewControllerZen: UIViewController, UIPopoverPresentationControllerDelega
             let vistaPopOver = segue.destination as! ViewControllerComoJugar
             vistaPopOver.popoverPresentationController!.delegate = self
             vistaPopOver.texto = explicacion
+            vistaPopOver.alto = 175
         }
     }
     

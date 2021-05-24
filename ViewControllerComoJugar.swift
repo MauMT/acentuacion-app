@@ -18,11 +18,12 @@ import UIKit
         }
         var texto:String!
         @IBOutlet weak var lbExplicacion: UILabel!
-    
+        var ancho = 345
+        var alto = 290
     override func viewDidLoad() {
         super.viewDidLoad()
         lbExplicacion.text = texto
-        preferredContentSize = CGSize(width: 345, height: 275)
+        preferredContentSize = CGSize(width: ancho, height: alto)
         
     }
     

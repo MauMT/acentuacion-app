@@ -17,7 +17,7 @@ class ViewControllerMuestraReglas: UIViewController{
         return false
     }
     
-    @IBOutlet weak var lbTitulo: UILabel!
+    
     @IBOutlet weak var contenedorTexto: UITextView!
     
     var titulo : String!
@@ -25,8 +25,8 @@ class ViewControllerMuestraReglas: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lbTitulo.text = titulo
-        contenedorTexto.text = textoLargo
+        titulo = titulo.uppercased()
+        contenedorTexto.text = titulo+"\n"+textoLargo
         
     }
     
