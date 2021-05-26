@@ -315,13 +315,14 @@ Jugar</string>
                                             </subviews>
                                             <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.88224869969999997" green="0.87848818299999998" blue="0.8783324361" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dbs-ue-NUb"/>
                         <color key="backgroundColor" red="0.88235294117647056" green="0.32549019607843138" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.8784313725490196" green="0.32549019607843138" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Dbs-ue-NUb" firstAttribute="trailing" secondItem="u4I-hs-WZn" secondAttribute="trailing" constant="13" id="3fM-XP-8VG"/>
                             <constraint firstItem="G3h-ny-mXV" firstAttribute="centerX" secondItem="EDJ-MK-uXc" secondAttribute="centerX" id="5Ri-lm-ooH"/>
@@ -1470,8 +1471,8 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="0tw-qQ-fdh"/>
-        <segue reference="NQe-EQ-1fJ"/>
-        <segue reference="WjN-6M-6Lh"/>
+        <segue reference="N5C-Ab-nyo"/>
+        <segue reference="Ykw-UO-Uci"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.down.circle.fill" catalog="system" width="128" height="121"/>
