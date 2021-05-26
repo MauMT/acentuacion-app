@@ -172,7 +172,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gf3-ce-hEA">
-                                <rect key="frame" x="108.5" y="90" width="158" height="57"/>
+                                <rect key="frame" x="106" y="90" width="163.5" height="63.5"/>
                                 <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" systemColor="labelColor"/>
@@ -287,7 +287,7 @@ Jugar</string>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hN9-Mp-rBP">
-                                <rect key="frame" x="49" y="208.5" width="277" height="267.5"/>
+                                <rect key="frame" x="49" y="215" width="277" height="261"/>
                                 <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -518,7 +518,7 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8S6-TK-w2g">
-                                <rect key="frame" x="58.5" y="90" width="258.5" height="57"/>
+                                <rect key="frame" x="45.5" y="90" width="284.5" height="63.5"/>
                                 <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="48"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" systemColor="labelColor"/>
@@ -560,7 +560,7 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mejores puntajes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4rY-Ch-mmW">
-                                <rect key="frame" x="67" y="159.5" width="135" height="21"/>
+                                <rect key="frame" x="67" y="166" width="143.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="9pc-jX-YRG"/>
                                 </constraints>
@@ -569,25 +569,25 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lcG-gf-z66">
-                                <rect key="frame" x="50" y="208.5" width="275" height="256.5"/>
+                                <rect key="frame" x="50" y="215" width="275" height="250"/>
                                 <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaTime" textLabel="vuE-2O-8xI" detailTextLabel="HWe-V9-Amh" style="IBUITableViewCellStyleValue1" id="oZg-cU-CYX">
-                                        <rect key="frame" x="0.0" y="28" width="275" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="275" height="57.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oZg-cU-CYX" id="B96-cp-lye">
-                                            <rect key="frame" x="0.0" y="0.0" width="275" height="52.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="275" height="57.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vuE-2O-8xI">
-                                                    <rect key="frame" x="16" y="12" width="47.5" height="29"/>
+                                                    <rect key="frame" x="16" y="15" width="47.5" height="29"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="22"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HWe-V9-Amh">
-                                                    <rect key="frame" x="180.5" y="12" width="78.5" height="29"/>
+                                                    <rect key="frame" x="180.5" y="15" width="78.5" height="29"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="AirbnbCerealApp-Book" family="Airbnb Cereal App" pointSize="22"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -699,7 +699,7 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqR-eo-RCP">
-                                <rect key="frame" x="145.5" y="90" width="84" height="57"/>
+                                <rect key="frame" x="142.5" y="90" width="90" height="63.5"/>
                                 <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="48"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" systemColor="labelColor"/>
@@ -735,7 +735,7 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mejores puntajes:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Shj-bd-74e">
-                                <rect key="frame" x="67" y="159.5" width="135" height="21"/>
+                                <rect key="frame" x="67" y="166" width="143.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="OTL-cR-0hz"/>
                                 </constraints>
@@ -744,25 +744,25 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iWk-dJ-9w2">
-                                <rect key="frame" x="49" y="208.5" width="277" height="256.5"/>
+                                <rect key="frame" x="49" y="215" width="277" height="250"/>
                                 <color key="backgroundColor" red="0.88403725619999995" green="0.32629495860000002" blue="0.224850148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaZen" textLabel="uLb-Dj-ZsR" detailTextLabel="a3A-X7-Wz0" style="IBUITableViewCellStyleValue1" id="zfS-sw-dQ8">
-                                        <rect key="frame" x="0.0" y="28" width="277" height="52.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="277" height="57.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zfS-sw-dQ8" id="rtF-4G-f3R">
-                                            <rect key="frame" x="0.0" y="0.0" width="277" height="52.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="277" height="57.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uLb-Dj-ZsR">
-                                                    <rect key="frame" x="16" y="12" width="47.5" height="29"/>
+                                                    <rect key="frame" x="16" y="15" width="47.5" height="29"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="22"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a3A-X7-Wz0">
-                                                    <rect key="frame" x="182.5" y="12" width="78.5" height="29"/>
+                                                    <rect key="frame" x="182.5" y="15" width="78.5" height="29"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="AirbnbCerealApp-Book" family="Airbnb Cereal App" pointSize="22"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1256,8 +1256,9 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                                     <action selector="opcionSi:" destination="sJx-Ve-sog" eventType="touchUpInside" id="VZA-Sm-HSJ"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YcK-h8-75m" customClass="KolodaView" customModule="Koloda">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YcK-h8-75m" customClass="KolodaView" customModule="Koloda">
                                 <rect key="frame" x="67" y="223" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hXP-uh-paY"/>
@@ -1266,7 +1267,6 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                         <constraints>
                             <constraint firstItem="hXP-uh-paY" firstAttribute="bottom" secondItem="cnx-qw-sWZ" secondAttribute="bottom" constant="32" id="4wq-cc-Yqx"/>
                             <constraint firstItem="d8d-Gf-JQ0" firstAttribute="leading" secondItem="hXP-uh-paY" secondAttribute="leading" constant="13" id="5Pd-As-NyS"/>
-                            <constraint firstItem="YcK-h8-75m" firstAttribute="centerX" secondItem="BzE-95-fgS" secondAttribute="centerX" id="5nB-uP-lY3"/>
                             <constraint firstItem="SNM-1E-aBC" firstAttribute="leading" secondItem="hXP-uh-paY" secondAttribute="leading" constant="175" id="IWz-Xo-iPE"/>
                             <constraint firstItem="cnx-qw-sWZ" firstAttribute="leading" secondItem="hXP-uh-paY" secondAttribute="leading" constant="74" id="jeA-Xo-5zg"/>
                             <constraint firstItem="M3D-18-ABM" firstAttribute="top" secondItem="hXP-uh-paY" secondAttribute="top" constant="13" id="jmb-Ee-WWa"/>
