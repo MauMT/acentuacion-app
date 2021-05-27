@@ -10,6 +10,7 @@ import AVFoundation
 
 class ViewControllerZenGame: UIViewController {
     
+    @IBOutlet var lbMasPunto: UILabel!
     var audioPlayer = AVAudioPlayer()
     var audioPlayer2 = AVAudioPlayer()
     
@@ -35,6 +36,11 @@ class ViewControllerZenGame: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        lbMasPunto.alpha = 0
+        lbMasPunto.textColor = .systemGreen
+
         
         // cargar el audio
         let doneSound = Bundle.main.path(forResource: "doneSound", ofType: "mp3")
@@ -136,6 +142,13 @@ class ViewControllerZenGame: UIViewController {
             if (opcion == respuesta) {
                 audioPlayer.play()
                 puntos = puntos + 1
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.lbMasPunto.alpha = 1
+                }, completion: {_ in
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.lbMasPunto.alpha = 0
+                    })
+                })
             } else {
                 audioPlayer2.play()
                 var err = ""

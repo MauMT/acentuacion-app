@@ -15,6 +15,9 @@
         <array key="AirbnbCerealBook.ttf">
             <string>AirbnbCerealApp-Book</string>
         </array>
+        <array key="AirbnbCerealExtraBold.ttf">
+            <string>AirbnbCerealApp-ExtraBold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller Modo De Juego-->
@@ -919,7 +922,7 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                                 <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Attack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qme-vX-fuW">
-                                <rect key="frame" x="123.5" y="13" width="128.5" height="28"/>
+                                <rect key="frame" x="117" y="13" width="141.5" height="31.5"/>
                                 <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" systemColor="labelColor"/>
@@ -1000,6 +1003,20 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                                     <constraint firstAttribute="height" constant="128" id="pr8-0E-OAh"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHn-zK-Qlf">
+                                <rect key="frame" x="232" y="604" width="26" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AirbnbCerealApp-ExtraBold" family="Airbnb Cereal App" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9i-lS-hYD">
+                                <rect key="frame" x="232" y="537" width="29" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AirbnbCerealApp-ExtraBold" family="Airbnb Cereal App" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NQ1-6r-h6g"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1031,6 +1048,8 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                     </view>
                     <connections>
                         <outlet property="kolodaView" destination="kFr-wf-rI9" id="RF7-Yr-IU3"/>
+                        <outlet property="lbMasPunto" destination="tHn-zK-Qlf" id="06r-2i-Oxm"/>
+                        <outlet property="lbMasTiempo" destination="P9i-lS-hYD" id="QKp-5m-apO"/>
                         <outlet property="lbPuntos" destination="9L6-7g-GmZ" id="sfz-c0-Oe2"/>
                         <outlet property="lbTiempo" destination="fxH-bH-Jd1" id="6AI-qh-0JI"/>
                     </connections>
@@ -1310,6 +1329,13 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                                     <constraint firstAttribute="height" constant="128" id="yhS-mu-AGj"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0u-qI-1Co">
+                                <rect key="frame" x="198" y="603" width="26" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AirbnbCerealApp-ExtraBold" family="Airbnb Cereal App" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hXP-uh-paY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1337,6 +1363,7 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                     </view>
                     <connections>
                         <outlet property="kolodaView" destination="YcK-h8-75m" id="Ygn-Nh-50m"/>
+                        <outlet property="lbMasPunto" destination="T0u-qI-1Co" id="iSI-61-kzv"/>
                         <outlet property="lbPuntos" destination="SNM-1E-aBC" id="Xpx-On-5Xh"/>
                     </connections>
                 </viewController>
@@ -1433,6 +1460,13 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                                     <action selector="opcionSi:" destination="hAi-db-yBn" eventType="touchUpInside" id="GqL-Y2-Hak"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4c-r5-w4I">
+                                <rect key="frame" x="202" y="603" width="26" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AirbnbCerealApp-ExtraBold" family="Airbnb Cereal App" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WFl-CU-l6q"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1461,6 +1495,7 @@ ConTilde se distribuye como está de manera gratuita y se prohíbe su distribuci
                     </view>
                     <connections>
                         <outlet property="kolodaView" destination="hpF-ma-ge1" id="uSu-bc-hVN"/>
+                        <outlet property="lbMasPunto" destination="A4c-r5-w4I" id="9ap-q8-Twx"/>
                         <outlet property="lbPuntos" destination="kXZ-aw-dEb" id="iG2-eo-emG"/>
                     </connections>
                 </viewController>

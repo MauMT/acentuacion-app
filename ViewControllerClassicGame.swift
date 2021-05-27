@@ -14,6 +14,7 @@ class ViewControllerClassicGame: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
     var audioPlayer2 = AVAudioPlayer()
+    @IBOutlet var lbMasPunto: UILabel!
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.portrait
@@ -40,7 +41,10 @@ class ViewControllerClassicGame: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
+        lbMasPunto.alpha = 0
+        lbMasPunto.textColor = .systemGreen
+
         
         // cargar el audio
         let doneSound = Bundle.main.path(forResource: "doneSound", ofType: "mp3")
@@ -157,6 +161,13 @@ class ViewControllerClassicGame: UIViewController {
             if (opcion == respuesta) {
                 puntos = puntos + 1
                 audioPlayer.play()
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.lbMasPunto.alpha = 1
+                }, completion: {_ in
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.lbMasPunto.alpha = 0
+                    })
+                })
             } else {
                 audioPlayer2.play()
                 var err = ""

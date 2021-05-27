@@ -10,6 +10,8 @@ import AVFoundation
 
 class ViewControllerTimeAttackGame: UIViewController {
     
+    @IBOutlet var lbMasPunto: UILabel!
+    @IBOutlet var lbMasTiempo: UILabel!
     var audioPlayer = AVAudioPlayer()
     var audioPlayer2 = AVAudioPlayer()
     
@@ -43,6 +45,9 @@ class ViewControllerTimeAttackGame: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        lbMasPunto.alpha = 0
+        lbMasPunto.textColor = .systemGreen
+        lbMasTiempo.alpha = 0
         
         // cargar el audio
         let doneSound = Bundle.main.path(forResource: "doneSound", ofType: "mp3")
@@ -175,13 +180,41 @@ class ViewControllerTimeAttackGame: UIViewController {
         if var puntos = Int(lbPuntos.text!) {
             if (opcion == respuesta) {
                 puntos = puntos + 1
+                // play al sonido
                 audioPlayer.play()
+                // animacion de puntos
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.lbMasPunto.alpha = 1
+                }, completion: {_ in
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.lbMasPunto.alpha = 0
+                    })
+                })
                 timeRemaining += 3
+                // animacion de tiempo
+                lbMasTiempo.text = "+3"
+                lbMasTiempo.textColor = .systemGreen
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.lbMasTiempo.alpha = 1
+                }, completion: {_ in
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.lbMasTiempo.alpha = 0
+                    })
+                })
                 if(timeRemaining > 3){
                     lbTiempo.textColor = .black
                 }
             } else {
                 audioPlayer2.play()
+                lbMasTiempo.text = "-3"
+                lbMasTiempo.textColor = .red
+                UIView.animate(withDuration: 0.5, animations: {
+                    self.lbMasTiempo.alpha = 1
+                }, completion: {_ in
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.lbMasTiempo.alpha = 0
+                    })
+                })
                 var err = ""
                 if listaPalabras[indice].error == 0 {
                     err = "Regla general de acentuacion"
