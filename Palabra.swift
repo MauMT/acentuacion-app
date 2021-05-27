@@ -9,9 +9,11 @@ import UIKit
 class Palabra: NSObject, Codable {
     var palabra : String
     var correcta : Bool
+    var error : Int
     
-    init(palabra : String, correcta : Bool) {
+    init(palabra : String, correcta : Bool, error: Int) {
         self.palabra = palabra
         self.correcta = correcta
+        self.error = error
     }
 }

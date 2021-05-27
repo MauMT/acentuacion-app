@@ -158,7 +158,15 @@ class ViewControllerTimeAttackGame: UIViewController {
                     lbTiempo.textColor = .black
                 }
             } else {
-                let alerta = UIAlertController(title: "Error", message: "Opción incorrecta", preferredStyle: .alert)
+                var err = ""
+                if listaPalabras[indice].error == 0 {
+                    err = "Regla general de acentuacion"
+                } else if listaPalabras[indice].error == 1 {
+                    err = "Regla de hiatos y diptongos"
+                } else if listaPalabras[indice].error == 2 {
+                    err = "Casos especiales de acentuacion"
+                }
+                let alerta = UIAlertController(title: "Opción Incorrecta", message: "Consulta la regla: " + err + "\nPuntaje: " + String(puntos), preferredStyle: .alert)
                 
                 let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 
