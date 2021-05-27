@@ -6,8 +6,13 @@
 //
 import UIKit
 import Koloda
+import AVFoundation
 
 class ViewControllerZenGame: UIViewController {
+    
+    var audioPlayer = AVAudioPlayer()
+    var audioPlayer2 = AVAudioPlayer()
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.portrait
     }
@@ -30,6 +35,22 @@ class ViewControllerZenGame: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // cargar el audio
+        let doneSound = Bundle.main.path(forResource: "doneSound", ofType: "mp3")
+        let errorSound = Bundle.main.path(forResource: "errorSound", ofType: "mp3")
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: doneSound!))
+        } catch {
+            print(error)
+        }
+        
+        do {
+            audioPlayer2 = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: errorSound!))
+        } catch {
+            print(error)
+        }
         
         if let data = defaults.data(forKey: "puntajeZen") {
             puntaje = try! PropertyListDecoder().decode([Puntaje].self, from: data)
@@ -113,8 +134,10 @@ class ViewControllerZenGame: UIViewController {
         
         if var puntos = Int(lbPuntos.text!) {
             if (opcion == respuesta) {
+                audioPlayer.play()
                 puntos = puntos + 1
             } else {
+                audioPlayer2.play()
                 var err = ""
                 if listaPalabras[indice].error == 0 {
                     err = "Regla general de acentuacion"
