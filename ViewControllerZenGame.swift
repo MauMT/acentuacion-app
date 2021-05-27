@@ -232,18 +232,18 @@ class ViewControllerZenGame: UIViewController {
    func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
      let viewMain = UIView(frame: kolodaView.frame)
      viewMain.backgroundColor = .systemGray6
-     let titleLabel = UILabel(frame: CGRect(x: 0 , y: 25, width: viewMain.frame.width, height: 80))
+    let titleLabel = UILabel(frame: CGRect(x: 0 , y: 0, width: viewMain.frame.width, height: viewMain.frame.height))
      
      titleLabel.text = listaPalabras[index].palabra
     if listaPalabras[index].palabra.count >= 20 {
         titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 15)
         titleLabel.lineBreakMode = .byWordWrapping
-        titleLabel.numberOfLines = 3
+        titleLabel.numberOfLines = 0
     }
     if listaPalabras[index].palabra.count >= 15  {
         titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 18)
         titleLabel.lineBreakMode = .byWordWrapping
-        titleLabel.numberOfLines = 3
+        titleLabel.numberOfLines = 0
     } else if listaPalabras[index].palabra.count >= 8 {
         titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 30)
     }else {

@@ -1650,222 +1650,222 @@
    "error": 2
  },
  {
-   "palabra": "Porque se trata de un cambio en la filosofía, en la práctica y en la organización educativa",
+   "palabra": "Porque se trata de un cambio en la filosofía, en la práctica y en la organización educativa.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Porqué se trata de un cambio en la filosofía, en la práctica y en la organización educativa",
+   "palabra": "Porqué se trata de un cambio en la filosofía, en la práctica y en la organización educativa.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Todo tiene su porqué en las ciencias exactas",
+   "palabra": "Todo tiene su porqué en las ciencias exactas.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Todo tiene su porque en las ciencias exactas",
+   "palabra": "Todo tiene su porque en las ciencias exactas.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Existe una preocupación por que se comience a trabajar más en Robótica",
+   "palabra": "Existe una preocupación por que se comience a trabajar más en Robótica.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Si bien este cambio es mucho más apegado a la educación, es todo un reto",
+   "palabra": "Si bien este cambio es mucho más apegado a la educación, es todo un reto.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Sí bien este cambio es mucho más apegado a la educación, es todo un reto",
+   "palabra": "Sí bien este cambio es mucho más apegado a la educación, es todo un reto.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Si se dan apoyos a los estudiantes, mejoraremos los niveles de éxito",
+   "palabra": "Si se dan apoyos a los estudiantes, mejoraremos los niveles de éxito.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Ellos dijeron que sí querían participar del campeonato",
+   "palabra": "Ellos dijeron que sí querían participar del campeonato.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Ellos dijeron que si querían participar del campeonato",
+   "palabra": "Ellos dijeron que si querían participar del campeonato.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "La contaminación ambiental altera el equilibrio de los ecosistemas",
+   "palabra": "La contaminación ambiental altera el equilibrio de los ecosistemas.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "La contaminación ambiental altera él equilibrio de los ecosistemas",
+   "palabra": "La contaminación ambiental altera él equilibrio de los ecosistemas.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Este humo de cigarro afecta también a las personas que se encuentran cerca de él",
+   "palabra": "Este humo de cigarro afecta también a las personas que se encuentran cerca de él.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Este humo de cigarro afecta también a las personas que se encuentran cerca de el",
+   "palabra": "Este humo de cigarro afecta también a las personas que se encuentran cerca de el.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Mi mayor éxito fue alcanzado en el experimento",
+   "palabra": "Mi mayor éxito fue alcanzado en el experimento.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Mí mayor éxito fue alcanzado en el experimento",
+   "palabra": "Mí mayor éxito fue alcanzado en el experimento.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Ante mí se inicaba un largo camino que debería recorrer",
+   "palabra": "Ante mí se inicaba un largo camino que debería recorrer.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Ante mi se inicaba un largo camino que debería recorrer",
+   "palabra": "Ante mi se inicaba un largo camino que debería recorrer.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "La ciencia te permite integrar a un nuevo modo de vida",
+   "palabra": "La ciencia te permite integrar a un nuevo modo de vida.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "La ciencia té permite integrar a un nuevo modo de vida",
+   "palabra": "La ciencia té permite integrar a un nuevo modo de vida.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "El té es una tradición milenaria en algunos países",
+   "palabra": "El té es una tradición milenaria en algunos países.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "El te es una tradición milenaria en algunos países",
+   "palabra": "El te es una tradición milenaria en algunos países.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Los niveles de dióxido de carbono están incrementando",
+   "palabra": "Los niveles de dióxido de carbono están incrementando.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Los niveles de dióxido dé carbono están incrementando",
+   "palabra": "Los niveles de dióxido dé carbono están incrementando.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Es necesario que se dé aviso a las autoridades para la solución del caso",
+   "palabra": "Es necesario que se dé aviso a las autoridades para la solución del caso.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Es necesario que se de aviso a las autoridades para la solución del caso",
+   "palabra": "Es necesario que se de aviso a las autoridades para la solución del caso.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "El objetivo de todas las vacunas es exponer tu cuerpo a antígenos del patógeno",
+   "palabra": "El objetivo de todas las vacunas es exponer tu cuerpo a antígenos del patógeno.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "El objetivo de todas las vacunas es exponer tú cuerpo a antígenos del patógeno",
+   "palabra": "El objetivo de todas las vacunas es exponer tú cuerpo a antígenos del patógeno.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Tú vas a llegar muy lejos",
+   "palabra": "Tú vas a llegar muy lejos.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Tu vas a llegar muy lejos",
+   "palabra": "Tu vas a llegar muy lejos.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Se ha trabajado con la vacuna Covid 19, mas falta camino por recorrer",
+   "palabra": "Se ha trabajado con la vacuna Covid 19, mas falta camino por recorrer.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Se ha trabajado con la vacuna Covid 19, más falta camino por recorrer",
+   "palabra": "Se ha trabajado con la vacuna Covid 19, más falta camino por recorrer.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Entre más vacunas anti Covid 19 haya, menor será el riesgo de contraer la enfermedad",
+   "palabra": "Entre más vacunas anti Covid 19 haya, menor será el riesgo de contraer la enfermedad.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Entre mas vacunas anti Covid 19 haya, menor será el riesgo de contraer la enfermedad",
+   "palabra": "Entre mas vacunas anti Covid 19 haya, menor será el riesgo de contraer la enfermedad.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "El futuro de la humanidad dependerá más que nunca de las políticas ambientales",
+   "palabra": "El futuro de la humanidad dependerá más que nunca de las políticas ambientales.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "El futuro de la humanidad dependerá mas que nunca de las políticas ambientales",
+   "palabra": "El futuro de la humanidad dependerá mas que nunca de las políticas ambientales.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Para crear vacunas de virus inactivado se altera el material genético",
+   "palabra": "Para crear vacunas de virus inactivado se altera el material genético.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Para crear vacunas de virus inactivado sé altera el material genético",
+   "palabra": "Para crear vacunas de virus inactivado sé altera el material genético.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Sé un ejemplo de virtud para tus alumnos",
+   "palabra": "Sé un ejemplo de virtud para tus alumnos.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Se un ejemplo de virtud para tus alumnos",
+   "palabra": "Se un ejemplo de virtud para tus alumnos.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Es un juego divertido para los niños, aun cuando no tengan la menor idea de lo que hacen",
+   "palabra": "Es un juego divertido para los niños, aun cuando no tengan la menor idea de lo que hacen.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Es un juego divertido para los niños, aún cuando no tengan la menor idea de lo que hacen",
+   "palabra": "Es un juego divertido para los niños, aún cuando no tengan la menor idea de lo que hacen.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "El SARS-CoV-2 y otros virus aún desconocidos representan amenazas constantes para la humanidad",
+   "palabra": "El SARS-CoV-2 y otros virus aún desconocidos representan amenazas constantes para la humanidad.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "El SARS-CoV-2 y otros virus aun desconocidos representan amenazas constantes para la humanidad",
+   "palabra": "El SARS-CoV-2 y otros virus aun desconocidos representan amenazas constantes para la humanidad.",
    "correcta": false,
    "error": 2
  },
@@ -1890,12 +1890,12 @@
    "error": 2
  },
  {
-   "palabra": "Sea cual fuere su ámbito de competencia, el sector privado debe prestar más apoyo a la tecnología",
+   "palabra": "Sea cual fuere su ámbito de competencia, el sector privado debe prestar más apoyo a la tecnología.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Sea cuál fuere su ámbito de competencia, el sector privado debe prestar más apoyo a la tecnología",
+   "palabra": "Sea cuál fuere su ámbito de competencia, el sector privado debe prestar más apoyo a la tecnología.",
    "correcta": false,
    "error": 2
  },
@@ -1910,12 +1910,12 @@
    "error": 2
  },
  {
-   "palabra": "Varias enfermedades, como la gripe y el sarampión, son provocadas por virus",
+   "palabra": "Varias enfermedades, como la gripe y el sarampión, son provocadas por virus.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Varias enfermedades, cómo la gripe y el sarampión, son provocadas por virus",
+   "palabra": "Varias enfermedades, cómo la gripe y el sarampión, son provocadas por virus.",
    "correcta": false,
    "error": 2
  },
@@ -1930,22 +1930,22 @@
    "error": 2
  },
  {
-   "palabra": "Los zoológicos son lugares dónde se hace investigación sobre los animales",
+   "palabra": "Los zoológicos son lugares dónde se hace investigación sobre los animales.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Los zoológicos son lugares donde se hace investigación sobre los animales",
+   "palabra": "Los zoológicos son lugares donde se hace investigación sobre los animales.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "La mayoría de los seres vivos residen en áreas donde la contaminación ambiental es altísima",
+   "palabra": "La mayoría de los seres vivos residen en áreas donde la contaminación ambiental es altísima.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "La mayoría de los seres vivos residen en áreas dónde la contaminación ambiental es altísima",
+   "palabra": "La mayoría de los seres vivos residen en áreas dónde la contaminación ambiental es altísima.",
    "correcta": false,
    "error": 2
  },
@@ -1960,7 +1960,7 @@
    "error": 2
  },
  {
-   "palabra": "Se enferma más seriamente quien ya sufre diabetes",
+   "palabra": "Se enferma más seriamente quien ya sufre diabetes.",
    "correcta": true,
    "error": 2
  },
@@ -1975,12 +1975,12 @@
    "error": 2
  },
  {
-   "palabra": "Los estudiantes pueden proponer una actividad siempre y cuando no sea una pérdida de tiempo",
+   "palabra": "Los estudiantes pueden proponer una actividad siempre y cuando no sea una pérdida de tiempo.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Los estudiantes pueden proponer una actividad siempre y cuándo no sea una pérdida de tiempo",
+   "palabra": "Los estudiantes pueden proponer una actividad siempre y cuándo no sea una pérdida de tiempo.",
    "correcta": false,
    "error": 2
  },
@@ -1995,22 +1995,22 @@
    "error": 2
  },
  {
-   "palabra": "Pero cuando el equipo determinó la antigüedad, creyó que los datos eran incorrectos",
+   "palabra": "Pero cuando el equipo determinó la antigüedad, creyó que los datos eran incorrectos.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Pero cuándo el equipo determinó la antigüedad, creyó que los datos eran incorrectos",
+   "palabra": "Pero cuándo el equipo determinó la antigüedad, creyó que los datos eran incorrectos.",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "En cuanto termine la pandemia, mejorará la economía",
+   "palabra": "En cuanto termine la pandemia, mejorará la economía.",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "En cuánto termine la pandemia, mejorará la economía",
+   "palabra": "En cuánto termine la pandemia, mejorará la economía.",
    "correcta": true,
    "error": 2
  },
