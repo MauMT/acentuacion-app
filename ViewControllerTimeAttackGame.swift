@@ -222,6 +222,11 @@ extension ViewControllerTimeAttackGame: KolodaViewDataSource {
     let titleLabel = UILabel(frame: CGRect(x: 0 , y: 25, width: viewMain.frame.width, height: 80))
     
     titleLabel.text = listaPalabras[index].palabra
+    if listaPalabras[index].palabra.count >= 20 {
+        titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 15)
+        titleLabel.lineBreakMode = .byWordWrapping
+        titleLabel.numberOfLines = 3
+    }
     if listaPalabras[index].palabra.count >= 15  {
         titleLabel.font = UIFont(name: "Airbnb Cereal App Bold", size: 18)
         titleLabel.lineBreakMode = .byWordWrapping

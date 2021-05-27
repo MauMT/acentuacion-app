@@ -1,46 +1,896 @@
 [
-  
-    
-  
-     
-  {
-      "palabra": "preambulo",
-      "correcta": false
-  },
-  {
-      "palabra": "comic",
-      "correcta": false
-  },
-  {
-      "palabra": "policía",
-      "correcta": true
-  },
-  {
-      "palabra":"¿Por qué la luz\nsiempre está viajando? ",
+    {
+        "palabra":"ágil",
         "correcta":true
       },
       {
-        "palabra":"¿Por que la luz\nsiempre está viajando? ",
+        "palabra":"néctar",
+        "correcta":true
+      },
+      {
+        "palabra":"ángel",
+        "correcta":true
+      },
+      {
+        "palabra":"árbol",
+        "correcta":true
+      },
+      {
+        "palabra":"marmol",
         "correcta":false
       },
       {
-        "palabra":"Porque se trata de un\ncambio en la filosofía",
-        "correcta":true
-      },
-      {
-        "palabra":"Porqué se trata de un\ncambio en la filosofía",
+        "palabra":"facil",
         "correcta":false
       },
       {
-        "palabra":"Todo tiene su porqué\nen las ciencias exactas ",
-        "correcta":true
-      },
-      {
-        "palabra":"Todo tiene su porque\nen las ciencias exactas ",
+        "palabra":"policia",
         "correcta":false
       },
       {
-        "palabra":"Existe una preocupación por que se comience a trabajar más en Robótica ",
-        "correcta":true
-      }
+        "palabra": "raices",
+        "correcta": false
+      },
+      {
+        "palabra": "duo",
+        "correcta": false
+      },
+      {
+        "palabra": "energía",
+        "correcta": true
+      },
+      {
+        "palabra": "decía",
+        "correcta": true
+      },
+      {
+        "palabra": "circulo",
+        "correcta": false
+      },
+      {
+          "palabra": "amor",
+          "correcta": true
+      },
+      {
+          "palabra": "camión",
+          "correcta": true
+      },
+      {
+          "palabra": "acción",
+          "correcta": true
+      },
+      {
+          "palabra": "árbol",
+          "correcta": true
+      },
+      {
+          "palabra": "Sepúlveda",
+          "correcta": true
+      },
+      {
+          "palabra": "perro",
+          "correcta": true
+      },
+      {
+          "palabra": "computadora",
+          "correcta": true
+      },
+      {
+          "palabra": "problemático",
+          "correcta": true
+      },
+      {
+          "palabra": "teléfono",
+          "correcta": true
+      },
+      {
+          "palabra": "ilógico",
+          "correcta": true
+      },
+      {
+          "palabra": "mágico",
+          "correcta": true
+      },
+      {
+          "palabra": "antídoto",
+          "correcta": true
+      },
+      {
+          "palabra": "efímero",
+          "correcta": true
+      },
+      {
+          "palabra": "cínico",
+          "correcta": true
+      },
+      {
+          "palabra": "lágrima",
+          "correcta": true
+      },
+      {
+          "palabra": "hipotético",
+          "correcta": true
+      },
+      {
+          "palabra": "auténtico",
+          "correcta": true
+      },
+      {
+          "palabra": "matemáticas",
+          "correcta": true
+      },
+      {
+          "palabra": "página",
+          "correcta": true
+      },
+      {
+          "palabra": "espíritu",
+          "correcta": true
+      },
+      {
+          "palabra": "química",
+          "correcta": true
+      },
+      {
+          "palabra": "esporádico",
+          "correcta": true
+      },
+      {
+          "palabra": "frágiles",
+          "correcta": true
+      },
+      {
+          "palabra": "cómplice",
+          "correcta": true
+      },
+      {
+          "palabra": "negándose",
+          "correcta": true
+      },
+      {
+          "palabra": "escondiéndose",
+          "correcta": true
+      },
+      {
+          "palabra": "retórica",
+          "correcta": true
+      },
+      {
+          "palabra": "botánica",
+          "correcta": true
+      },
+      {
+          "palabra": "aerostático",
+          "correcta": true
+      },
+      {
+          "palabra": "filosófico",
+          "correcta": true
+      },
+      {
+          "palabra": "físico",
+          "correcta": true
+      },
+      {
+          "palabra": "astrónomo",
+          "correcta": true
+      },
+      {
+          "palabra": "político",
+          "correcta": true
+      },
+      {
+          "palabra": "científico",
+          "correcta": true
+      },
+      {
+          "palabra": "pretérito",
+          "correcta": true
+      },
+      {
+          "palabra": "poética",
+          "correcta": true
+      },
+      {
+          "palabra": "Úrsula",
+          "correcta": true
+      },
+      {
+          "palabra": "esdrújula",
+          "correcta": true
+      },
+      {
+          "palabra": "describiéndolos",
+          "correcta": true
+      },
+      {
+          "palabra": "católico",
+          "correcta": true
+      },
+      {
+          "palabra": "kilómetro",
+          "correcta": true
+      },
+      {
+          "palabra": "área",
+          "correcta": true
+      },
+      {
+          "palabra": "olvídame",
+          "correcta": true
+      },
+      {
+          "palabra": "contemporánea",
+          "correcta": true
+      },
+      {
+          "palabra": "partícula",
+          "correcta": true
+      },
+      {
+          "palabra": "didáctica",
+          "correcta": true
+      },
+      {
+          "palabra": "jóvenes",
+          "correcta": true
+      },
+      {
+          "palabra": "antropólogo",
+          "correcta": true
+      },
+      {
+          "palabra": "básico",
+          "correcta": true
+      },
+      {
+          "palabra": "música",
+          "correcta": true
+      },
+      {
+          "palabra": "México",
+          "correcta": true
+      },
+      {
+          "palabra": "príncipe",
+          "correcta": true
+      },
+      {
+          "palabra": "aquí",
+          "correcta": true
+      },
+      {
+          "palabra": "alimentación",
+          "correcta": true
+      },
+      {
+          "palabra": "ocasión",
+          "correcta": true
+      },
+      {
+          "palabra": "imaginación",
+          "correcta": true
+      },
+      {
+          "palabra": "introducción",
+          "correcta": true
+      },
+      {
+          "palabra": "versión",
+          "correcta": true
+      },
+      {
+          "palabra": "expansión",
+          "correcta": true
+      },
+      {
+          "palabra": "empezó",
+          "correcta": true
+      },
+      {
+          "palabra": "quedarán",
+          "correcta": true
+      },
+      {
+          "palabra": "educación",
+          "correcta": true
+      },
+      {
+          "palabra": "conversación",
+          "correcta": true
+      },
+      {
+          "palabra": "dirección",
+          "correcta": true
+      },
+      {
+          "palabra": "así",
+          "correcta": true
+      },
+      {
+          "palabra": "extraccion",
+          "correcta": false
+      },
+      {
+          "palabra": "Japon",
+          "correcta": false
+      },
+      {
+          "palabra": "tomaran",
+          "correcta": false
+      },
+      {
+          "palabra": "detras",
+          "correcta": false
+      },
+      {
+          "palabra": "infantíl",
+          "correcta": false
+      },
+      {
+          "palabra": "docúmental",
+          "correcta": false
+      },
+      {
+          "palabra": "comunidád",
+          "correcta": false
+      },
+      {
+          "palabra": "áprender",
+          "correcta": false
+      },
+      {
+          "palabra": "ínvestigar",
+          "correcta": false
+      },
+      {
+          "palabra": "húmedad",
+          "correcta": false
+      },
+      {
+          "palabra": "espaciál",
+          "correcta": false
+      },
+      {
+          "palabra": "materiál",
+          "correcta": false
+      },
+      {
+          "palabra": "oficiál",
+          "correcta": false,
+          "undefined": "1"
+      },
+      {
+          "palabra": "logico",
+          "correcta": false
+      },
+      {
+          "palabra": "debil",
+          "correcta": false
+      },
+      {
+          "palabra": "azucar",
+          "correcta": false
+      },
+      {
+          "palabra": "tunel",
+          "correcta": false
+      },
+      {
+          "palabra": "cesped",
+          "correcta": false
+      },
+      {
+          "palabra": "util",
+          "correcta": false
+      },
+      {
+          "palabra": "lapiz",
+          "correcta": false
+      },
+      {
+          "palabra": "dificil",
+          "correcta": false
+      },
+      {
+          "palabra": "super",
+          "correcta": false
+      },
+      {
+          "palabra": "facil",
+          "correcta": false
+      },
+      {
+          "palabra": "angel",
+          "correcta": false
+      },
+      {
+          "palabra": "carcel",
+          "correcta": false
+      },
+      {
+          "palabra": "record",
+          "correcta": false
+      },
+      {
+          "palabra": "habil",
+          "correcta": false
+      },
+      {
+          "palabra": "martir",
+          "correcta": false
+      },
+      {
+          "palabra": "album",
+          "correcta": false
+      },
+      {
+          "palabra": "ambar",
+          "correcta": false
+      },
+      {
+          "palabra": "dolar",
+          "correcta": false
+      },
+      {
+          "palabra": "onix",
+          "correcta": false
+      },
+      {
+          "palabra": "Oscar",
+          "correcta": false
+      },
+      {
+          "palabra": "poliester",
+          "correcta": false
+      },
+      {
+          "palabra": "portatil",
+          "correcta": false
+      },
+      {
+          "palabra": "poster",
+          "correcta": false
+      },
+      {
+          "palabra": "Gutierrez",
+          "correcta": false
+      },
+      {
+          "palabra": "Sanchez",
+          "correcta": false
+      },
+      {
+          "palabra": "Cesar",
+          "correcta": false
+      },
+      {
+          "palabra": "simil",
+          "correcta": false
+      },
+      {
+          "palabra": "Gomez",
+          "correcta": false
+      },
+      {
+          "palabra": "forceps",
+          "correcta": false
+      },
+      {
+          "palabra": "torax",
+          "correcta": false
+      },
+      {
+          "palabra": "exámen",
+          "correcta": false
+      },
+      {
+          "palabra": "cárne",
+          "correcta": false
+      },
+      {
+          "palabra": "suficiénte",
+          "correcta": false
+      },
+      {
+          "palabra": "hécho",
+          "correcta": false
+      },
+      {
+          "palabra": "estratégia",
+          "correcta": false
+      },
+      {
+          "palabra": "esperánza",
+          "correcta": false
+      },
+      {
+          "palabra": "prisionéro",
+          "correcta": false
+      },
+      {
+          "palabra": "diénte",
+          "correcta": false
+      },
+      {
+          "palabra": "carrusél",
+          "correcta": false
+      },
+      {
+          "palabra": "recuérdo",
+          "correcta": false
+      },
+      {
+          "palabra": "segúndo",
+          "correcta": false
+      },
+      {
+          "palabra": "posíble",
+          "correcta": false
+      },
+      {
+          "palabra": "holográma",
+          "correcta": false
+      },
+      {
+          "palabra": "estrélla",
+          "correcta": false
+      },
+      {
+          "palabra": "hámbre",
+          "correcta": false
+      },
+      {
+          "palabra": "lógran",
+          "correcta": false
+      },
+      {
+          "palabra": "trajerón",
+          "correcta": false
+      },
+      {
+          "palabra": "imagenes",
+          "correcta": false
+      },
+      {
+          "palabra": "organizandolo",
+          "correcta": false
+      },
+      {
+          "palabra": "preambulo",
+          "correcta": false
+      },
+      {
+          "palabra": "comic",
+          "correcta": false
+      },
+      {
+          "palabra": "policía",
+          "correcta": true
+      },
+      
+          {
+            "palabra":"Porque se trata de un\ncambio en la filosofía",
+            "correcta":true
+          },
+          {
+            "palabra":"Porqué se trata de un\ncambio en la filosofía",
+            "correcta":false
+          },
+          {
+            "palabra":"Todo tiene su porqué\nen las ciencias exactas ",
+            "correcta":true
+          },
+          {
+            "palabra":"Todo tiene su porque\nen las ciencias exactas ",
+            "correcta":false
+          },
+          {
+            "palabra":"Existe una preocupación por que se\ncomience a trabajar más en Robótica ",
+            "correcta":true
+          },
+    {
+      "palabra":"¿Por qué la luz siempre está viajando? ",
+      "correcta":true
+    },
+    {
+      "palabra":"¿Por que la luz siempre está viajando? ",
+      "correcta":false
+    },
+    {
+      "palabra":"Si bien este cambio es prometedeor, es todo un reto para el sistema de evaluación",
+      "correcta":true
+    },
+    {
+      "palabra":"Sí bien este cambio es prometedor, es todo un reto para el sistema de evaluación",
+      "correcta":false
+    },
+    {
+      "palabra":"Si se dan los apoyos a los estudiantes, mejoraremos los niveles de éxito",
+      "correcta":true
+    },
+    {
+      "palabra":"Ellos dijeron que sí querían participar del campeonato",
+      "correcta":true
+    },
+    {
+      "palabra":"Ellos dijeron que si querían participar del campeonato ",
+      "correcta":false
+    },
+    {
+      "palabra":"La contaminación ambiental altera el equilibrio de los ecosistemas ",
+      "correcta":true
+    },
+    {
+      "palabra":"La contaminación ambiental altera él equilibrio de los ecosistemas ",
+      "correcta":false
+    },
+    {
+      "palabra":"Este humo de cigarro afecta también a las personas que se encuentran cerca de él ",
+      "correcta":true
+    },
+    {
+      "palabra":"Este humo de cigarro afecta también a las personas que se encuentran cerca de el ",
+      "correcta":false
+    },
+    {
+      "palabra":"Mi mayor éxito fue alcanzado en el experimento ",
+      "correcta":true
+    },
+    {
+      "palabra":"Mí mayor éxito fue alcanzado en el experimento ",
+      "correcta":false
+    },
+    {
+      "palabra":"Ante mí se mostraba un largo camino que debería recorrer ",
+      "correcta":true
+    },
+    {
+      "palabra":"Ante mi se mostraba un largo camino que debería recorrer ",
+      "correcta":false
+    },
+    {
+      "palabra":"La ciencia te otorga un mejor modo de vida",
+      "correcta":true
+    },
+    {
+      "palabra":"La ciencia té otorga un mejor modo de vida",
+      "correcta":false
+    },
+    {
+      "palabra":"El té es una tradición milenaria en algunos países ",
+      "correcta":true
+    },
+    {
+      "palabra":"El te es una tradición milenaria en algunos países ",
+      "correcta":false
+    },
+    {
+      "palabra":"Los niveles de dióxido de carbono están incrementando ",
+      "correcta":true
+    },
+    {
+      "palabra":"Los niveles de dióxido dé carbono están incrementando ",
+      "correcta":false
+    },
+    {
+      "palabra":"Los niveles de dioxido de carbono están incrementando ",
+      "correcta":false
+    },
+    {
+      "palabra":"Los niveles de dióxido de carbono están incrementando ",
+      "correcta":true
+    },
+    {
+      "palabra":"Es necesario que se dé aviso a las autoridades para la solución del caso ",
+      "correcta":true
+    },
+    {
+      "palabra":"Es necesario que se de aviso a las autoridades para la solución del caso ",
+      "correcta":false
+    },
+    {
+      "palabra":"El objetivo de todas las vacunas es exponer tu cuerpo a antígenos del patógeno ",
+      "correcta":true
+    },
+    {
+      "palabra":"El objetivo de todas las vacunas es exponer tú cuerpo a antígenos del patógeno ",
+      "correcta":false
+    },
+    {
+      "palabra":"Tú vas a llegar muy lejos ",
+      "correcta":true
+    },
+    {
+      "palabra":"Tu vas a llegar muy lejos ",
+      "correcta":false
+    },
+    {
+      "palabra":"Se ha trabajado con la vacuna Covid 19, mas falta camino por recorrer ",
+      "correcta":true
+    },
+    {
+      "palabra":"Se ha trabajado con la vacuna Covid 19, más falta camino por recorrer ",
+      "correcta":false
+    },
+    {
+      "palabra":"Se ha trabajado con la vacuna Covid 19, falta mas camino por recorrer ",
+      "correcta":true
+    },
+    {
+      "palabra":"Se ha trabajado con la vacuna Covid 19, falta más camino por recorrer ",
+      "correcta":false
+    },
+    {
+      "palabra":"Entre más vacunas anti Covid 19 haya, menor será el riesgo para contraer la enfermedad ",
+      "correcta":true
+    },
+    {
+      "palabra":"Entre mas vacunas anti Covid 19 haya, menor será el riesgo para contraer la enfermedad ",
+      "correcta":false
+    },
+    {
+      "palabra":"El futuro de la humanidad dependerá más que nunca de las políticas ambientales ",
+      "correcta":true
+    },
+    {
+      "palabra":"El futuro de la humanidad dependerá mas que nunca de las políticas ambientales ",
+      "correcta":false
+    },
+    {
+      "palabra":"Para crear vacunas de virus inactivado se altera el material genético",
+      "correcta":true
+    },
+    {
+      "palabra":"Para crear vacunas de virus inactivado sé altera el material genético",
+      "correcta":false
+    },
+    {
+      "palabra":"Sé un ejemplo de virtud para tus alumnos ",
+      "correcta":true
+    },
+    {
+      "palabra":"Se un ejemplo de virtud para tus alumnos ",
+      "correcta":false
+    },
+    {
+      "palabra":"Los niños se divierten, aun cuando no tengan la menor idea de lo que hacen ",
+      "correcta":true
+    },
+    {
+      "palabra":"Los niños se divierten, aún cuando no tengan la menor idea de lo que hacen ",
+      "correcta":false
+    },
+    {
+      "palabra":"El SARS-CoV-2 y otros virus aún desconocidos representan amenazas constantes para la humanidad ",
+      "correcta":true
+    },
+    {
+      "palabra":"El SARS-CoV-2 y otros virus aun desconocidos representan amenazas constantes para la humanidad ",
+      "correcta":false
+    },
+    {
+      "palabra":"La primera pandemia de la que hay registros escritos ocurrió entre los años 541 y 549 d. C. ",
+      "correcta":true
+    },
+    {
+      "palabra":"La primera pandemia de la qué hay registros escritos ocurrió entre los años 541 y 549 d. C. ",
+      "correcta":false
+    },
+    {
+      "palabra":"¿Qué es lo que le permite al ciudadano común acatar las leyes? ",
+      "correcta":true
+    },
+    {
+      "palabra":"¿Que es lo que le permite al ciudadano común acatar las leyes? ",
+      "correcta":false
+    },
+    {
+      "palabra":"Sea cual fuere su ámbito de competencia, el sector privado debe prestar más apoyo a la tecnología ",
+      "correcta":true
+    },
+    {
+      "palabra":"Sea cuál fuere su ámbito de competencia, el sector privado debe prestar más apoyo a la tecnología ",
+      "correcta":false
+    },
+    {
+      "palabra":"¿Cuál es la edad promedio de accidentes de hombres en motocicletas? ",
+      "correcta":true
+    },
+    {
+      "palabra":"¿Cual es la edad promedio de accidentes de hombres en motocicletas? ",
+      "correcta":false
+    },
+    {
+      "palabra":"El Ginkgo biloba es un árbol es conocido como un agente cuyas hojas mejoran la memoria ",
+      "correcta":true
+    },
+    {
+      "palabra":"El Ginkgo biloba es un árbol es conocido cómo un agente cuyas hojas mejoran la memoria ",
+      "correcta":false
+    },
+    {
+      "palabra":"¿Cómo te sentiste tras enterarte de lo de ayer? ",
+      "correcta":true
+    },
+    {
+      "palabra":"¿Como te sentiste tras enterarte de lo de ayer? ",
+      "correcta":false
+    },
+    {
+      "palabra":"Los zoológicos son lugares recreativos en donde se observan animales ",
+      "correcta":true
+    },
+    {
+      "palabra":"Los zoológicos son lugares recreativos en dónde se observan animales ",
+      "correcta":false
+    },
+    {
+      "palabra":"La mayoría de los seres vivos residen en áreas donde la contaminación ambiental es altísima ",
+      "correcta":true
+    },
+    {
+      "palabra":"La mayoría de los seres vivos residen en áreas dónde la contaminación ambiental es altísima ",
+      "correcta":false
+    },
+    {
+      "palabra":"¿De dónde llegaron los primeros pobladores de las islas del Pacífico? ",
+      "correcta":true
+    },
+    {
+      "palabra":"¿De donde llegaron los primeros pobladores de las islas del Pacífico? ",
+      "correcta":false
+    },
+    {
+      "palabra":"Quien padece diabetes es propenso a otras enfermedades ",
+      "correcta":true
+    },
+    {
+      "palabra":"¿Quién tiene la culpa de los accidentes aéreos? ",
+      "correcta":true
+    },
+    {
+      "palabra":"¿Quien tiene la culpa de los accidentes aéreos? ",
+      "correcta":false
+    },
+    {
+      "palabra":"Los estudiantes pueden proponer una actividad siempre y cuando no sea una pérdida de tiempo ",
+      "correcta":true
+    },
+    {
+      "palabra":"Los estudiantes pueden proponer una actividad siempre y cuándo no sea una pérdida de tiempo ",
+      "correcta":false
+    },
+    {
+      "palabra":"¿Pero cuándo el equipo de expertos determinó la antigüedad de esas reliquias? ",
+      "correcta":true
+    },
+    {
+      "palabra":"¿Pero cuando el equipo de expertos determinó la antigüedad de esas reliquias? ",
+      "correcta":false
+    },
+    {
+      "palabra":"Para cuando el equipo determinó la antigüedad, los datos ya eran obsoletos ",
+      "correcta":true
+    },
+    {
+      "palabra":"Para cuándo el equipo determinó la antigüedad, los datos ya eran obsoletos ",
+      "correcta":false
+    },
+    {
+      "palabra":"En cuanto termine la pandemia, mejorará la economía ",
+      "correcta":true
+    },
+    {
+      "palabra":"En cuánto termine la pandemia, mejorará la economía ",
+      "correcta":false
+    },
+    {
+      "palabra":"¿Cuánto cuesta para cada país la pandemia? ",
+      "correcta":true
+    },
+    {
+      "palabra":"¿Cuanto cuesta para cada país la pandemia? ",
+      "correcta":false
+    }
 ]
