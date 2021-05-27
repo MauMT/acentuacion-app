@@ -162,7 +162,6 @@ class ViewControllerZenGame: UIViewController {
                 let alerta = UIAlertController(title: "Opción Incorrecta", message: "Consulta la regla: " + err + "\nPuntaje: " + String(puntos), preferredStyle: .alert)
                 
                 let accion = UIAlertAction(title: "Salir", style: .default, handler: {_ in
-                    self.salvarPuntaje()
                     self.dismissGame()
                 })
                 
