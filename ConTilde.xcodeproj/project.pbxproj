@@ -22,6 +22,8 @@
 		4FD100D72629F48A004E5024 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD100D52629F48A004E5024 /* Main.storyboard */; };
 		4FD100DC2629F48D004E5024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FD100DA2629F48D004E5024 /* LaunchScreen.storyboard */; };
 		8D4CA5982630A36A00577807 /* Palabra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CA5972630A36A00577807 /* Palabra.swift */; };
+		8D788A37265F6A2C00BE23D7 /* doneSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D788A36265F6A2C00BE23D7 /* doneSound.mp3 */; };
+		8D788A3A265F6C0800BE23D7 /* errorSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D788A39265F6C0800BE23D7 /* errorSound.mp3 */; };
 		8D8443242651ACE3000FF6C9 /* AirbnbCerealExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D84431E2651ACE3000FF6C9 /* AirbnbCerealExtraBold.ttf */; };
 		8D8443252651ACE3000FF6C9 /* AirbnbCerealMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D84431F2651ACE3000FF6C9 /* AirbnbCerealMedium.ttf */; };
 		8D8443262651ACE3000FF6C9 /* AirbnbCerealBook.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D8443202651ACE3000FF6C9 /* AirbnbCerealBook.ttf */; };
@@ -52,6 +54,8 @@
 		4FD100DB2629F48D004E5024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FD100DD2629F48D004E5024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D4CA5972630A36A00577807 /* Palabra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palabra.swift; sourceTree = "<group>"; };
+		8D788A36265F6A2C00BE23D7 /* doneSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = doneSound.mp3; sourceTree = "<group>"; };
+		8D788A39265F6C0800BE23D7 /* errorSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = errorSound.mp3; sourceTree = "<group>"; };
 		8D84431E2651ACE3000FF6C9 /* AirbnbCerealExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirbnbCerealExtraBold.ttf; sourceTree = "<group>"; };
 		8D84431F2651ACE3000FF6C9 /* AirbnbCerealMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirbnbCerealMedium.ttf; sourceTree = "<group>"; };
 		8D8443202651ACE3000FF6C9 /* AirbnbCerealBook.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirbnbCerealBook.ttf; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 		4FD100CE2629F48A004E5024 /* ConTilde */ = {
 			isa = PBXGroup;
 			children = (
+				8D788A31265F69FA00BE23D7 /* Sounds */,
 				4FD100CF2629F48A004E5024 /* AppDelegate.swift */,
 				4FD100D12629F48A004E5024 /* SceneDelegate.swift */,
 				4FD100D32629F48A004E5024 /* ViewController.swift */,
@@ -155,6 +160,15 @@
 				ECDACF5A6081A255A30C5969 /* Pods-ConTilde.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D788A31265F69FA00BE23D7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8D788A36265F6A2C00BE23D7 /* doneSound.mp3 */,
+				8D788A39265F6C0800BE23D7 /* errorSound.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +238,10 @@
 				8D8443292651ACE3000FF6C9 /* AirbnbCerealBlack.ttf in Resources */,
 				8D8443242651ACE3000FF6C9 /* AirbnbCerealExtraBold.ttf in Resources */,
 				8D8443282651ACE3000FF6C9 /* AirbnbCerealBold.ttf in Resources */,
+				8D788A37265F6A2C00BE23D7 /* doneSound.mp3 in Resources */,
 				8D8443252651ACE3000FF6C9 /* AirbnbCerealMedium.ttf in Resources */,
 				4FD100D72629F48A004E5024 /* Main.storyboard in Resources */,
+				8D788A3A265F6C0800BE23D7 /* errorSound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

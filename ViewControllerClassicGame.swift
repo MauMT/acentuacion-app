@@ -7,9 +7,14 @@
 
 import UIKit
 import Koloda
+import AVFoundation
 
 
 class ViewControllerClassicGame: UIViewController {
+    
+    var audioPlayer = AVAudioPlayer()
+    var audioPlayer2 = AVAudioPlayer()
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.portrait
     }
@@ -36,7 +41,23 @@ class ViewControllerClassicGame: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-
+        
+        // cargar el audio
+        let doneSound = Bundle.main.path(forResource: "doneSound", ofType: "mp3")
+        let errorSound = Bundle.main.path(forResource: "errorSound", ofType: "mp3")
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: doneSound!))
+        } catch {
+            print(error)
+        }
+        
+        do {
+            audioPlayer2 = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: errorSound!))
+        } catch {
+            print(error)
+        }
+        
         
         if let data = defaults.data(forKey: "puntajeClassic") {
             puntaje = try! PropertyListDecoder().decode([Puntaje].self, from: data)
@@ -135,7 +156,9 @@ class ViewControllerClassicGame: UIViewController {
         if var puntos = Int(lbPuntos.text!) {
             if (opcion == respuesta) {
                 puntos = puntos + 1
+                audioPlayer.play()
             } else {
+                audioPlayer2.play()
                 var err = ""
                 if listaPalabras[indice].error == 0 {
                     err = "Regla general de acentuacion"
