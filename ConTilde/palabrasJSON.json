@@ -1675,17 +1675,17 @@
    "error": 2
  },
  {
-   "palabra": "Si bien este cambio es mucho más apegado a la educación, es todo un reto para el sistema de evaluación",
+   "palabra": "Si bien este cambio es mucho más apegado a la educación, es todo un reto",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Sí bien este cambio es mucho más apegado a la educación, es todo un reto para el sistema de evaluación",
+   "palabra": "Sí bien este cambio es mucho más apegado a la educación, es todo un reto",
    "correcta": false,
    "error": 2
  },
  {
-   "palabra": "Si se dan, de forma oportuna, los apoyos a los estudiantes, mejoraremos los niveles de éxito",
+   "palabra": "Si se dan apoyos a los estudiantes, mejoraremos los niveles de éxito",
    "correcta": true,
    "error": 2
  },
@@ -1810,12 +1810,12 @@
    "error": 2
  },
  {
-   "palabra": "Entre más vacunas anti Covid 19 haya, menor será el riesgo para contraer la enfermedad",
+   "palabra": "Entre más vacunas anti Covid 19 haya, menor será el riesgo de contraer la enfermedad",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Entre mas vacunas anti Covid 19 haya, menor será el riesgo para contraer la enfermedad",
+   "palabra": "Entre mas vacunas anti Covid 19 haya, menor será el riesgo de contraer la enfermedad",
    "correcta": false,
    "error": 2
  },
@@ -1830,12 +1830,12 @@
    "error": 2
  },
  {
-   "palabra": "Para crear vacunas de virus inactivado se altera el material genético con sustancias químicas",
+   "palabra": "Para crear vacunas de virus inactivado se altera el material genético",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Para crear vacunas de virus inactivado sé altera el material genético con sustancias químicas",
+   "palabra": "Para crear vacunas de virus inactivado sé altera el material genético",
    "correcta": false,
    "error": 2
  },
@@ -1850,12 +1850,12 @@
    "error": 2
  },
  {
-   "palabra": "Construir moléculas, un juego divertido para los niños, aun cuando no tengan la menor idea de lo que hacen",
+   "palabra": "Es un juego divertido para los niños, aun cuando no tengan la menor idea de lo que hacen",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Construir moléculas, un juego divertido para los niños, aún cuando no tengan la menor idea de lo que hacen",
+   "palabra": "Es un juego divertido para los niños, aún cuando no tengan la menor idea de lo que hacen",
    "correcta": false,
    "error": 2
  },
@@ -1910,12 +1910,12 @@
    "error": 2
  },
  {
-   "palabra": "El Ginkgo biloba es un árbol que se identifica mundialmente como un agente cuyas hojas mejoran la memoria",
+   "palabra": "Varias enfermedades, como la gripe y el sarampión, son provocadas por virus",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "El Ginkgo biloba es un árbol que se identifica mundialmente cómo un agente cuyas hojas mejoran la memoria",
+   "palabra": "Varias enfermedades, cómo la gripe y el sarampión, son provocadas por virus",
    "correcta": false,
    "error": 2
  },
@@ -1930,12 +1930,12 @@
    "error": 2
  },
  {
-   "palabra": "Los zoológicos son lugares recreativos en donde se observa la interacción de los niños con los animales",
+   "palabra": "Los zoológicos son lugares dónde se hace investigación sobre los animales",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "Los zoológicos son lugares recreativos en dónde se observa la interacción de los niños con los animales",
+   "palabra": "Los zoológicos son lugares donde se hace investigación sobre los animales",
    "correcta": false,
    "error": 2
  },
@@ -1960,7 +1960,7 @@
    "error": 2
  },
  {
-   "palabra": "Se enferma más seriamente quien ya sufre otros padecimientos como la diabetes, la obesidad, la hipertensión, el cáncer o los problemas de corazo",
+   "palabra": "Se enferma más seriamente quien ya sufre diabetes",
    "correcta": true,
    "error": 2
  },
@@ -1985,12 +1985,12 @@
    "error": 2
  },
  {
-   "palabra": "¿Pero cuándo el equipo de expertos determinó la antigüedad de la intrusión de genes indígenas americanos en las poblaciones de Polinesia?",
+   "palabra": "¿Pero cuándo el equipo de expertos determinó la antigüedad de esas reliquias?",
    "correcta": true,
    "error": 2
  },
  {
-   "palabra": "¿Pero cúándo el equipo de expertos determinó la antigüedad de la intrusión de genes indígenas americanos en las poblaciones de Polinesia?",
+   "palabra": "¿Pero cuando el equipo de expertos determinó la antigüedad de esas reliquias?",
    "correcta": false,
    "error": 2
  },
