@@ -33,7 +33,14 @@ class ViewController: UIViewController {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        defaults.set(tfName.text, forKey: "name")
+        
+        var nombreUsuario = tfName.text?.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if nombreUsuario == "" {
+            nombreUsuario = "Albert Einstein"
+        }
+    
+        defaults.set(nombreUsuario, forKey: "name")
        
     }
    
