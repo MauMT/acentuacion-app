@@ -57,6 +57,13 @@ class ViewControllerClassic: UIViewController, UIPopoverPresentationControllerDe
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if let data = defaults.data(forKey: "puntajeClassic") {
+            puntaje = try! PropertyListDecoder().decode([Puntaje].self, from: data)
+        }
+        tableview.reloadData()
+    }
+    
     
 
     @IBAction func playGame(_ sender: UIButton) {

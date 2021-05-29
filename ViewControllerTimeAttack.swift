@@ -77,6 +77,13 @@ class ViewControllerTimeAttack: UIViewController, UIPopoverPresentationControlle
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if let data = defaults.data(forKey: "puntajeTime") {
+            puntaje = try! PropertyListDecoder().decode([Puntaje].self, from: data)
+        }
+        tableview.reloadData()
+    }
+    
     //MARK: - Swipe Controller
     
     @objc func handleSwipes(_ sender: UISwipeGestureRecognizer){

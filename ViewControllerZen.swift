@@ -68,6 +68,13 @@ class ViewControllerZen: UIViewController, UIPopoverPresentationControllerDelega
         playGame(sender)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if let data = defaults.data(forKey: "puntajeZen") {
+            puntaje = try! PropertyListDecoder().decode([Puntaje].self, from: data)
+        }
+        tableview.reloadData()
+    }
+    
     
     //MARK: - Swipe Controller
     
